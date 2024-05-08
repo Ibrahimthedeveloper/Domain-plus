@@ -7,6 +7,52 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="font-rajdhani">
+    <!-- HEADER -->
+    <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+            <!-- HEADER LOGO -->
+            <div class="container">
+                <a href="index.html" target="_blank"><img src="/images/logo.svg" alt="Company Logo" class="w-[70px]"/></a>
+            </div>
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
+                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
+                  </div>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-lg font-Rajdhani">
+                    <li><a href="index.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                    <li><a href="about.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="services.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="contact.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                    
+                </ul>
+            </div>
+            
+              <div id="sideNav"
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+                </div>
+                
+                <nav class="">
+                  <ul class="ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                    <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="#">Contact</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </nav>
+    
+          <div onclick="exitNav()" id="sideBar" class="">
+          </div> 
     <!-- hero section -->
     <section class="">
         <div class="flex flex-col gap-4 py-5 pl-5 bg-gray-100 lg:flex-row lg:items-center lg:justify-between lg:px-32">
@@ -104,7 +150,7 @@
                 <div class="pl-5">
                     
                     <p class="text-xl font-bold ">Warehouse Management</p>
-                    <details>
+                    <details>   
                         <summary class="font-semibold text-blue-600 ">Read More</summary>
                         <p class="ont-light p text-md text-slate-400 ">Daily planning and controlling of resources in the <span class="lg:block">warehouse is crucial and involves processes not only </span> <span class="lg:block">related to transporting and storing but also keeping track</span>of your inventory.</p>
                         <p class="font-light justify-center-center text-md text-slate-400 lg:w-[300px] lg:hover:text-white">The need for flexible and scalable warehousing and distribution solutions is growing as supply chain operators try to overcome labor shortages, increasing costs, and rising consumer demands. Warehouse Management improves the quality of work, boosts efficiency, saves space, organizes labor, increases security, and guarantees client satisfaction.</p>
@@ -143,6 +189,94 @@
          </div>
         
     </section>
-      
+
+    <footer class="bg-[#0b0b0b] w-full">
+        <div class="flex flex-col items-center justify-center gap-12 py-12 lg:px-12 lg:py-20 lg:flex-row lg:justify-between lg:items-start lg:gap-10">
+            <!-- COMPANY LOGO -->
+            <div>
+                <a href="index.html" target="_blank"><img src="/images/logo.svg" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
+            </div>
+
+            <div class="flex flex-col items-center gap-12 lg:items-start lg:flex-row lg:gap-10">
+                 <!-- NAVIGATIONAL LINKS -->
+                <div class="flex flex-col items-center gap-5 lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Navigational</h2>
+                    <ul class="flex flex-col items-center gap-3 text-xl font-semibold text-white font-Rajdhani lg:items-start">
+                        <li><a href="index.html" target="_blank" class="hover:text-blue-400">Home</a></li>
+                            <li><a href="about.html" target="_blank" class="hover:text-blue-400">About Us</a></li>
+                            <li><a href="services.html" target="_blank" class="hover:text-blue-400">Services</a></li>
+                            <li><a href="contact.html" target="_blank" class="hover:text-blue-400">Contact Us</a></li>
+                            
+                    </ul>
+                </div>
+    
+                <!-- OFFICE LINKS -->
+                <div class="flex flex-col items-center gap-5 lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Office</h2>
+                    <!-- OFFICE ADDRESS -->
+                    <div class="flex flex-col items-center gap-3 lg:items-start">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                            fill="white" width="20px" class="w-8 h-8">
+                                <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 
+                                1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 
+                                3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" 
+                                clip-rule="evenodd" />
+                              </svg>
+                              <p class="text-base text-white font-Rajdhani font-semibold max-w-[300px]">
+                                2, Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria.     
+                            </p>
+                        </div>
+        
+                        <!-- CONTACT INFO -->
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                             fill="white" class="w-8 h-8">
+                                <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 
+                                1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 
+                                1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 
+                                13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd" />
+                            </svg>
+    
+                            <div class="flex flex-col">
+                                <a href="http://" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08023121258,</a>
+                                <a href="http://" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08126290758</a>
+                            </div>
+                        </div>
+    
+                        <!-- E-MAIL INFO -->
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                              fill="white" width="20px" class="w-8 h-8">
+                              <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                              <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+                            </svg>
+    
+                            <a href="mailto:hub@dervac.com" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">info@domain-plusltd.com</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- OFFICE HOURS -->
+                <div class="flex flex-col items-center gap-4 px-10px lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Office Hours</h2>
+    
+                    <!-- DAYS -->
+                    <div class="flex items-center gap-2 lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="white" d="M12.5 12.792V8.5q0-.213-.143-.357Q12.213 8 12 8t-.357.143q-.143.144-.143.357v4.379q0 .161.056.3q.056.14.186.271l3.05 3.05q.14.14.345.15q.203.01.363-.15t.16-.354q0-.194-.16-.354l-3-3ZM12 21q-1.663 0-3.118-.626q-1.455-.626-2.543-1.713q-1.087-1.088-1.713-2.543Q4 14.663 4 13q0-1.663.626-3.118q.626-1.455 1.713-2.543q1.088-1.087 2.543-1.713Q10.337 5 12 5q1.663 0 3.118.626q1.455.626 2.543 1.713q1.087 1.088 1.713 2.543Q20 11.337 20 13q0 1.663-.626 3.118q-.626 1.455-1.713 2.543q-1.088 1.087-2.543 1.713Q13.663 21 12 21Zm0-8ZM2.78 7.262q-.159-.16-.159-.354q0-.195.16-.354L5.554 3.78q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.353L3.488 7.262q-.14.14-.344.15q-.204.01-.363-.15Zm18.44 0q-.16.16-.355.16q-.194 0-.353-.16l-2.774-2.774q-.14-.14-.15-.344q-.01-.204.15-.363q.16-.16.354-.16q.195 0 .354.16l2.773 2.773q.14.14.15.344q.01.204-.15.364ZM12 20q2.906 0 4.953-2.047T19 13q0-2.906-2.047-4.953T12 6Q9.094 6 7.047 8.047T5 13q0 2.906 2.047 4.953T12 20Z"></path></svg>
+                        <h2 class="text-xl font-black text-white font-Rajdhani">Monday - Friday: 9:00am - 6:00pm</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOMAIN PLUS COPYRIGHT -->
+        <div class="px-8 py-10 text-center border-t border-slate-300">
+            <p class="text-sm font-semibold font-Rajdhani lg:text-xl text-slate-200">Domain-Plus International Limited &copy 2024. All rights reserved | Powered by dervacHub</p>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>

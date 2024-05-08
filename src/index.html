@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domain-Plus International Limited</title>
     <link href="./output.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 </head>
 <body>
     <!-- HEADER -->
@@ -17,16 +17,16 @@
         <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
             <!-- HEADER LOGO -->
             <div class="container">
-                <a href="index.html" target="_blank"><img src="images/logo.svg" alt="Company Logo" class="w-[70px]"/></a>
+                <a href="index.html" target="_blank"><img src="/images/logo.svg" alt="Company Logo" class="w-[70px]"/></a>
             </div>
             
             <!-- HEADER ICON MENU -->
-            <div class="sm:fle sm:items-center sm:gap-8 flex-row-reverse lg:gap-10">
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
                 <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
-                    <img src="images/icon-menu.svg" alt="Menu Logo" class=""/>
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
                   </div>
                 <!-- HEADER LINK MENU -->
-                <ul class="hidden lg:flex lg:justify-centr lg:gap-16 text-white text-2xl lg:text-lg font-semibold font-Rajdhani">
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-lg font-Rajdhani">
                     <li><a href="index.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
                     <li><a href="about.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
                     <li><a href="services.html" target="_blank" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
@@ -36,14 +36,14 @@
             </div>
             
               <div id="sideNav"
-                class="fixed top-0 right-0 bg-black text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10">
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
                 
-                <div class="flex items-center absolute top-2 left-1 mx-4 mt-5">
-                  <a href="javascript:void(0)" onclick="exitNav()"><img src="images/icon-close.svg" alt="Close logo"/></a>
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
                 </div>
                 
                 <nav class="">
-                  <ul class="text-left font-serif ml-4 text-3xl sm:text-4xl font-semibold font-Rajdhani">
+                  <ul class="ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
                     <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
                     <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
                     <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
@@ -60,10 +60,10 @@
           </div> 
 
         <!-- HEADER SECTION FINANCIAL -->
-        <div class="bg-pattern bg-cover bg-no-repeat bg-center pt-11 lg:bg-none lg:pt-44">
-            <div class="pt-10 md:pt-20 lg:pl-14 mx-auto text-center flex justify-center items-center lg:justify-start gap-2 pb-4 sm:pb-6 lg:pb-8">
-                <img src="images/asterisk.png" alt="Asterik image" class="w-10"/>
-                <p class="text-white text-2xl lg:pt-0 font-semibold font-Rajdhani">LEARNING IT BE EARNING</p>
+        <div class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44">
+            <div class="flex items-center justify-center gap-2 pt-10 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
+                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">LEARNING IT BE EARNING</p>
             </div>
             <h1 class="lg:pl-14 text-center lg:text-start text-4xl sm:text-5xl lg:text-7xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We Provide a <span class="text-blue-600">Financial </span> <span class=" sm:text-blue-600 lg:text-white">Solution</span>.</h1>
             <p class="px-5 sm:px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
@@ -76,10 +76,10 @@
     <!-- SECTION ONE -->
     <section class="my-10 lg:my-12">
         <!-- SECTION ABOUT WHAT WE DO -->
-        <div class="flex flex-col px-7 sm:px-5 lg:px-0 items-center sm:flex-row sm:justify-evenly gap-5">
-            <img src="images/single-img.jpg" alt="Single Image" class="w-[445px] sm:w-[350px] md:w-[400px] lg:w-[430px]"/>
+        <div class="flex flex-col items-center gap-5 px-7 sm:px-5 lg:px-0 sm:flex-row sm:justify-evenly">
+            <img src="/images/single-img.jpg" alt="Single Image" class="w-[445px] sm:w-[350px] md:w-[400px] lg:w-[430px]"/>
             <div>
-                <h3 class="text-blue-600 font-Rajdhani text-lg font-bold">About Domain Plus</h3>
+                <h3 class="text-lg font-bold text-blue-600 font-Rajdhani">About Domain Plus</h3>
                 <h3 class="text-3xl sm:text-2xl md:text-4xl xl:text-5xl font-Rajdhani font-bold sm: md:max-w-[700px] lg:max-w-[750px]">Trust With Our Business Management Solutions.</h3>
                 <p class="text-base py-8 lg:text-lg font-Rajdhani text-[#717575] max-w-[600px]">
                     Our unique structure consisting of over 15 seasoned and skillful solutions-certified professionals/Consultants with real industry experience, 
@@ -90,17 +90,17 @@
                 <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3">
                     <div class="flex flex-col gap-8 lg:gap-10">
                         <div class="bg-blue-600 lg:w-[280px] border border-black flex items-center rounded-md gap-2">
-                            <h3 class="text-white text-5xl font-Rajdhani font-bold px-5 py-4">20<sup class="text-4xl">+</sup></h3>
-                            <h3 class="text-lg text-white font-Rajdhani font-bold">Years Experience</h3>
+                            <h3 class="px-5 py-4 text-5xl font-bold text-white font-Rajdhani">20<sup class="text-4xl">+</sup></h3>
+                            <h3 class="text-lg font-bold text-white font-Rajdhani">Years Experience</h3>
                         </div>
 
                      <!-- SUCCESS RATE -->
                         <div class="bg-transparent lg:w-[280px] border-2 border-blue-600 flex items-center rounded-md gap-">
-                            <h3 class="text-black text-5xl font-Rajdhani font-bold px-5 py-4">70%</h3>
-                            <h3 class="text-lg text-black font-Rajdhani font-bold">Success Rate</h3>
+                            <h3 class="px-5 py-4 text-5xl font-bold text-black font-Rajdhani">70%</h3>
+                            <h3 class="text-lg font-bold text-black font-Rajdhani">Success Rate</h3>
                         </div>
                     </div>
-                    <img src="images/single-img-2.jpg" alt="Single Image 2" class="hidden lg:block lg:w-[250px] rounded-sm"/>
+                    <img src="/images/single-img-2.jpg" alt="Single Image 2" class="hidden lg:block lg:w-[250px] rounded-sm"/>
                 </div>
             </div>
         </div>
@@ -108,17 +108,17 @@
 
     <!-- SECTION TWO -->
     <section class="bg-[#edf1f5]">
-        <h3 class="text-blue-600 font-Rajdhani text-lg text-center pt-14 md:pt-20  font-bold">WHAT WE DO</h3>
-        <h3 class="text-3xl sm:text-2xl md:text-4xl xl:text-5xl font-Rajdhani font-bold pt-5 md:pt-8 text-center">Where Dreams Get Wings!</h3>
+        <h3 class="text-lg font-bold text-center text-blue-600 font-Rajdhani pt-14 md:pt-20">WHAT WE DO</h3>
+        <h3 class="pt-5 text-3xl font-bold text-center sm:text-2xl md:text-4xl xl:text-5xl font-Rajdhani md:pt-8">Where Dreams Get Wings!</h3>
         <!-- WHAT WE DO -->
-        <div class="flex flex-col items-center py-20 lg:flex-row  justify-center gap-10 md:gap-6">
+        <div class="flex flex-col items-center justify-center gap-10 py-20 lg:flex-row md:gap-6">
             <!-- IT CONSULTING -->
             <div class="pt-10">
                 <!-- IT CONSULTING IMAGE -->
-                <img src="images/consulting.png" alt="IT Consulting" class="w-[320px] md:w-[350px] lg:w-[320px] rounded-t-md shadow-md shadow-black"/>
+                <img src="/images/consulting.png" alt="IT Consulting" class="w-[320px] md:w-[350px] lg:w-[320px] rounded-t-md shadow-md shadow-black"/>
                 <!-- IT CONSULTNG TEXT -->
                 <div class="bg-white shadow-md shadow-black rounded-b-md w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-center text-xl font-Rajdhani font-bold">IT CONSULTING</h3>
+                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">IT CONSULTING</h3>
                     <p class="text-center text-base py-5 px-9 lg:text-base font-Rajdhani text-[#717575]">
                         Our Company is one of the leading ICT consultancy in Nigeria. Our unique structure consisting of over 15 seasoned and skillful solutions-certified professionals/Consultants with real industry experience,
                         assures our clients of the best services at all times.
@@ -129,10 +129,10 @@
             <!-- BUSINESS MANAGEMENT SOLUTIONS -->
             <div class="pt-10">
                 <!-- BUSINESS MANAGEMENT SOLUTIONS IMAGE -->
-                <img src="images/business-management.png" alt="Business Management Solution" class="md:h-[180px] w-[320px] md:w-[350px] shadow-md shadow-black lg:w-[320px] rounded-t-md"/>
+                <img src="/images/business-management.png" alt="Business Management Solution" class="md:h-[180px] w-[320px] md:w-[350px] shadow-md shadow-black lg:w-[320px] rounded-t-md"/>
                 <!-- BUSINESS MANAGEMENT SOLUTIONS TEXT -->
                 <div class="bg-white shadow-md shadow-black rounded-b-md  w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-center text-xl font-Rajdhani font-bold">BUSINESS MANAGEMENT SOLUTIONS</h3>
+                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">BUSINESS MANAGEMENT SOLUTIONS</h3>
                     <p class="text-center text-base py-5 px-4 lg:text-[17px] font-Rajdhani text-[#717575]">
                         We assist our clients in achieving significant improvements in operating performance via state-of-the-art automation and
                         our uniqueness professionals, with real industry experiences and committment to our business clients.
@@ -143,10 +143,10 @@
             <!-- BUSINESS CONSULTING PARTNERSHIP -->
             <div class="pt-10 ">
                 <!-- BUSINESS CONSULTING PARTNERSHIP IMAGE -->
-                <img src="images/business-consulting-partnership.jpg" alt="Business Consulting Partnership" class="w-[320px] md:w-[350px] lg:w-[320px] shadow-md shadow-black rounded-t-md"/>
+                <img src="/images/business-consulting-partnership.jpg" alt="Business Consulting Partnership" class="w-[320px] md:w-[350px] lg:w-[320px] shadow-md shadow-black rounded-t-md"/>
                 <!-- BUSINESS CONSULTING PARTNERSHIP TEXT -->
                 <div class="bg-white shadow-md shadow-black rounded-b-md w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-center text-xl font-Rajdhani font-bold">BUSINESS CONSULTING PARTNERSHIP</h3>
+                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">BUSINESS CONSULTING PARTNERSHIP</h3>
                     <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575] max-w-[400px]">
                         As a professional services firm of Business and Computer Software consultants with a special interest in 
                         computerization of Government/businesses and the facilitation of high-quality.
@@ -161,7 +161,7 @@
     <section class="bg-[#dee3e9e7] opacity-85 pb-12 w-full">
         <!-- SECTION FAQ -->
         <div class="">
-            <h2 class="text-blue-600 text-center pt-10 text-2xl md:text-4xl font-Rajdhani font-semibold">OUR SERVICES</h2>
+            <h2 class="pt-10 text-2xl font-semibold text-center text-blue-600 md:text-4xl font-Rajdhani">OUR SERVICES</h2>
             <!-- FINANCE AND ACCOUNT -->
             <div class="bg-white shadow-md shadow-[#0b0b0b] my-10 lg:mx-20 mx-7 sm:mx-16 md:mx-20 py-5 px-7 text-black hover:text-blue-600 font-Rajdhani font-bold text-xl md:text-2xl rounded-lg flex items-center justify-between">
                 <a href="services.html">Finance & Accounting</a>
@@ -222,54 +222,54 @@
     <section class="bg-gradient-to-tr from-[#edf1f5] via-slate-300 to-[#e5e9ee]">
         <!-- OUR STRATEGIC PARTNERS -->
         <div class="pt-10 md:pt-20">
-            <h3 class="text-5xl font-Rajdhani font-bold text-center">Our Strategic Partners</h3>
+            <h3 class="text-5xl font-bold text-center font-Rajdhani">Our Strategic Partners</h3>
 
             <!-- CLIENTS COMPANY -->
-            <div class=" py-16 mx-6 md:place-content-center lg:mx-24 grid grid-cols-2 md:grid-cols-3 items-center gap-4 md:gap-6">
-                <img src="images/albergo-hotel.jpg" alt="Albergo Hotel Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/johnwood-hotel.png" alt="Johnwood Hotel Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/optimum-exposure.png" alt="Optimum exposure Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px]  transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/okra.png" alt="Okra Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/lagos-state-parking.png" alt="Lagos State Parking Image" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/africa-prudencial.jpg" alt="Africa Prudencial Image" class="rounded-tl-3xl rounded-br-3xl shadow-md w-[150px] md:w-[170px] shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/ezion-geber-energy-ltd.png" alt="Ezion Geber Limited" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/energy-services-ltd.png" alt="Energy Services Limited" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
-                <img src="images/red-wire.png" alt="Red Wire Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black transition-transform w-[150px] md:w-[170px] hover:scale-90 ease-linear duration-300"/>
+            <div class="grid items-center grid-cols-2 gap-4 py-16 mx-6 md:place-content-center lg:mx-24 md:grid-cols-3 md:gap-6">
+                <img src="/images/albergo-hotel.jpg" alt="Albergo Hotel Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/johnwood-hotel.png" alt="Johnwood Hotel Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/optimum-exposure.png" alt="Optimum exposure Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px]  transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/okra.png" alt="Okra Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black w-[150px] md:w-[170px] transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/lagos-state-parking.png" alt="Lagos State Parking Image" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/africa-prudencial.jpg" alt="Africa Prudencial Image" class="rounded-tl-3xl rounded-br-3xl shadow-md w-[150px] md:w-[170px] shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/ezion-geber-energy-ltd.png" alt="Ezion Geber Limited" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/energy-services-ltd.png" alt="Energy Services Limited" class="rounded-tl-3xl rounded-br-3xl w-[150px] md:w-[170px] shadow-md shadow-black transition-transform hover:scale-90 ease-linear duration-300"/>
+                <img src="/images/red-wire.png" alt="Red Wire Image" class="rounded-tl-3xl rounded-br-3xl shadow-md shadow-black transition-transform w-[150px] md:w-[170px] hover:scale-90 ease-linear duration-300"/>
             </div>
         </div>
 
         <!-- OUR RATINGS -->
         <div class="bg-white">
-            <h3 class="py-16 text-3xl md:text-5xl font-Rajdhani font-bold text-center">WHAT WE HAVE ACQUIRED</h3>
-            <div class="md:px-10 grid grid-cols-2 md:flex md:items-center md:justify-center gap-6 lg:gap-16">
+            <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">WHAT WE HAVE ACQUIRED</h3>
+            <div class="grid grid-cols-2 gap-6 md:px-10 md:flex md:items-center md:justify-center lg:gap-16">
                 <!-- YEARS OF EXPEIENCE -->
-                <div class="flex flex-col text-center items-center gap-2">
-                    <h3 class="text-blue-600 text-3xl lg:text-6xl font-Rajdhani font-black">20<sup>+</sup></h3>
-                    <h3 class="text-blue-600 text-xl lg:text-2xl font-Rajdhani font-black">Years Experience</h3>
+                <div class="flex flex-col items-center gap-2 text-center">
+                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Years Experience</h3>
                 </div>
 
                 <!-- INDUSTRY DEPLOYMENTS -->
-                <div class="flex flex-col text-center items-center gap-2">
-                    <h3 class="text-blue-600 text-3xl lg:text-6xl font-Rajdhani font-black">20<sup>+</sup></h3>
-                    <h3 class="text-blue-600 text-xl lg:text-2xl font-Rajdhani font-black">Industry Deployment</h3>
+                <div class="flex flex-col items-center gap-2 text-center">
+                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Industry Deployment</h3>
                 </div>
 
                 <!-- PROJECT COMPLETED -->
-                <div class="flex flex-col text-center items-center gap-2">
-                    <h3 class="text-blue-600 text-3xl lg:text-6xl font-Rajdhani font-black">180<sup>+</sup></h3>
-                    <h3 class="text-blue-600 text-xl lg:text-2xl font-Rajdhani font-black">Project Completed</h3>
+                <div class="flex flex-col items-center gap-2 text-center">
+                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
+                    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Project Completed</h3>
                 </div>
 
                 <!-- CERTIFIED  CONSULTANTS-->
-                <div class="flex flex-col text-center items-center gap-2">
-                    <h3 class="text-blue-600 text-3xl lg:text-6xl font-Rajdhani font-black">70<sup>+</sup></h3>
-                    <h3 class="text-blue-600 text-xl lg:text-2xl font-Rajdhani font-black">Certified Consultants</h3>
+                <div class="flex flex-col items-center gap-2 text-center">
+                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
+                    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Certified Consultants</h3>
                 </div>
 
                 <!-- COUNTRIES SERVICING -->
-                <div class="hidden md:flex flex-col text-center items-center gap-2">
-                    <h3 class="text-blue-600 text-3xl lg:text-6xl font-Rajdhani font-black">3<sup>+</sup></h3>
-                    <h3 class="text-blue-600 text-xl lg:text-2xl font-Rajdhani font-black">Countries Servicing</h3>
+                <div class="flex-col items-center hidden gap-2 text-center md:flex">
+                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
+                    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Countries Servicing</h3>
                 </div>
             </div>
         </div>
@@ -278,50 +278,50 @@
     <!-- SECTION FIVE -->
     <section class="mt-16 bg-gradient-to-tr from-[#edf1f5] via-slate-300 to-[#e5e9ee]">
         <!-- OUR TESTIMONIALS -->
-        <h3 class="py-16 text-3xl md:text-5xl font-Rajdhani font-bold text-center">OUR TESTIMONIALS</h3>
-       <div class="px-20 pb-20 flex flex-col items-center justify-center gap-12 lg:flex-row lg:gap-8">
+        <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">OUR TESTIMONIALS</h3>
+       <div class="flex flex-col items-center justify-center gap-12 px-20 pb-20 lg:flex-row lg:gap-8">
                 <!-- CEO DRAFT -->
            <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
-               <div class="py-6 flex flex-col items-center hover:bg-blue-700">
-                   <img src="images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
+               <div class="flex flex-col items-center py-6 hover:bg-blue-700">
+                   <img src="/images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
                    <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
                      Domain-Plus International Limited played a pivotal role in transforming our HR and payroll processes. Their comprehensive ICT 
                      solutions streamlined our operations, enhancing efficiency and reducing costs. Their team of seasoned professionals delivered 
                      top-notch service, making them our go-to ICT consultancy partner. Domain-Plus is indeed a reliable and innovative ICT consultancy,
                       making a significant impact on our business
                    </p>
-                   <h3 class="font-Rajdhani text-lg font-extrabold text-white">Kolade Ishola</h3>
-                   <h3 class="font-Rajdhani text-lg font-extrabold text-white">CEO DRAFT</h3>
+                   <h3 class="text-lg font-extrabold text-white font-Rajdhani">Kolade Ishola</h3>
+                   <h3 class="text-lg font-extrabold text-white font-Rajdhani">CEO DRAFT</h3>
                </div>
             </div>
 
             <!-- MANAGER WEALTH -->
             <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
-                <div class="py-6 flex flex-col items-center hover:bg-blue-700">
-                    <img src="images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
+                <div class="flex flex-col items-center py-6 hover:bg-blue-700">
+                    <img src="/images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
                     <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
                         As a business owner, partnering with Domain-Plus was a game-changer. Their expertise in computerization and ICT 
                         solutions revolutionized our accounting, project costing, and asset management. Their commitment to delivering 
                         high-quality training further empowered our team. Domain-Plus is indeed a reliable and innovative ICT consultancy,
                          making a significant impact on our business.
                     </p>
-                    <h3 class="font-Rajdhani text-lg font-extrabold text-white">Adeyemo Cave</h3>
-                    <h3 class="font-Rajdhani text-lg font-extrabold text-white">MANAGER WEALTH</h3>
+                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">Adeyemo Cave</h3>
+                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">MANAGER WEALTH</h3>
                 </div>
             </div>
 
             <!-- DIRECTOR HOLICS -->
             <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
-                <div class="py-6 flex flex-col items-center hover:bg-blue-700">
-                    <img src="images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
+                <div class="flex flex-col items-center py-6 hover:bg-blue-700">
+                    <img src="/images/team1.png" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-24"/>
                     <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
                         We have been working with Domain-Plus International Limited since 2018, and their services have exceeded our 
                         expectations. Their dedicated team of solutions-certified professionals has not only provided us with cutting-edge 
                         automation but also tailored their solutions to fit our unique needs. Their wealth of industry experience and commitment 
                         to excellence make them a trusted partner. 
                     </p>
-                    <h3 class="font-Rajdhani text-lg font-extrabold text-white">Cynthia Cole</h3>
-                    <h3 class="font-Rajdhani text-lg font-extrabold text-white">DIRECTOR HOLICS</h3>
+                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">Cynthia Cole</h3>
+                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">DIRECTOR HOLICS</h3>
                 </div>
             </div>
         </div>
@@ -329,17 +329,17 @@
 
     <!-- FOOTER -->
     <footer class="bg-[#0b0b0b] w-full">
-        <div class="flex flex-col justify-center items-center py-12 gap-12 lg:px-12 lg:py-20 lg:flex-row lg:justify-between lg:items-start lg:gap-10">
+        <div class="flex flex-col items-center justify-center gap-12 py-12 lg:px-12 lg:py-20 lg:flex-row lg:justify-between lg:items-start lg:gap-10">
             <!-- COMPANY LOGO -->
             <div>
-                <a href="index.html" target="_blank"><img src="images/logo.svg" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
+                <a href="index.html" target="_blank"><img src="/images/logo.svg" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
             </div>
 
             <div class="flex flex-col items-center gap-12 lg:items-start lg:flex-row lg:gap-10">
                  <!-- NAVIGATIONAL LINKS -->
-                <div class="flex flex-col gap-5 items-center lg:items-start">
-                    <h2 class="text-white text-3xl font-Rajdhani font-black">Navigational</h2>
-                    <ul class="text-white text-xl font-Rajdhani font-semibold flex flex-col gap-3 items-center lg:items-start">
+                <div class="flex flex-col items-center gap-5 lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Navigational</h2>
+                    <ul class="flex flex-col items-center gap-3 text-xl font-semibold text-white font-Rajdhani lg:items-start">
                         <li><a href="index.html" target="_blank" class="hover:text-blue-400">Home</a></li>
                             <li><a href="about.html" target="_blank" class="hover:text-blue-400">About Us</a></li>
                             <li><a href="services.html" target="_blank" class="hover:text-blue-400">Services</a></li>
@@ -349,13 +349,13 @@
                 </div>
     
                 <!-- OFFICE LINKS -->
-                <div class="flex flex-col gap-5 items-center lg:items-start">
-                    <h2 class="text-white text-3xl font-Rajdhani font-black">Office</h2>
+                <div class="flex flex-col items-center gap-5 lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Office</h2>
                     <!-- OFFICE ADDRESS -->
-                    <div class="flex flex-col gap-3 items-center lg:items-start">
-                        <div class="flex gap-2 items-center">
+                    <div class="flex flex-col items-center gap-3 lg:items-start">
+                        <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
-                            fill="white" width="20px" class="w-10 h-10">
+                            fill="white" width="20px" class="w-8 h-8">
                                 <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 
                                 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 
                                 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" 
@@ -367,9 +367,9 @@
                         </div>
         
                         <!-- CONTACT INFO -->
-                        <div class="flex gap-2 items-center">
+                        <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                             fill="white" class="w-8 h-10">
+                             fill="white" class="w-8 h-8">
                                 <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 
                                 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 
                                 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 
@@ -377,40 +377,40 @@
                             </svg>
     
                             <div class="flex flex-col">
-                                <a href="http://" target="_blank" class="text-lg text-white font-Rajdhani font-semibold hover:text-blue-400">08023121258,</a>
-                                <a href="http://" target="_blank" class="text-lg text-white font-Rajdhani font-semibold hover:text-blue-400">08126290758</a>
+                                <a href="http://" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08023121258,</a>
+                                <a href="http://" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08126290758</a>
                             </div>
                         </div>
     
                         <!-- E-MAIL INFO -->
-                        <div class="flex gap-2 items-center">
+                        <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                               fill="white" width="20px" class="w-8 h-8">
                               <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                               <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
                             </svg>
     
-                            <a href="mailto:hub@dervac.com" target="_blank" class="text-lg text-white font-Rajdhani font-semibold hover:text-blue-400">info@domain-plusltd.com</a>
+                            <a href="mailto:hub@dervac.com" target="_blank" class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">info@domain-plusltd.com</a>
                         </div>
                     </div>
                 </div>
     
                 <!-- OFFICE HOURS -->
-                <div class="px-10px flex flex-col gap-4 items-center lg:items-start">
-                    <h2 class="text-white text-3xl font-Rajdhani font-black">Office Hours</h2>
+                <div class="flex flex-col items-center gap-4 px-10px lg:items-start">
+                    <h2 class="text-3xl font-black text-white font-Rajdhani">Office Hours</h2>
     
                     <!-- DAYS -->
-                    <div class="flex gap-2 items-center lg">
+                    <div class="flex items-center gap-2 lg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="white" d="M12.5 12.792V8.5q0-.213-.143-.357Q12.213 8 12 8t-.357.143q-.143.144-.143.357v4.379q0 .161.056.3q.056.14.186.271l3.05 3.05q.14.14.345.15q.203.01.363-.15t.16-.354q0-.194-.16-.354l-3-3ZM12 21q-1.663 0-3.118-.626q-1.455-.626-2.543-1.713q-1.087-1.088-1.713-2.543Q4 14.663 4 13q0-1.663.626-3.118q.626-1.455 1.713-2.543q1.088-1.087 2.543-1.713Q10.337 5 12 5q1.663 0 3.118.626q1.455.626 2.543 1.713q1.087 1.088 1.713 2.543Q20 11.337 20 13q0 1.663-.626 3.118q-.626 1.455-1.713 2.543q-1.088 1.087-2.543 1.713Q13.663 21 12 21Zm0-8ZM2.78 7.262q-.159-.16-.159-.354q0-.195.16-.354L5.554 3.78q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.353L3.488 7.262q-.14.14-.344.15q-.204.01-.363-.15Zm18.44 0q-.16.16-.355.16q-.194 0-.353-.16l-2.774-2.774q-.14-.14-.15-.344q-.01-.204.15-.363q.16-.16.354-.16q.195 0 .354.16l2.773 2.773q.14.14.15.344q.01.204-.15.364ZM12 20q2.906 0 4.953-2.047T19 13q0-2.906-2.047-4.953T12 6Q9.094 6 7.047 8.047T5 13q0 2.906 2.047 4.953T12 20Z"></path></svg>
-                        <h2 class="text-white text-xl font-Rajdhani font-black">Monday - Friday: 9:00am - 6:00pm</h2>
+                        <h2 class="text-xl font-black text-white font-Rajdhani">Monday - Friday: 9:00am - 6:00pm</h2>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- DOMAIN PLUS COPYRIGHT -->
-        <div class="border-t border-slate-300 px-8 text-center py-10">
-            <p class="font-Rajdhani text-sm lg:text-xl text-slate-200 font-semibold">Domain-Plus International Limited &copy 2024. All rights reserved | Powered by dervacHub</p>
+        <div class="px-8 py-10 text-center border-t border-slate-300">
+            <p class="text-sm font-semibold font-Rajdhani lg:text-xl text-slate-200">Domain-Plus International Limited &copy 2024. All rights reserved | Powered by dervacHub</p>
         </div>
     </footer>
 

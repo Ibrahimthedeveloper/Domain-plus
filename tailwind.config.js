@@ -2,9 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {  fontFamily: {
-      'rajdhani': ['rajdhani'],
-    },},
+    fontFamily: {
+      'Rajdhani': ['Rajdhani', 'sans'],
+      'bimini': ['bimini'],
+    },
+    
+    extend: {
+      backgroundImage: {
+        'pattern': "url('./images/slider-mainbg-01.jpg')",
+        'headbg': "url('./images/pagetitle-bg.jpg')",
+      }
+    },
   },
   plugins: [],
 }
