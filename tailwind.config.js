@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'rajdhani': ['rajdhani', 'sans'],
+      'Rajdhani': ['rajdhani', 'sans'],
       'bimini': ['bimini'],
     },
     
