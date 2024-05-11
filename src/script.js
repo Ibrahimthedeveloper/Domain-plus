@@ -58,23 +58,20 @@ changeBackground(); // Start the slideshow
   
 
 //arrow up section
-let mybutton = document.getElementById("go-up");
-//lets the user scrolls down 20px from the top of the document, and also show the button
-window.onscroll = function () {scrollFunction()};
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-function scrollFunction() {
-    if (document.body.scrollTop >20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = 'block';
+// Function to toggle button visibility based on scroll position
+window.addEventListener('scroll', function() {
+    var button = document.getElementById('go-up');
+    if (window.scrollY > 200) { // Adjust the scroll position threshold as needed
+        button.style.opacity = '1';
     } else {
-        mybutton.style.display = 'none';
+        button.style.opacity = '0';
     }
-}
-
-//When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; //for safari
-    document.documentElement.scrollTop = 0; // For chrome, Firefox, IE and Opera
-}
+});
 
 
 
