@@ -55,4 +55,32 @@ function changeBackground() {
 }
 
 changeBackground(); // Start the slideshow
+  
+
+//arrow up section
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Function to toggle button visibility based on scroll position
+window.addEventListener('scroll', function() {
+    var button = document.getElementById('go-up');
+    if (window.scrollY > 200) { // Adjust the scroll position threshold as needed
+        button.style.opacity = '1';
+    } else {
+        button.style.opacity = '0';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 
