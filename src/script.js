@@ -37,4 +37,22 @@ function openNav() {
 
 
 
-  
+
+
+const slideshow = document.getElementById('slideshow');
+const images = [
+    '/images/slider-mainbg-01.jpg',
+    '/images/slider-mainbg-02.jpg',
+    '/images/pagetitle-bg.jpg',
+    // Add more image URLs as needed
+];
+let index = 0;
+
+function changeBackground() {
+    index = (index + 1) % images.length;
+    slideshow.style.backgroundImage = "url('" + images[index] + "')";
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+}
+
+changeBackground(); // Start the slideshow
+

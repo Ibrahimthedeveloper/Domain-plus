@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'Rajdhani': ['rajdhani', 'sans'],
-      'bimini': ['bimini'],
+      bimini: ['Bimini', 'sans-serif'],
     },
     
     extend: {
