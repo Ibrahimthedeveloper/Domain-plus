@@ -8,3 +8,51 @@ function openNav() {
     document.getElementById("sideBar").style.width = "0%";
     document.getElementById("sideNav").style.width = "0%";
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Perform form validation
+        // Example: Check if input fields are not empty
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const select = document.getElementById('select').value.trim();
+
+        if (!name || !email || !message || !select) {
+            alert('Please fill out all fields.'); // Display an error message
+            return;
+        }
+
+        // Form data is valid, you can submit the form data or perform other actions here
+        alert('Form submitted successfully!'); // Display success message
+        // Clear all form fields
+        form.reset();
+    });
+});
+
+
+
+
+
+
+const slideshow = document.getElementById('slideshow');
+const images = [
+    '/images/slider-mainbg-01.jpg',
+    '/images/slider-mainbg-02.jpg',
+    '/images/pagetitle-bg.jpg',
+    // Add more image URLs as needed
+];
+let index = 0;
+
+function changeBackground() {
+    index = (index + 1) % images.length;
+    slideshow.style.backgroundImage = "url('" + images[index] + "')";
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+}
+
+changeBackground(); // Start the slideshow
+

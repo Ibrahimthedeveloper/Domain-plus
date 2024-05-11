@@ -62,7 +62,7 @@
         </div>
     </section>
     <!-- address section -->
-    <section class="lg:flex lg:justify-between lg:px-10 lg:py-20 lg:bg-slate-100">
+    <section class="py-20 lg:flex lg:justify-between lg:px-10 lg:py-20 lg:bg-slate-100">
         
         <section class="flex flex-col gap-10 pt-16 pl-5 lg:pt-32">
             <div class="flex flex-col gap-2 ">
@@ -90,32 +90,30 @@
             <!-- forms👇🏼 -->
             <section>
                 <div>
-                    <form action="" class="flex flex-col gap-5">
+                    <form action="#" id="myForm" class="flex flex-col gap-5">
                         <div class="flex flex-col gap-5 lg:flex lg:flex-row">
-                            <input type="text" name="Name" id="" placeholder="Name" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
-                            <input type="text" name="Name" id="" placeholder="E-mail" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="text" name="name" id="name" placeholder="Name" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
                         </div>
                         <div class="flex flex-col gap-5 lg:flex lg:flex-row">
-                            <input type="text" name="Name" id="" placeholder="Phone no" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="text" name="number" id="number" required placeholder="Phone no" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
                             <section class="pb-5">
-                                <form action="">
-                                    <select name="" id="" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] out-of-range:">
-                                        <option value="">Select</option>
-                                        <option value="">Finance and Accounting</option>
-                                        <option value="">fleet Management and Tracking</option>
-                                        <option value="">Payroll and Human Resource Management</option>
-                                        <option value="">Procurement Management</option> 
-                                        <option value="">Inventory Management</option>
-                                        <option value="">Warehouse Management</option>
-                                        <option value="">Customer Relationship Management</option>
-                                        <option value="">Business Intelligence and Reporting</option>
-                                    </select>
-                                </form>
+                                <select name="select" id="select" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] out-of-range:">
+                                    <option value="">Select</option>
+                                    <option value="Finance and Accounting">Finance and Accounting</option>
+                                    <option value="Fleet Management and Tracking">Fleet Management and Tracking</option>
+                                    <option value="Payroll and Human Resource Management">Payroll and Human Resource Management</option>
+                                    <option value="Procurement Management">Procurement Management</option> 
+                                    <option value="Inventory Management">Inventory Management</option>
+                                    <option value="Warehouse Management">Warehouse Management</option>
+                                    <option value="Customer Relationship Management">Customer Relationship Management</option>
+                                    <option value="Business Intelligence and Reporting">Business Intelligence and Reporting</option>
+                                </select>
                             </section>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <textarea name="name" id="" placeholder="Message" class="justify-center pb-56 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 h-72 w-80 shadow-gray-500 lg:w-[720px]"></textarea>
-                            <button class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
+                            <textarea name="message" id="message" placeholder="Message" required class="justify-center pt-5 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 h-56 w-80 shadow-gray-500 lg:w-[720px]"></textarea>
+                            <button type="submit" class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -208,13 +206,69 @@
                 </div>
             </div>
         </div>
+      
 
-        <!-- DOMAIN PLUS COPYRIGHT -->
-        <div class="px-8 py-10 text-center border-t border-slate-300">
-            <p class="text-sm font-semibold font-Rajdhani lg:text-xl text-slate-200">Domain-Plus International Limited &copy 2024. All rights reserved | Powered by dervacHub</p>
-        </div>
-    </footer>
+        <footer class="py-12 bg-gray-900 font-Rajdhani">
+            <div class="container flex flex-col items-center justify-between px-4 mx-auto lg:flex-row lg:px-0">
+                <!-- COMPANY LOGO -->
+                <a href="index.html" class="mb-8 mr-0 lg:mb-0 lg:mr-16">
+                    <img src="/images/logo.svg" alt="Company Logo" class="w-32 lg:w-40">
+                </a>
+        
+                <!-- NAVIGATION LINKS -->
+                <nav class="flex flex-col items-center mb-8 lg:items-start lg:mb-0">
+                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Navigational</h2>
+                    <ul class="text-lg">
+                        <li><a href="index.html" class="text-white hover:text-blue-400">Home</a></li>
+                        <li><a href="about.html" class="text-white hover:text-blue-400">About Us</a></li>
+                        <li><a href="services.html" class="text-white hover:text-blue-400">Services</a></li>
+                        <li><a href="contact.html" class="text-white hover:text-blue-400">Contact Us</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- OFFICE INFORMATION -->
+                <div class="flex flex-col items-center mb-8 ml-0 lg:items-start lg:mb-0 lg:ml-16">
+                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Office</h2>
+                    <div class="text-lg">
+                        <p class="mb-2 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 1.5c-4.14 0-7.5 3.36-7.5 7.5 0 5.25 7.5 13.5 7.5 13.5s7.5-8.25 7.5-13.5c0-4.14-3.36-7.5-7.5-7.5zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z"/>
+                            </svg>
+                            2, Adaranijo Street, Opposite Pedro Police Station, Palmgroove, Lagos, Nigeria
+                        </p>
+                        <p class="mb-2 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M21 2H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v4a1 1 0 0 0 1.447.894l6-3a1 1 0 0 0 .553-.894V17h5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 14.618L15.382 19 14 18.382V17h-4v1.382L8.618 19 4 17.618V4h16v12.618z"/>
+                            </svg>
+                            <a href="tel:+2348023121258" class="text-white hover:text-blue-400">08023121258</a>,
+                            <a href="tel:+2348126290758" class="text-white hover:text-blue-400">08126290758</a>
+                        </p>
+                        <p class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                            <a href="mailto:info@domain-plusltd.com" class="text-white hover:text-blue-400">info@domain-plusltd.com</a>
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- OFFICE HOURS -->
+                <div class="flex flex-col items-center lg:items-start">
+                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Office Hours</h2>
+                    <p class="text-lg font-semibold text-white">Monday - Friday: 9:00am - 6:00pm</p>
+                </div>
+            </div>
+        
+            <!-- COPYRIGHT -->
+            <div class="py-6 text-center border-t border-gray-700">
+                <p class="text-sm text-gray-400">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
+            </div>
+        </footer>
 
+        
     <script src="./script.js"></script>
 </body>
 </html>
