@@ -90,34 +90,34 @@
             <!-- forms👇🏼 -->
             <section>
                 <div>
-                    <form action="" class="flex flex-col gap-5">
+                    <form action="#" id="myForm" class="flex flex-col gap-5">
                         <div class="flex flex-col gap-5 lg:flex lg:flex-row">
-                            <input type="text" name="Name" id="" placeholder="Name" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
-                            <input type="text" name="Name" id="" placeholder="E-mail" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="text" name="name" id="name" placeholder="Name" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
                         </div>
                         <div class="flex flex-col gap-5 lg:flex lg:flex-row">
-                            <input type="text" name="Name" id="" placeholder="Phone no" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="text" name="number" id="number" required placeholder="Phone no" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
                             <section class="pb-5">
-                                <form action="">
-                                    <select name="" id="" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] out-of-range:">
-                                        <option value="">Select</option>
-                                        <option value="">Finance and Accounting</option>
-                                        <option value="">fleet Management and Tracking</option>
-                                        <option value="">Payroll and Human Resource Management</option>
-                                        <option value="">Procurement Management</option> 
-                                        <option value="">Inventory Management</option>
-                                        <option value="">Warehouse Management</option>
-                                        <option value="">Customer Relationship Management</option>
-                                        <option value="">Business Intelligence and Reporting</option>
-                                    </select>
-                                </form>
+                                <select name="select" id="select" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] out-of-range:">
+                                    <option value="">Select</option>
+                                    <option value="Finance and Accounting">Finance and Accounting</option>
+                                    <option value="Fleet Management and Tracking">Fleet Management and Tracking</option>
+                                    <option value="Payroll and Human Resource Management">Payroll and Human Resource Management</option>
+                                    <option value="Procurement Management">Procurement Management</option> 
+                                    <option value="Inventory Management">Inventory Management</option>
+                                    <option value="Warehouse Management">Warehouse Management</option>
+                                    <option value="Customer Relationship Management">Customer Relationship Management</option>
+                                    <option value="Business Intelligence and Reporting">Business Intelligence and Reporting</option>
+                                </select>
                             </section>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <textarea name="name" id="" placeholder="Message" class="justify-center pb-56 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 h-72 w-80 shadow-gray-500 lg:w-[720px]"></textarea>
-                            <button class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
+                            <textarea name="message" id="message" placeholder="Message" required class="justify-center pb-56 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 h-72 w-80 shadow-gray-500 lg:w-[720px]"></textarea>
+                            <button type="submit" class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
                         </div>
                     </form>
+                    
+                    
                 </div>
             </section>
             </div>
@@ -214,7 +214,6 @@
             <p class="text-sm font-semibold font-Rajdhani lg:text-xl text-slate-200">Domain-Plus International Limited &copy 2024. All rights reserved | Powered by dervacHub</p>
         </div>
     </footer>
-
     <script src="./script.js"></script>
 </body>
 </html>
