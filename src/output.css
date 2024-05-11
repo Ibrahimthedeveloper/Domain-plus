@@ -701,10 +701,6 @@ video {
   height: 2rem;
 }
 
-.h-\[1000px\] {
-  height: 1000px;
-}
-
 .h-\[140px\] {
   height: 140px;
 }
@@ -783,6 +779,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .max-w-\[300px\] {
@@ -1700,10 +1704,6 @@ video {
 
   .lg\:ml-\[200px\] {
     margin-left: 200px;
-  }
-
-  .lg\:mt-\[px\] {
-    margin-top: px;
   }
 
   .lg\:block {
