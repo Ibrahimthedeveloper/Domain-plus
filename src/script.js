@@ -75,6 +75,31 @@ window.addEventListener('scroll', function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = [
+        { id: "years-experience", initialValue: 20 },
+        { id: "industry-deployment", initialValue: 20 },
+        { id: "projects-completed", initialValue: 180 },
+        { id: "certified-consultants", initialValue: 70 },
+        { id: "countries-servicing", initialValue: 3 }
+    ];
+
+    elements.forEach(el => {
+        const element = document.getElementById(el.id);
+        let count = 0;
+        const interval = setInterval(() => {
+            count++;
+            element.textContent = count;
+            if (count === el.initialValue) {
+                clearInterval(interval);
+            }
+        }, 10); // Change the interval to adjust the speed (lower value for faster)
+    });
+});
+
+
+
+
 
 
 
