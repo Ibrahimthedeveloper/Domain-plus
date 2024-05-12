@@ -8,7 +8,17 @@
 </head>
 <body class="font-rajdhani">
     <!-- HEADER -->
-    <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+    <style>
+        footer{
+            background-color: #0f0f0f;
+            background-image: radial-gradient(gray 1px, transparent 2px);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            z-index: 100px;
+        }
+  </style>
+  
+    <header class="lg:bg-headbg lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
         <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
             <!-- HEADER LOGO -->
             <div class="container">
@@ -21,12 +31,13 @@
                     <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
                   </div>
                 <!-- HEADER LINK MENU -->
-                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-lg font-Rajdhani">
-                    <li><a href="index.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
                     <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
-                    <li><a href="services.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="solution.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
                     <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
-                    
                 </ul>
             </div>
             
@@ -38,10 +49,12 @@
                 </div>
                 
                 <nav class="">
-                  <ul class="ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                  <ul class="flex flex-col gap-6 ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
                     <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
                     <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
                     <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
                     <li class="p-2 text-white hover:text-blue-600"><a href="#">Contact</a></li>
                     
                   </ul>
@@ -53,16 +66,8 @@
     
           <div onclick="exitNav()" id="sideBar" class="">
           </div> 
-    <section class="">
-        <div class="flex flex-col gap-4 py-5 pl-5 bg-gray-100 lg:flex-row lg:items-center lg:justify-between lg:px-32">
-            <p class="text-4xl font-bold">Contact</p>
-            <div>
-                <p class="font-semibold text-blue-600 ">Home > <span class="text-gray-400">Contact</span></p>
-            </div>
-        </div>
-    </section>
     <!-- address section -->
-    <section class="py-20 lg:flex lg:justify-between lg:px-10 lg:py-20 lg:bg-slate-100">
+    <section class="py-20 lg:flex lg:justify-between lg:px-10 lg:py-20 lg:bg-slate-100 lg:pt-44">
         
         <section class="flex flex-col gap-10 pt-16 pl-5 lg:pt-32">
             <div class="flex flex-col gap-2 ">
@@ -126,65 +131,77 @@
         <iframe class="w-full lg:w-full" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.832936369781!2d3.3673977240460284!3d6.542769672941068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2%20Adaranijo%20street%2C%20opposite%20Pedro%20Police%20Station%2C%20Palmgroove%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1715190587047!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="oops something wrong!!"></iframe>
     </section >
    <!-- footer section -->
-        <footer class="py-12 bg-gray-900 font-Rajdhani">
-            <div class="container flex flex-col items-center justify-between px-4 mx-auto lg:flex-row lg:px-0">
-                <!-- COMPANY LOGO -->
-                <a href="index.html" class="mb-8 mr-0 lg:mb-0 lg:mr-16">
-                    <img src="/images/logo (2).png" alt="Company Logo" class="w-32 lg:w-40">
-                </a>
-        
-                <!-- NAVIGATION LINKS -->
-                <!-- <nav class="flex flex-col items-center mb-8 lg:items-start lg:mb-0">
-                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Navigational</h2>
-                    <ul class="text-lg">
-                        <li><a href="index.html" class="text-white hover:text-blue-400">Home</a></li>
-                        <li><a href="about.html" class="text-white hover:text-blue-400">About Us</a></li>
-                        <li><a href="services.html" class="text-white hover:text-blue-400">Services</a></li>
-                        <li><a href="contact.html" class="text-white hover:text-blue-400">Contact Us</a></li>
-                    </ul>
-                </nav> -->
-        
-                <!-- OFFICE INFORMATION -->
-                <div class="flex flex-col items-center mb-8 ml-0 lg:items-start lg:mb-0 lg:ml-16">
-                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Office</h2>
-                    <div class="text-lg">
-                        <p class="mb-2 text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
-                                <path d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 1.5c-4.14 0-7.5 3.36-7.5 7.5 0 5.25 7.5 13.5 7.5 13.5s7.5-8.25 7.5-13.5c0-4.14-3.36-7.5-7.5-7.5zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z"/>
-                            </svg>
-                            2, Adaranijo Street, Opposite Pedro Police Station, Palmgroove, Lagos, Nigeria
-                        </p>
-                        <p class="mb-2 text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
-                                <path d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M21 2H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v4a1 1 0 0 0 1.447.894l6-3a1 1 0 0 0 .553-.894V17h5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 14.618L15.382 19 14 18.382V17h-4v1.382L8.618 19 4 17.618V4h16v12.618z"/>
-                            </svg>
-                            <a href="tel:+2348023121258" class="text-white hover:text-blue-400">08023121258</a>,
-                            <a href="tel:+2348126290758" class="text-white hover:text-blue-400">08126290758</a>
-                        </p>
-                        <p class="text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-5 h-5 mr-2">
-                                <path d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-                            </svg>
-                            <a href="mailto:info@domain-plusltd.com" class="text-white hover:text-blue-400">info@domain-plusltd.com</a>
+   <footer class="w-full ">
+    <div class="flex flex-col items-center justify-center gap-12 py-12 lg:px-12 lg:py-20 lg:flex-row lg:justify-between lg:items-start lg:gap-10">
+        <!-- COMPANY LOGO -->
+        <div>
+            <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
+        </div>
+
+        <div class="flex flex-col items-center gap-12 lg:items-start lg:flex-row lg:gap-10">
+             <!-- NAVIGATIONAL LINKS -->
+            <div class="flex flex-col items-center gap-5 lg:items-start">
+                <h2 class="text-3xl font-black text-white font-Rajdhani">Navigational</h2>
+                <ul class="flex flex-col items-center gap-3 text-xl font-semibold text-white font-Rajdhani lg:items-start">
+                        <li><a href="index.html"  class="hover:text-blue-400">Home</a></li>
+                        <li><a href="about.html"  class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="services.html"  class="hover:text-blue-400">Services</a></li>
+                        <li><a href="solution.html"  class="hover:text-blue-400">Solution</a></li>
+                        <li><a href="blog.html"  class="hover:text-blue-400">Blog</a></li>
+                        <li><a href="contact.html"  class="hover:text-blue-400">Contact Us</a></li>
+                        
+                </ul>
+            </div>
+
+            <!-- OFFICE LINKS -->
+            <div class="flex flex-col items-center gap-5 lg:items-start">
+                <h2 class="text-3xl font-black text-white font-Rajdhani">Office</h2>
+                <!-- OFFICE ADDRESS -->
+                <div class="flex flex-col items-center gap-5 lg:items-start">
+                    <div class="flex items-center gap-2">
+                        <ion-icon class="text-3xl text-white hover:text-blue-400" name="location"></ion-icon>
+                          <p class="text-base text-white font-Rajdhani font-semibold max-w-[300px]">
+                            2, Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria.     
                         </p>
                     </div>
-                </div>
-        
-                <!-- OFFICE HOURS -->
-                <div class="flex flex-col items-center lg:items-start">
-                    <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">Office Hours</h2>
-                    <p class="text-lg font-semibold text-white">Monday - Friday: 9:00am - 6:00pm</p>
+    
+                    <!-- CONTACT INFO -->
+                    <div class="flex items-center gap-2">
+                        <ion-icon class="text-3xl text-white hover:text-blue-400" name="call"></ion-icon>
+
+                        <div class="flex gap-3">
+                            <a href="http://"  class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08023121258,</a>
+                            <a href="http://"  class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08126290758</a>
+                        </div>
+                    </div>
+
+                    <!-- E-MAIL INFO -->
+                    <div class="flex items-center gap-2">
+                        <ion-icon class="text-3xl text-white hover:text-blue-400" name="mail"></ion-icon>
+
+                        <a href="mailto:hub@dervac.com"  class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">info@domain-plusltd.com</a>
+                    </div>
                 </div>
             </div>
-        
-            <!-- COPYRIGHT -->
-            <div class="py-6 text-center border-t border-gray-700">
-                <p class="text-sm text-gray-400">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
+
+            <!-- OFFICE HOURS -->
+            <div class="flex flex-col items-center gap-4 px-10px lg:items-start">
+                <h2 class="text-3xl font-black text-white font-Rajdhani">Office Hours</h2>
+
+                <!-- DAYS -->
+                <div class="flex items-center gap-2 lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="white" d="M12.5 12.792V8.5q0-.213-.143-.357Q12.213 8 12 8t-.357.143q-.143.144-.143.357v4.379q0 .161.056.3q.056.14.186.271l3.05 3.05q.14.14.345.15q.203.01.363-.15t.16-.354q0-.194-.16-.354l-3-3ZM12 21q-1.663 0-3.118-.626q-1.455-.626-2.543-1.713q-1.087-1.088-1.713-2.543Q4 14.663 4 13q0-1.663.626-3.118q.626-1.455 1.713-2.543q1.088-1.087 2.543-1.713Q10.337 5 12 5q1.663 0 3.118.626q1.455.626 2.543 1.713q1.087 1.088 1.713 2.543Q20 11.337 20 13q0 1.663-.626 3.118q-.626 1.455-1.713 2.543q-1.088 1.087-2.543 1.713Q13.663 21 12 21Zm0-8ZM2.78 7.262q-.159-.16-.159-.354q0-.195.16-.354L5.554 3.78q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.353L3.488 7.262q-.14.14-.344.15q-.204.01-.363-.15Zm18.44 0q-.16.16-.355.16q-.194 0-.353-.16l-2.774-2.774q-.14-.14-.15-.344q-.01-.204.15-.363q.16-.16.354-.16q.195 0 .354.16l2.773 2.773q.14.14.15.344q.01.204-.15.364ZM12 20q2.906 0 4.953-2.047T19 13q0-2.906-2.047-4.953T12 6Q9.094 6 7.047 8.047T5 13q0 2.906 2.047 4.953T12 20Z"></path></svg>
+                    <h2 class="text-xl font-black text-white font-Rajdhani">Monday - Friday: 9:00am - 6:00pm</h2>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+<!-- COPYRIGHT -->
+<div class="py-6 text-center border-t border-gray-700">
+    <p class="text-base font-semibold text-white lg:text-lg font-Rajdhani">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
+</div>
+</footer>
+
         
         <a href="contact.html" class="fixed z-50 bottom-5 ">
             <img src="/images/let_s-chat-removebg-preview.png" alt="chat image" class="w-16 transition-opacity duration-300 opacity-50 hover:opacity-100">
