@@ -20,6 +20,23 @@
                 background-repeat: repeat;
                 z-index: 100px;
             }
+            /* Tailwind CSS */
+.hover-light::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.hover-light:hover::before {
+    transform: translateX(100%);
+}
+
       </style>
     <!-- HEADER -->
     <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
@@ -102,7 +119,7 @@
                 <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3">
                     <div class="flex flex-col gap-8 lg:gap-10">
                         <div class="bg-blue-600 lg:w-[280px] border border-black flex items-center rounded-md gap-2">
-                            <h3 class="px-5 py-4 text-5xl font-bold text-white font-Rajdhani">20<sup class="text-4xl">+</sup></h3>
+                            <h3 id="years-experience" class="px-5 py-4 text-5xl font-bold text-white font-Rajdhani">20<sup class="text-4xl">+</sup></h3>
                             <h3 class="text-lg font-bold text-white font-Rajdhani">Years Experience</h3>
                         </div>
 
@@ -256,31 +273,31 @@
             <div class="grid grid-cols-2 gap-6 md:px-10 md:flex md:items-center md:justify-center lg:gap-16">
                 <!-- YEARS OF EXPEIENCE -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 id="years-experience" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Years Experience</h3>
                 </div>
 
                 <!-- INDUSTRY DEPLOYMENTS -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 id="industry-deployment" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Industry Deployment</h3>
                 </div>
 
                 <!-- PROJECT COMPLETED -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
+                    <h3 id="projects-completed" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Project Completed</h3>
                 </div>
 
                 <!-- CERTIFIED  CONSULTANTS-->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
+                    <h3 id="certified-consultants" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Certified Consultants</h3>
                 </div>
 
                 <!-- COUNTRIES SERVICING -->
                 <div class="flex-col items-center hidden gap-2 text-center md:flex">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
+                    <h3 id="countries-servicing" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Countries Servicing</h3>
                 </div>
             </div>
@@ -339,7 +356,7 @@
             </div>
             
         </div>
-    </section> -->
+    </section> 
 
 
     <!-- FOOTER -->
@@ -422,31 +439,6 @@
     <img src="/images/arrow_2-removebg-preview.png" alt="arrow up image" class="w-10">
 </button>
      
-
-<div class="flex flex-col items-center gap-2 text-center">
-    <h3 id="years-experience" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
-    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Years Experience</h3>
-</div>
-
-<div class="flex flex-col items-center gap-2 text-center">
-    <h3 id="industry-deployment" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
-    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Industry Deployment</h3>
-</div>
-
-<div class="flex flex-col items-center gap-2 text-center">
-    <h3 id="projects-completed" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
-    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Project Completed</h3>
-</div>
-
-<div class="flex flex-col items-center gap-2 text-center">
-    <h3 id="certified-consultants" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
-    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Certified Consultants</h3>
-</div>
-
-<div class="flex-col items-center hidden gap-2 text-center md:flex">
-    <h3 id="countries-servicing" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
-    <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Countries Servicing</h3>
-</div>
 
 
     <!-- JAVASCRIPT WORK FOR MENU -->

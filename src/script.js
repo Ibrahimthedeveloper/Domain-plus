@@ -76,26 +76,39 @@ window.addEventListener('scroll', function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = [
-        { id: "years-experience", initialValue: 20 },
-        { id: "industry-deployment", initialValue: 20 },
-        { id: "projects-completed", initialValue: 180 },
-        { id: "certified-consultants", initialValue: 70 },
-        { id: "countries-servicing", initialValue: 3 }
-    ];
+    const options = {
+        threshold: 0.5 // Change the threshold as needed (0.5 means halfway into the viewport)
+    };
 
-    elements.forEach(el => {
-        const element = document.getElementById(el.id);
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounting(entry.target);
+            }
+        });
+    }, options);
+
+    const elements = document.querySelectorAll("#years-experience, #industry-deployment, #projects-completed, #certified-consultants");
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    function startCounting(element) {
+        const initialValue = parseInt(element.textContent);
         let count = 0;
         const interval = setInterval(() => {
             count++;
-            element.textContent = count;
-            if (count === el.initialValue) {
+            element.textContent = count + "+";
+            if (count === initialValue) {
                 clearInterval(interval);
             }
-        }, 10); // Change the interval to adjust the speed (lower value for faster)
-    });
+        }, 1); // Adjust the interval as needed
+    }
 });
+
+//scroll light
+
+
 
 
 
