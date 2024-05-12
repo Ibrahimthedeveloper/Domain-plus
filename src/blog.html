@@ -1,11 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Domain-Plus International Limited</title>
+        <link href="./output.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+<body class="bg-gray-100 font-Rajdhani">
+    <style>
+        footer{
+            background-color: #0f0f0f;
+            background-image: radial-gradient(gray 1px, transparent 2px);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            z-index: 100px;
+        }
+  </style>
+  
+    <header class="lg:bg-headbg lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+            <!-- HEADER LOGO -->
+            <div class="container">
+                <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[70px]"/></a>
+            </div>
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
+                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
+                  </div>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="solution.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            
+              <div id="sideNav"
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+                </div>
+                
+                <nav class="">
+                  <ul class="flex flex-col gap-6 ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                    <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="#">Contact</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </nav>
     
+          <div onclick="exitNav()" id="sideBar" class="">
+          </div> 
+
+        <!-- HEADER SECTION FINANCIAL -->
+        <div id="slideshow" class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44">
+            <div class="flex items-center justify-center gap-2 pt-20 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
+                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">Our Blog</p>
+            </div>
+            <h1 class="pt-6 px-10 lg:pl-14 text-center lg:text-start text-2xl sm:text-5xl lg:text-5xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">"Domain Plus: Revolutionizing finance with tailored solutions."</h1>
+            <p class="px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
+                "Domain Plus, a leading provider of comprehensive financial solutions, offers innovative software and expert consultancy services tailored to streamline operations, optimize financial performance, and drive sustainable growth for businesses of all sizes."
+            </p>
+        </div>
+    </header>
+
+        <!-- Introduction Section -->
+        <section class="container py-12 mx-auto">
+            <div class="flex flex-col items-center justify-center gap-12">
+                <!-- Image Section -->
+                <div class="">
+                    <img src="/images/desktop-wallpaper-finance-finance-and-accounting.jpg" alt="Introduction Image" class="px-5 lg:w-full ">
+                </div>
+                <!-- Text Section -->
+                <div class="items-center px-5 lg:text-center">
+                    <h2 class="text-3xl font-semibold text-gray-800 font-Rajdhani">Welcome to our Blog!</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        At domain-plus International Limited, we are passionate about helping businesses thrive with our comprehensive
+                        ERP (Enterprise Resource Planning) and CRM (Customer Relationship Management) solutions. With over
+                        20 years of experience in the industry, we have empowered countless companies to streamline their
+                        operations, enhance productivity, and achieve sustainable growth.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        In this blog, we aim to share valuable insights, tips, and best practices related to ERP and CRM
+                        implementation, customization, and optimization. Whether you are a small startup or a large
+                        enterprise, our goal is to provide you with the knowledge and resources you need to leverage
+                        technology effectively and drive success for your business.
+                    </p>
+                </div>
+            </div>
+        </section>
+          
+
+        <!-- articles -->
+        <section class="lg:flex lg:gap-10">
+            
+            <!-- sage 300 -->
+            <div class="items-center mb-8 bg-white rounded-lg shadow-md lg:p-6 lg:flex lg:flex-col lg:w-[400px] lg:rounded-2xl">
+                <div class="">
+                    <img src="/images/hero_sage300_dashboard.webp" alt="Sage 300" class="rounded-lg lg:h-64 ">
+                </div>
+                <div class="pt-5 pl-6 lg:pl-1">
+                    <h2 class="mb-4 text-2xl font-semibold">Sage 300</h2>
+                    <h2 class="pb-5 text-3xl font-semibold text-gray-800">Unlocking Business Potential with Sage 300</h2>
+                    <p class="mb-4 text-gray-700">
+                        Sage 300's intuitive interface and customizable features make it easy for businesses to tailor the system to their specific needs, enhancing efficiency and productivity.
+                        With robust reporting and analytics capabilities, Sage 300 empowers organizations to gain valuable insights into their performance and make informed decisions.
+                        Moreover, Sage 300's scalability ensures that it can grow with your business, accommodating expansion and evolving requirements seamlessly.
+                    </p>
+                    <details><summary class="font-semibold text-blue-600 list-none">Read more</summary></details>
+                </div>
+            </div>
+    
+            <!-- sage x3 -->
+            <div class="items-center mb-8 bg-white rounded-lg shadow-md lg:p-6 lg:flex lg:flex-col lg:w-[400px] lg:rounded-2xl ">
+                <div class="">
+                    <img src="/images/Sage-X3-Overview-min.png" alt="Sage 300" class="rounded-lg ">
+                </div>
+                <div class="pt-5 pl-6 lg:pl-1">
+                    <h2 class="mb-4 text-2xl font-semibold">Sage X3</h2>
+                    <h2 class="pb-5 text-3xl font-semibold text-gray-800">Driving Growth with Sage X3</h2>
+                    <p class="mb-4 text-gray-700">
+                        Sage X3 is an enterprise-level ERP solution designed to meet the complex needs of mid-sized and
+                        large organizations. With its comprehensive features and advanced functionalities, Sage X3 enables
+                        businesses to streamline operations, improve efficiency, and accelerate growth.
+                    </p>
+                    <details><summary class="font-semibold text-blue-600 list-none">Read more</summary></details>
+                </div>
+            </div>
+    
+            <!-- sage crm -->
+            <div class="items-center mb-8 bg-white rounded-lg shadow-md lg:p-6 lg:flex lg:flex-col lg:w-[400px] lg:rounded-2xl ">
+                <div class="">
+                    <img src="/images/sagecCRM.png" alt="Sage 300" class="rounded-lg w-96">
+                </div>
+                <div class="pt-5 pl-6 lg:pl-1">
+                    <h2 class="mb-4 text-2xl font-semibold">Sage CRM</h2>
+                    <h2 class="pb-5 text-3xl font-semibold text-gray-800">Enhancing Customer Relationships with Sage CRM</h2>
+                    <p class="mb-4 text-gray-700">
+                        Sage CRM is a powerful customer relationship management solution designed to help businesses
+                        effectively manage customer interactions and drive sales growth. With its intuitive interface and
+                        robust features, Sage CRM enables organizations to improve customer engagement, increase sales
+                        productivity, and foster long-term customer loyalty
+                    </p>
+                    <details><summary class="font-semibold text-blue-600 list-none">Read more</summary></details>
+                </div>
+            </div>
+           
+        </section>
+        
+        <section class="lg:flex lg:gap-10 lg:ml-52">
+            <div class="items-center mb-8 bg-white rounded-lg shadow-md lg:p-6 lg:flex lg:flex-col lg:w-[400px] lg:rounded-2xl ">
+                <div class="">
+                    <img src="/images/sage300 people.jpeg" alt="Sage 300" class="rounded-lg w-96">
+                </div>
+                <div class="pt-5 pl-6 lg:pl-1">
+                    <h2 class="mb-4 text-2xl font-semibold">Sage 300 People</h2>
+                    <h2 class="pb-5 text-3xl font-semibold text-gray-800">Optimizing HR Management with Sage 300 People</h2>
+                    <p class="mb-4 text-gray-700">
+                        Sage 300 People is a comprehensive HR and payroll management solution designed to streamline HR
+                    processes, ensure compliance, and empower employees. With its flexible features and intuitive
+                    interface, Sage 300 People helps organizations effectively manage their workforce, from
+                    recruitment and onboarding to payroll processing and performance management.
+                    </p>
+                    <details><summary class="font-semibold text-blue-600 list-none">Read more</summary></details>
+                </div>
+            </div>
+            
+            <div class="items-center mb-8 bg-white rounded-lg shadow-md lg:p-6 lg:flex lg:flex-col lg:w-[400px] lg:rounded-2xl ">
+                <div class="">
+                    <img src="/images/acumatica.png" alt="Sage 300" class="rounded-lg w-96 ">
+                </div>
+                <div class="pt-5 pl-6 lg:pl-1">
+                    <h2 class="mb-4 text-2xl font-semibold">Acumatica</h2>
+                    <h2 class="pb-5 text-3xl font-semibold text-gray-800">Driving Business Agility with Acumatica</h2>
+                    <p class="mb-4 text-gray-700">
+                        Acumatica is renowned for its user-friendly interface, empowering teams to maximize productivity and collaboration across departments.
+Built on a modern cloud architecture, Acumatica ensures reliable performance and accessibility from anywhere, at any time.
+Furthermore, Acumatica's commitment to innovation ensures that businesses stay ahead of the curve, leveraging cutting-edge technology to achieve their strategic objectives with ease and agility.
+
+
+
+
+
+
+                    </p>
+                    <details><summary class="font-semibold text-blue-600 list-none">Read more</summary></details>
+                </div>
+            </div>
+        </section>
+
+
+    
+    
+    <script src="./script.js"></script>
 </body>
 </html>
