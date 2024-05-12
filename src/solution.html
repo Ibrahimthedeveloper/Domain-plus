@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Domain-Plus International Limited</title>
+    <link href="./output.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    <style>
+        footer{
+            background-color: #0f0f0f;
+            background-image: radial-gradient(gray 1px, transparent 2px);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            z-index: 100px;
+        }
+
+        .container > div{
+            border: 3px solid;
+            border-image: linear-gradient(#2de32d, black) 2;
+            clip-path: inset(0 round );
+            
+        }
+  </style>
+  
+    <header class="bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+            <!-- HEADER LOGO -->
+            <div class="container">
+                <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[70px]"/></a>
+            </div>
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
+                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
+                  </div>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="solution.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            
+              <div id="sideNav"
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+                </div>
+                
+                <nav class="">
+                  <ul class="flex flex-col gap-6 ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                    <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="#">Contact</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </nav>
     
+          <div onclick="exitNav()" id="sideBar" class="">
+          </div> 
+
+        <!-- HEADER SECTION FINANCIAL -->
+        <div id="slideshow" class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44">
+            <div class="flex items-center justify-center gap-2 pt-20 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
+                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">LEARNING IT BE EARNING</p>
+            </div>
+            <h1 class="pt-6 px-10 lg:pl-14 text-center lg:text-start text-2xl sm:text-5xl lg:text-5xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We are professionally integrated into quality first, effective communication, and reliability.</h1>
+            <p class="px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
+                Domain-Plus International Limited is one of the leading ICT consultancy and Training Providers in Nigeria. 
+                We assist our clients in achieving significant improvements in operating performance via state-of-the-art automation.
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <!-- SAGE 300 -->
+        <div class="flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row lg:gap-8">
+            <!-- SAGE LOGO -->
+            <div class="sub_container">
+                <img src="/images/Sage-300-Logo.png" alt="Sage Logo" class="w-60"/>
+                <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    Sage 300 ERP is an enterprise resource planning (ERP) software system that serves small and medium-sized businesses in 
+                    professional services, financial services, the public sector, and other markets such as distribution and wholesale.
+                </p>
+
+                <p class="text-center hidden sm:block md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    The solution comes in three different versions: Sage 300 Standard, Advanced, and Premium ERP. These versions correspond 
+                    with the scalability requirements of the customers, as defined by company size and the number of users. Sage 300 ERP is 
+                    designed as a multi-tiered architecture, so it can run on Windows and Linux operating systems with Microsoft, Pervasive, or 
+                    Oracle databases. Sage 300 ERP product is designed to run using Microsoft SQL Server. By understanding how Microsoft SQL 
+                    Server works, implementing and supporting Sage 300 ERP will become easier and more efficient. 
+                </p>
+
+                <p class="text-center block sm:hidden md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    The solution comes in three different versions: Sage 300 Standard, Advanced, and Premium ERP. These versions correspond 
+                    with the scalability requirements of the customers, as defined by company size and the number of users. Sage 300 ERP is 
+                    designed as a multi-tiered architecture, so it can run on Windows and Linux operating systems with Microsoft, Pervasive, or 
+                    Oracle databases.
+                </p>
+                
+            </div>
+            <!-- SAGE 300 DASHBOARD IMAGE -->
+                <img src="/images/hero_sage300_dashboard.webp" alt="Dashboard Hero Sage Image" class="w-[500px]"/>
+             
+        </div>
+        
+    </section>
+
+        <!-- SECTION TWO -->
+        <section class="bg-[#f5f5f5] w-full">
+            <div class="text-center pt-20 ">
+                <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">WHY PEOPLE CHOOSE <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">300</span></h3>
+            </div>
+
+            <!-- REASONS  -->
+            <div class="container">
+                <!--  OMNI CHANNEL -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-20"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Omnichannel</h3>
+                    <p class="max-w-[400px] font-Rajdhani text-lg pt-4 pb-8">
+                        Sage 300 works on desktop computers and mobile devices, including phones and tablets. This means you can access 
+                        transactions and other business data from whatever device you have handy. This is known as omnichannel capability.
+                    </p>
+                </div>
+
+                <!-- PROJECT MANAGEMENT -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-20"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Project Management</h3>
+                    <p class="max-w-[400px] font-Rajdhani text-lg pt-4 pb-8">
+                        Sage 300 works on desktop computers and mobile devices, including phones and tablets. This means you can access 
+                        transactions and other business data from whatever device you have handy. This is known as omnichannel capability.
+                    </p>
+                </div>
+            </div>
+        </section>
+    <script src="./script.js"></script>
 </body>
 </html>
