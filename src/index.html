@@ -10,16 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="/images/logo (2).png" type="image/x-icon">
 </head>
 <body>
     <style>
             footer{
-                background-color: #0b0b0b;
+                background-color: rgb(17 24 39);
                 background-image: radial-gradient(gray 1px, transparent 1px);
                 background-size: 20px 20px;
                 background-repeat: repeat;
                 z-index: 100px;
             }
+            /* Tailwind CSS */
+.hover-light::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.hover-light:hover::before {
+    transform: translateX(100%);
+}
+
       </style>
     <!-- HEADER -->
     <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
@@ -35,9 +53,9 @@
                     <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
                   </div>
                 <!-- HEADER LINK MENU -->
-                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-2xl font-Rajdhani">
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-20 lg:text-xl font-Rajdhani">
                     <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
-                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="about us.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
                     <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
                     <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
                     <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
@@ -102,7 +120,7 @@
                 <div class="flex flex-col lg:flex-row lg:items-center lg:gap-3">
                     <div class="flex flex-col gap-8 lg:gap-10">
                         <div class="bg-blue-600 lg:w-[280px] border border-black flex items-center rounded-md gap-2">
-                            <h3 class="px-5 py-4 text-5xl font-bold text-white font-Rajdhani">20<sup class="text-4xl">+</sup></h3>
+                            <h3 id="years-experience" class="px-5 py-4 text-5xl font-bold text-white font-Rajdhani">20<sup class="text-4xl">+</sup></h3>
                             <h3 class="text-lg font-bold text-white font-Rajdhani">Years Experience</h3>
                         </div>
 
@@ -256,31 +274,31 @@
             <div class="grid grid-cols-2 gap-6 md:px-10 md:flex md:items-center md:justify-center lg:gap-16">
                 <!-- YEARS OF EXPEIENCE -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 id="years-experience" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Years Experience</h3>
                 </div>
 
                 <!-- INDUSTRY DEPLOYMENTS -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
+                    <h3 id="industry-deployment" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">20<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Industry Deployment</h3>
                 </div>
 
                 <!-- PROJECT COMPLETED -->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
+                    <h3 id="projects-completed" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">180<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Project Completed</h3>
                 </div>
 
                 <!-- CERTIFIED  CONSULTANTS-->
                 <div class="flex flex-col items-center gap-2 text-center">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
+                    <h3 id="certified-consultants" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">70<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Certified Consultants</h3>
                 </div>
 
                 <!-- COUNTRIES SERVICING -->
                 <div class="flex-col items-center hidden gap-2 text-center md:flex">
-                    <h3 class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
+                    <h3 id="countries-servicing" class="text-3xl font-black text-blue-600 lg:text-6xl font-Rajdhani">3<sup>+</sup></h3>
                     <h3 class="text-xl font-black text-blue-600 lg:text-2xl font-Rajdhani">Countries Servicing</h3>
                 </div>
             </div>
@@ -289,7 +307,7 @@
 
     <!-- SECTION FIVE -->
     <section class="mt-16 bg-gradient-to-tr from-[#edf1f5] via-slate-300 to-[#e5e9ee]">
-        <!-- OUR TESTIMONIALS -->
+       <!-- OUR TESTIMONIALS  -->
         <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">OUR TESTIMONIALS</h3>
        <div class="flex flex-col items-center justify-center gap-12 px-20 pb-20 lg:flex-row lg:gap-8">
                 <!-- CEO DRAFT -->
@@ -339,15 +357,15 @@
             </div>
             
         </div>
-    </section>
+    </section> 
 
 
     <!-- FOOTER -->
-    <footer class="w-full">
+    <footer class="w-full ">
         <div class="flex flex-col items-center justify-center gap-12 py-12 lg:px-12 lg:py-20 lg:flex-row lg:justify-between lg:items-start lg:gap-10">
             <!-- COMPANY LOGO -->
             <div>
-                <a href="index.html" ><img src="/images/logo.svg" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
+                <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[120px] sm:w-[130px]"/></a>
             </div>
 
             <div class="flex flex-col items-center gap-12 lg:items-start lg:flex-row lg:gap-10">
@@ -371,7 +389,7 @@
                     <!-- OFFICE ADDRESS -->
                     <div class="flex flex-col items-center gap-5 lg:items-start">
                         <div class="flex items-center gap-2">
-                            <ion-icon class="text-white text-3xl hover:text-blue-400" name="location"></ion-icon>
+                            <ion-icon class="text-3xl text-white hover:text-blue-400" name="location"></ion-icon>
                               <p class="text-base text-white font-Rajdhani font-semibold max-w-[300px]">
                                 2, Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria.     
                             </p>
@@ -379,7 +397,7 @@
         
                         <!-- CONTACT INFO -->
                         <div class="flex items-center gap-2">
-                            <ion-icon class="text-white text-3xl hover:text-blue-400" name="call"></ion-icon>
+                            <ion-icon class="text-3xl text-white hover:text-blue-400" name="call"></ion-icon>
     
                             <div class="flex gap-3">
                                 <a href="http://"  class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">08023121258,</a>
@@ -389,7 +407,7 @@
     
                         <!-- E-MAIL INFO -->
                         <div class="flex items-center gap-2">
-                            <ion-icon class="text-white text-3xl hover:text-blue-400" name="mail"></ion-icon>
+                            <ion-icon class="text-3xl text-white hover:text-blue-400" name="mail"></ion-icon>
     
                             <a href="mailto:hub@dervac.com"  class="text-lg font-semibold text-white font-Rajdhani hover:text-blue-400">info@domain-plusltd.com</a>
                         </div>
@@ -410,7 +428,7 @@
         </div>
     <!-- COPYRIGHT -->
     <div class="py-6 text-center border-t border-gray-700">
-        <p class="text-base lg:text-lg font-Rajdhani font-semibold text-white">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
+        <p class="text-base font-semibold text-white lg:text-lg font-Rajdhani">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
     </div>
 </footer>
 
@@ -421,6 +439,7 @@
 <button id="go-up" onclick="scrollToTop()" class="fixed transition-opacity duration-300 opacity-0 bottom-4 right-4">
     <img src="/images/arrow_2-removebg-preview.png" alt="arrow up image" class="w-10">
 </button>
+     
 
 
     <!-- JAVASCRIPT WORK FOR MENU -->

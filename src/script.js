@@ -75,6 +75,44 @@ window.addEventListener('scroll', function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const options = {
+        threshold: 0.5 // Change the threshold as needed (0.5 means halfway into the viewport)
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounting(entry.target);
+            }
+        });
+    }, options);
+
+    const elements = document.querySelectorAll("#years-experience, #industry-deployment, #projects-completed, #certified-consultants");
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    function startCounting(element) {
+        const initialValue = parseInt(element.textContent);
+        let count = 0;
+        const interval = setInterval(() => {
+            count++;
+            element.textContent = count + "+";
+            if (count === initialValue) {
+                clearInterval(interval);
+            }
+        }, 1); // Adjust the interval as needed
+    }
+});
+
+//scroll light
+
+
+
+
+
+
 
 
 
