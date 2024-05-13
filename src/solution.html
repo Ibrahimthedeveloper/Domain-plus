@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-Plus International Limited</title>
+    <link href="./output.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <style>
+        footer{
+            background-color: #0f0f0f;
+            background-image: radial-gradient(gray 1px, transparent 2px);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            z-index: 100px;
+        }
+
+        .container > div{
+            border: 3px solid;
+            border-image: linear-gradient(#2de32d, black) 2;
+            clip-path: inset(0 round );
+            
+        }
+  </style>
+  
+    <header class="bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+            <!-- HEADER LOGO -->
+            <div class="container">
+                <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[70px]"/></a>
+            </div>
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
+                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
+                  </div>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="solution.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            
+              <div id="sideNav"
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+                </div>
+                
+                <nav class="">
+                  <ul class="flex flex-col gap-6 ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                    <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="">Services</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
+                    <li class="p-2 text-white hover:text-blue-600"><a href="#">Contact</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </nav>
+    
+          <div onclick="exitNav()" id="sideBar" class="">
+          </div> 
+
+        <!-- HEADER SECTION FINANCIAL -->
+        <div id="slideshow" class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44">
+            <div class="flex items-center justify-center gap-2 pt-20 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
+                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">LEARNING IT BE EARNING</p>
+            </div>
+            <h1 class="pt-6 px-10 lg:pl-14 text-center lg:text-start text-2xl sm:text-5xl lg:text-5xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We are professionally integrated into quality first, effective communication, and reliability.</h1>
+            <p class="px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
+                Domain-Plus International Limited is one of the leading ICT consultancy and Training Providers in Nigeria. 
+                We assist our clients in achieving significant improvements in operating performance via state-of-the-art automation.
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <!-- SAGE 300 -->
+        <div class="flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row lg:gap-8">
+            <!-- SAGE LOGO -->
+            <div class="sub_container">
+                <img src="/images/Sage-300-Logo.png" alt="Sage Logo" class="w-60"/>
+                <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    Sage 300 ERP is an enterprise resource planning (ERP) software system that serves small and medium-sized businesses in 
+                    professional services, financial services, the public sector, and other markets such as distribution and wholesale.
+                </p>
+
+                <p class="text-center hidden sm:block md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    The solution comes in three different versions: Sage 300 Standard, Advanced, and Premium ERP. These versions correspond 
+                    with the scalability requirements of the customers, as defined by company size and the number of users. Sage 300 ERP is 
+                    designed as a multi-tiered architecture, so it can run on Windows and Linux operating systems with Microsoft, Pervasive, or 
+                    Oracle databases. Sage 300 ERP product is designed to run using Microsoft SQL Server. By understanding how Microsoft SQL 
+                    Server works, implementing and supporting Sage 300 ERP will become easier and more efficient. 
+                </p>
+
+                <p class="text-center block sm:hidden md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    The solution comes in three different versions: Sage 300 Standard, Advanced, and Premium ERP. These versions correspond 
+                    with the scalability requirements of the customers, as defined by company size and the number of users. Sage 300 ERP is 
+                    designed as a multi-tiered architecture, so it can run on Windows and Linux operating systems with Microsoft, Pervasive, or 
+                    Oracle databases.
+                </p>
+                
+            </div>
+            <!-- SAGE 300 DASHBOARD IMAGE -->
+                <img src="/images/hero_sage300_dashboard.webp" alt="Dashboard Hero Sage Image" class="w-[500px]"/>
+             
+        </div>
+        
+    </section>
+
+        <!-- SECTION TWO -->
+        <section class="bg-[#f5f5f5] w-full">
+            <div class="text-center pt-20 ">
+                <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">WHY PEOPLE CHOOSE <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">300</span></h3>
+            </div>
+
+            <!-- REASONS  -->
+            <div class="container py-14 flex flex-col items-center justify-center gap-6 px-5 lg:px-20 md:grid md:grid-cols-2 md:place-content-center md:justify-items-center md:gap-10">
+                <!--  OMNI CHANNEL -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-20"/> 
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Omnichannel</h3>
+                    <p class="max-w-[400px] font-Rajdhani text-sm md:text-base lg:text-lg pt-4 pb-8">
+                        Sage 300 works on desktop computers and mobile devices, including phones and tablets. This means you can access 
+                        transactions and other business data from whatever device you have handy. This is known as omnichannel capability.
+                    </p>
+                </div>
+
+                <!-- PROJECT MANAGEMENT -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-14"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Project Management</h3>
+                    <p class="max-w-[400px] md:max-w-[430px] font-Rajdhani text-sm lg:text-lg pt-4 pb-8">
+                        Organize your projects based on your schedule and budget with a flexible estimate for tracking and billing. With hosted
+                        Sage 300 ERP, you can view the details for every part of a project, including costs, responsibilities, and 
+                        implementation requirements. This ensures you can complete projects on time and within budget.
+                    </p>
+                </div>
+
+                <!-- INFORMED DECISION MAKING -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-14"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Informed Decision Making</h3>
+                    <p class="max-w-[400px] font-Rajdhani text-sm md:text-base lg:text-lg pt-4 pb-8">
+                        With a broad overview of your business and personalized dashboards and financial reports, you get a complete insight into 
+                        all departments using Sage 300 cloud tools for business integration. This allows you to make informed and efficient 
+                        decisions about business operations.
+                    </p>
+                </div>
+
+                <!-- LOGISTICS MANAGEMENT -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-14"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10">Logistics Management</h3>
+                    <p class="max-w-[430px] font-Rajdhani text-sm lg:text-lg pt-4 pb-8">
+                        Coordinate processes between warehouses in different locations, inventory management with automatic data transfer
+                        between systems, and optimize production with Sage 300. This results in more efficient supply chain operations, 
+                        which in turn results in greater customer satisfaction when orders are delivered on time.
+                    </p>
+                </div>
+
+                 <!-- BUSINESS INTELLIGENCE  -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-14"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10 max-w-[280px]">Business Intelligence And Reporting</h3>
+                    <p class="max-w-[400px] font-Rajdhani text-sm md:text-base lg:text-lg pt-4 pb-8">
+                        With tools that allow you to collaborate, you get selective access to the data you want to view and allow others to view.
+                        This serves to identify, analyze, and prevent possible problems.
+                    </p>
+                </div>
+
+                <!-- PROCUMENT -->
+                <div class="bg-white inline-block shadow-4xl px-10 rounded-md">
+                    <img src="/images/checkbox svg.svg" alt="Check Box image" class="pt-12"/>
+                    <h3 class="font-Rajdhani font-semibold text-3xl pt-10 max-w-[270px]">Procurement and Supplier Management</h3>
+                    <p class="max-w-[430px] font-Rajdhani text-sm lg:text-base pt-3 pb-8">
+                        The entire purchase process can be simplified by including the Sage 300 cloud, which provides you with a tool to manage your
+                        purchases and create accurate and detailed records of your customers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SAGE FINANCIAL FEATURES -->
+            <div class="bg-white w-full">
+                <div class="text-center pt-20 ">
+                    <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">FINANCIAL  MANAGEMENT FEATURES OF <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">300</span></h3>
+                    <p class="mx-auto text-center text-lg md:text-xl font-semibold font-Rajdhani max-w-[750px] py-6 px-5 md:px-0">
+                        Sage accounting software allows you to easily integrate all your services and sales functions. It has advanced 
+                        accounting and financial management features such as:
+                    </p>
+                </div>
+
+                <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-2xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                    <li>Budgeting and planning functions</li>
+                    <li>Customizable ledger</li>
+                    <li>Automated transactions</li>
+                    <li>Tax calculations</li>
+                    <li>Multicurrency conversions and support</li>
+                    <li>Invoice tracking</li>
+                    <li>Efficient payment methods and integrations </li>
+                    <li>Cash flow insights</li>
+                </ul>
+
+
+            <!-- BENEFITS OF SAGE 300 -->
+            <div class="bg-[#f5f5f5] w-full">
+                <div class="text-center pt-20 ">
+                    <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">BENEFITS OF <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">300</span></h3>
+                    <p class="text-start text-lg md:text-xl font-semibold font-Rajdhani max-w-[750px] py-6 pl-12 md:pl-16 lg:pl-32">
+                        Some of the  benefits of sage 300 are as follows:
+                    </p>
+                </div>
+
+                <div class="py-6 pl-10 pr-3 md:pl-16 lg:pl-32">
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Control Business Growth.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        You are given greater control over your entire business using flexible tools to improve your finances and your
+                        compliance reports. It also has features that allow you to better integrate your sales and service functions.
+                        You can increase the number of users depending on your needs, so the system can grow according to the needs of your business.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">International Business Opportunities.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Sage 300 is one of the most important resources in business development, considering the system’s ability to work in 
+                        multiple languages and execute transactions in several different currencies. Your company will be able to work 
+                        effectively with people from many different countries around the world.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Operate Anywhere.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Sage 300 allows you to work seamlessly from anywhere in the world and at any time. All you need is an internet connection, 
+                        thus ensuring that you remain competitive at all times in the market.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Ease of Use.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Sage 300 is one of the easiest and most practical systems to use. Its exceptional and user-friendly management system gives you
+                        complete control over business operations. Sage 300 is also flexible and can adapt to your specifications.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Make the Most of Sage Software.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Looking for the best Sage 300 resellers? We think you should talk to Clarity. We'll answer all of your questions for 
+                        free, and all you have to do is get in touch. We're looking forward to hearing from you!
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- KEY TAKEWAYS -->
+            <div class="flex flex-col items-center justify-center mx-auto py-7 px-10 lg:py-10 lg:flex-row gap-10 lg:gap-8">
+                <!-- SAGE LOGO -->
+                <div class="md:pl-12 lg:pl-24">
+                    <h3 class="font-Rajdhani font-bold text-3xl list-decimal">KEY TAKEAWAYS</h3>
+                    <li class="text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[750px]">
+                        Sage 300 is a line of applications used by middle-market accounting management companies and has the best performance
+                        on the market with its modern and up-to-date business accounting software solutions that suit companies of different
+                        sizes.
+                    </li>
+    
+                    <li class="text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[750px]">
+                        Sage 300 has a large selection of standard, advanced, and premium packages that are customizable and can be chosen
+                        based on what best suits a company so it can reach its business goals.
+                    </li>
+    
+                    <li class="text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[750px]">
+                        Sage 300 is one of the easiest and most practical systems to use and is flexible and can adapt to a company's 
+                        specifications. It allows for omnichannel capability, meaning it can work on desktop computers and mobile devices, 
+                        including phones and tablets.
+                    </li>
+                    
+                    <li class="hidden lg:block text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[750px]">
+                        Sage 300 provides a broad overview of a business and personalized dashboards and financial reports, allowing for 
+                        informed and efficient decision-making about business operations. It also offers features for logistics management,
+                        project management, procurement and supplier management, and sales management, and allows for international business 
+                        opportunities.
+                    </li>
+                </div>
+                <!-- SAGE 300 DASHBOARD IMAGE -->
+                    <img src="/images/chart.png" alt="Dashboard Hero Sage Image" class="w-[500px]"/>
+                 
+            </div>
+        </section>
+
+        <!-- SSAGE X3 -->
+        <section class="bg-[#f5f5ff]">
+            <div class="pl-7 md:pl-12 lg:pl-28 flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row gap-10 lg:gap-8">
+                <!-- SAGE LOGO -->
+                <div class="sub_container">
+                    <img src="/images/sage-x3.png" alt="Sage Logo" class="w-40"/>
+                    <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Sage X3, also known as Sage Business Cloud Enterprise Management is an ERP package from the Sage group. Sage X3 can
+                        handle the complete data flow of large-scale organizations and can also be perfect for SMEs as well.
+                    </p>
+                   
+                    <p class="text-center hidden sm:block md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Sage X3 is a simple, flexible, cost-effective, end-to-end ERP that integrates all the business operations under one
+                        enterprise management solution and database. It is easily accessed online as it is web-based through on-premise or 
+                        cloud hosting and offers multi-currency, multi-country, multi-language, and multi-location features making it suitable
+                        for large enterprises as well as enterprises having global operations. It includes features such as inbuilt analytics,
+                        and visual processes that provide a graphical view of the sequence of steps/screens to perform the activities,
+                        notifications, alerts, and workflows that make it more user-friendly and provide analysis and decision-making as
+                        well.
+                    </p>
+
+                    <p class="text-center block sm:hidden md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Sage X3 is most used by manufacturers and traders, usually, any organization that relies on complex departments and 
+                        handles a high volume of data transactions including reporting, purchasing, inventory, CRM, production management, 
+                        quality control, HR & payroll management, etc.
+                    </p>
+                </div>
+                <!-- SAGE 300 DASHBOARD IMAGE -->
+                    <img src="/images/sage-x3-cloud.png" alt="Sage x3 cloud Image" class="w-[500px]"/>
+                 
+            </div>
+
+
+
+            <div class="bg-white w-full pl-7 md:pl-12 lg:pl-24">
+                <div class="flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row gap-10 lg:gap-8">
+                    <!-- SAGE LOGO -->
+                    <div class="sub_container">
+                        <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">BENEFITS OF <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">x3</span></h3>
+                        <p class=" md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px]">
+                            There are numerous benefits associated with Sage X3 implementation, starting with making your organization 
+                            foolproof and delivering financial and productive stability, and that too at a minimal cost and less complexity
+                            compared to traditional ERP systems. Sage X3 also helps to minimize your operational costs and accelerate your 
+                            business growth. With user-defined dashboards, you can select what you need to see on your home screen. This is
+                            important as you can keep a check on how your critical business functions are performing at that given time.
+                        </p>
+                    </div>
+                    <!-- SAGE 300 DASHBOARD IMAGE -->
+                        <img src="/images/sage-x3-benefits.png" alt="Sage x3 benefits Image" class="w-[500px]"/>
+                     
+                </div>
+
+
+                <div class="flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row gap-10 lg:gap-8">
+                    <!-- SAGE LOGO -->
+                    <div class="sub_container">
+                        <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl"><span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">x3</span>- SOLUTIONS BUILT FOR YOUR INDUSTRY.</h3>
+                        <p class="md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                            Companies need to differentiate themselves from the rest and need to take advantage of standard best practices to 
+                            remain competitive and grow. Your organization, processes, as well as the unique way in which you manage your business,
+                            significantly contribute to this difference.
+                        </p>
+
+                        <p class="md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                            For this reason, Sage X3 is designed to provide your Organization with both best-in-class standard management
+                            features and in-depth process customization capabilities. The result is a range of pre-configured offerings,
+                            covering the standard requirements of your industry that are also easily adaptable to your company’s specific 
+                            organization.
+                        </p>
+                    </div>
+                    <!-- SAGE 300 DASHBOARD IMAGE -->
+                    <img src="/images/indutry-ssage-x3.png" alt="Sage x3 industries Image" class="w-[500px]"/>
+                     
+                </div>
+            </div>
+
+            <div class="bg-[#f5f5f5] w-full">
+                <div class="text-center pt-20 ">
+                    <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl"><span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">x3</span>- SOLUTIONS BUILT FOR YOUR INDUSTRY.</h3>
+                    <p class="text-start text-lg md:text-xl font-semibold font-Rajdhani max-w-[750px] py-6 pl-12 md:pl-16 lg:pl-32">
+                        Some of the  solution build by sage x3 are as follows:
+                    </p>
+                </div>
+
+                <div class="py-6 pl-10 pr-3 md:pl-16 lg:pl-32">
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Manufacturing.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Reduce manufacturing costs while responding to increasingly complex dynamics according to market demand.
+                        Sage X3 provides real-time control and visibility of production schedules, capacity, shop floor activities, and an
+                        all-encompassing view of costs. Sage ERP X3 helps improve the new product introduction processes through better 
+                        collaboration between all departments.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">Distribution.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Optimize business efficiency through improved supply chain management. Sage X3 helps you manage and integrate every 
+                        aspect of your operation from supplier through to accounts, procurement to payment. Specifically designed for the 
+                        distribution and supply chain management industry, Sage X3 will help you stay one step ahead of the competition.
+                    </p>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-decimal">services.</li>
+                    <p class="text-start text-lg pt-4 pb-7 font-semibold font-Rajdhani max-w-[750px]">
+                        Deliver excellent services through a full project management view. Sage X3 helps you simplify the management of your
+                        service activities and keep the operational, sales, and financial aspects of your customers’ projects firmly on the
+                        radar. Its features are tail ored to the needs of professional service companies, particularly businesses delivering
+                        operational services such as after-sale services and maintenance, Utility companies, Telecom, Oil and gas, Government
+                        Departments/Parastatals, or intellectual and technical services.                        
+                    </p>    
+                </div>
+        </section>
+
+        <!-- SSAGE CRM -->
+        <section>
+            <div class="pl-7 md:pl-12 lg:pl-28 flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row gap-10 lg:gap-8">
+                <!-- SAGE LOGO -->
+                <div class="sub_container">
+                    <img src="/images/sage-crm.jpg" alt="Sage Logo" class="w-40"/>
+                    <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Sage CRM is a cloud-based customer relationship management solution designed to help small and midsize businesses 
+                        optimize their customer experience by offering tools to manage new and existing client relationships.
+                    </p>
+                   
+                    <p class="text-center hidden sm:block md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Sage CRM can be used to track the performance of sales agents, forecast trends, schedule meetings, and more. 
+                        The dashboard gives visibility on the current sales deals and the reporting and analytic features help in forecasting 
+                        sales performance and tracking new opportunities. The marketing tools help campaigners to plan and execute marketing and 
+                        promotion campaigns. The solution is capable of managing campaigns across multiple channels. The built-in email marketing 
+                        feature allows sending promotional messages and newsletters to the contacts.
+                    </p>
+
+                    <p class="text-center  md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                        Over 10,000 organizations across the globe use Sage CRM every day to manage and maximize the performance of their 
+                        business. With customers in over 70 countries worldwide, Sage CRM is an award-winning web-based CRM solution. 
+                        Applications include integrated modules for sales and marketing automation, customer service, help desk, social CRM, 
+                        and more. Sage CRM also offers robust mobile capabilities. The software can be deployed in the cloud and on-premise. 
+                    </p>
+                </div>
+                <!-- SAGE 300 DASHBOARD IMAGE -->
+                    <img src="/images/ssage-crm-marketing.png" alt="Sage crm cloud Image" class="w-[500px]"/>
+                 
+            </div>
+
+             <!-- BENEFITS OF SAGE CRM -->
+             <div class="bg-[#f5f5f5] w-full">
+                <div class="text-center pt-20 ">
+                    <h3 class="font-Rajdhani font-bold text-3xl md:text-4xl">BENEFITS OF <span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf] md:text-5xl">CRM</span></h3>
+                    <p class="text-start text-lg md:text-xl font-semibold font-Rajdhani max-w-[750px] py-6 pl-12 md:pl-16 lg:pl-32">
+                        Some of the major benefits of sage crm are as follows:
+                    </p>
+                </div>
+
+                <div class="py-6 pl-10 pr-3 md:pl-16 lg:pl-32">
+                    <li class="font-Rajdhani font-semibold text-2xl list-none">Exceptional Customer Service.</li>
+                    <li class="text-start text-lg pt-4 pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Manages your customer accounts with insight and collaboration.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                       Responds to customer cases quickly, reducing response times to customer service requests.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Enables agents to quickly and accurately find the right answer the first time.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Enables customer satisfaction measurement and benchmarking.
+                    </li>
+
+                    <li class="text-start text-lg pb-7 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Increases productivity of customer support representatives.
+                    </li>
+                    
+                    <li class="text-start text-lg pb-7 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Delivers a single view of relevant and comprehensive information on the interactive dashboard.
+                    </li>
+
+                    <li class="font-Rajdhani font-semibold text-2xl list-none">Focused Sales Management.</li>
+                    <li class="text-start text-lg pt-4 pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Maximize the value of every sales opportunity in your pipeline.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Manage collaboration and team selling across your department with ease.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Eliminate guesswork; make decisions based on accurate, real-time information.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Create improved team collaboration and customer communications by using integrated LinkedIn, Facebook, and Yammer.
+                    </li>
+
+                    <li class="text-start text-lg pb-7 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Enable sales teams to work effectively regardless of their location with Sage CRM mobile solutions.
+                    </li>
+
+                    <li class="font-Rajdhani font-semibold text-2xl">Targeted Measurable Marketing.</li>
+                    <li class="text-start text-lg pt-4 pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Create, track, and manage dynamic marketing campaigns that deliver.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Plan and track activities, tasks, budgets, and details for each marketing activity.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                    	Produce highly targeted customer communications, improving response rates.
+                    </li>
+
+                    <li class="text-start text-lg pb-3 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Enable real-time marketing performance analysis and pinpoint budget management.
+                    </li>
+
+                    <li class="text-start text-lg pb-7 font-semibold font-Rajdhani max-w-[750px] list-disc">
+                        Fully customize marketing workflow out of the box for rapid campaign execution
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAGE PEOPLE -->
+        <section class="bg-white w-full">
+            <!-- SAGE PEOPLE -->
+        <div class="flex flex-col items-center justify-center px-8 mx-auto py-7 lg:px-7 lg:py-10 lg:flex-row lg:gap-8">
+            <!-- SAGE PEOPLE LOGO -->
+            <div class="sub_container">
+                <img src="/images/sage-people.png" alt="Sage Logo" class="w-60"/>
+                <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    Sage 300 People HR Software is designed for small and medium-sized businesses that require sophisticated and complicated
+                    HR and payroll functionality.
+                </p>
+
+                <p class="text-center hidden sm:block md:mx-auto lg:mx-0 text-base pt-4 pb-6 lg:text-start lg:pt-5 lg:pb-8 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
+                    Sage 300 People comprises an agile, innovative, and cost-effective HR solution that effortlessly and powerfully processes 
+                    HR and payroll functions in your business. Its world-class capabilities include fast and efficient system implementation, 
+                    security, stability, improved processes, real-time online design for easy monitoring and reduced risk, and a universal 
+                    calculation engine for simpler calculations across functions.
+                </p>
+                
+            </div>
+            <!-- SAGE 300 DASHBOARD IMAGE -->
+                <img src="/images/hero_sage300_dashboard.webp" alt="Dashboard Hero Sage Image" class="w-[500px]"/>
+             
+        </div>
+
+        <!-- SASGE 300 PEOPLE FEATURES -->
+        <div class="bg-[#f5f5f5]">
+            <div class="text-center pt-20 ">
+                <h3 class="font-Rajdhani font-bold text-3xl text-center mx-auto md:text-4xl"><span class="text-[#2de32d]">SAGE</span> <span class="text-[#afafaf]">300 PEOPLE</span> HR FEATUES</h3>
+                <p class="text-center mx-auto text-lg md:text-xl font-semibold font-Rajdhani max-w-[750px] py-6 pl-12 md:pl-16 lg:pl-32">
+                    Manage all stages of the employee lifecycle with the following features:
+                </p>
+            </div>
+
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Process-driven modules on Sage 300 People modules follow a systematic HR process.</li>
+                <li>Always-available, easy-to-use electronic employee files, to which you can attach documents.</li>
+                <li>Give managers and employees access to real-time data simultaneously from a range of different locations.</li>
+                <li>Robust reporting interface email reports directly from the application.</li>
+                <li>Managers can access employee records, conduct their employee performance reviews, and print reports.</li>
+                <li>Manage Employment Equity and monitor your employment equity targets and goals for the actual staff. Print Labor Department-sanctioned reports.</li>
+                <li>Manage Learning and Skills Development by defining the critical skills required and monitoring development plans and interventions.</li>
+                <li>Manage employee performance from defining agreements to conducting performance reviews and updating performance plans.</li>
+            </ul>
+
+        </div>
+
+        <!-- SECTION PAYROLL -->
+        <div class="bg-white">
+            <div class="text-center pt-20">
+                <h3 class="font-Rajdhani font-bold text-3xl text-center mx-auto md:text-4xl">PAYROLL FEATURE</h3>
+                <p class="text-start mx-auto text-lg md:text-xl font-Rajdhani  pt-6 pl-12 md:px-16 lg:px-32">
+                    A boundless system with unlimited companies, hierarchies, employees, pay period configurations and runs; unlimited 
+                    definitions for earning, deduction, company contribution, fringe benefit, and provision.
+                </p>
+                
+                <p class="text-start mx-auto text-lg md:text-xl font-Rajdhani  pt-3 pb-6 pl-12 md:px-16 lg:px-32">
+                    Regular updates of the latest statutory legislation to ensure consistent compliance, net-up calculations of wages and 
+                    salaries, net pay-splits between bank accounts, recall at any time the full history of each period, which are stored 
+                    separately, draw single company or multiple company consolidated reports, Precise security up to field level; user 
+                    authentication with MS Active Directory and System actions recorded to ensure accurate auditing.
+                </p>
+            </div>
+
+            <h3 class="font-Rajdhani font-bold text-2xl text-center  mx-auto md:text-3xl pl-12 md:px-16 lg:px-32">Additional Features Includes:</h3>
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Pay Slips:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Consolidate multiple pay slips per pay period for a single printable pay slip.</li>
+                <li>Automatically calculate pro-rata earnings and deductions based on start and termination dates.</li>
+                <li>Minimum net pay feature.</li>
+                <li>Flag pay slip lines to show effects on OID and/or BCEA.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Employee management:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Create multiple records for a single employee.</li>
+                <li>Create new employees (or terminate old ones) with built-in checklists.</li>
+                <li>Use the Transfer Wizard to easily move employees between companies, policies.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Content management:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Attach employee and company documents to any records in the system.</li>
+                <li>All uploaded documents are stored in the database to ensure they are secure and backed up.</li>
+                <li>Use the Transfer Wizard to easily move employees between companies, policies.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Company management:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Create unlimited companies per database.</li>
+                <li>Define multiple payment cycles per company.</li>
+                <li>View pays periods two years in advance.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Remuneration structures:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Create default pay slip structures for individuals and employee groups with similar pay slip setups.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Leave management:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Manage advance leave.</li>
+                <li>Customize the leave function to match your company’s policies.</li>
+                <li>Automatically monitor sick leave rule.</li>
+                <li>Line managers can have access to all leave management reports, via ESS.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Powerful, flexible calculations:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Expression Builder allows you to define formulas and sliding scales for any earning structure.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Management reporting:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Style, print, and export reports, for distribution.</li>
+                <li>Customize reports for limitless table and chart layouts.</li>
+                <li>Export reports to MS Excel, or send them as email attachments.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Auditing:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>All system activities are recorded for detailed reporting – what the changes entail, who made them, and old vs new values.</li>
+            </ul>
+
+            <h3 class="font-Rajdhani font-bold text-xl pt-8 mx-auto md:text-2xl pl-12 md:px-16 lg:px-32">Security:</h3>
+            <ul class="flex flex-col gap-4 pb-10 pl-12 pr-6 text-xl font-semibold list-disc md:pl-16 lg:pl-32 pt-7 font-Rajdhani">
+                <li>Sage 300 People has maximum security and control based on best practice protocols.</li>
+                <li>Assign multiple security configurations to multiple users – define who views which data.</li>
+                <li>Define security on the navigation level, apply password policies, and integrate them with MS Active Directory for single login efficiency.</li>
+                <li>Full security audit trail on the system.</li>
+            </ul>
+        </div>
+        </section>
+
+
+        <section>
+            
+        </section>
+    <script src="./script.js"></script>
+</body>
+</html>
