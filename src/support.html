@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-Plus International Limited</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="/images/logo (2).png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        footer{
+            background-color:  rgb(17 24 39);
+            background-image: radial-gradient(gray 1px, transparent 2px);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            z-index: 100px;
+        }
+  </style>
+  
+    <header class="lg:bg-headbg lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+            <!-- HEADER LOGO -->
+            <div class="container">
+                <a href="index.html" ><img src="/images/logo (2).png" alt="Company Logo" class="w-[70px]"/></a>
+            </div>
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:fle sm:items-center sm:gap-8 lg:gap-10">
+                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
+                  </div>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                    <li><a href="about us.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+                    <li><a href="solution.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
+                    <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Support</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            
+              <div id="sideNav"
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                
+                <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
+                  <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+                </div>
+                
+                <nav class="">
+                  <ul class="flex flex-col gap-6 ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                    <ul class="ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
+                        <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="about us.html">About</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="services.html">Services</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="support.html">Support</a></li>
+                        <li class="p-2 text-white hover:text-blue-600"><a href="contact.html">Contact</a></li>
+                      </ul>
+                </nav>
+              </div>
+              
+            </div>
+          </nav>
+          <div onclick="exitNav()" id="sideBar" class="">
+          </div> 
+        <!-- header section -->
+          <div id="slideshow" class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44">
+            <div class="flex items-center justify-center gap-2 pt-20 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
+                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">LEARNING IT BE EARNING</p>
+            </div>
+            <h1 class="pt-6 px-10 lg:pl-14 text-center lg:text-start text-2xl sm:text-5xl lg:text-5xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We are professionally integrated into quality first, effective communication, and reliability.</h1>
+            <p class="px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
+                Domain Plus Limited, with over 20 years of expertise, is a premier provider of ERP and CRM solutions. We specialize in empowering businesses of all sizes with tailored systems, driving growth and efficiency.
+            </p>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="container mx-auto">
+            <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Support Options -->
+                <div class="shadow-lg support-option">
+                    <h3 class="mb-4 text-xl font-bold">FAQs</h3>
+                    <p class="text-gray-700">Find answers to commonly asked questions.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Explore FAQs</a>
+                </div>
+                <div class="shadow-lg support-option">
+                    <h3 class="mb-4 text-xl font-bold">Knowledge Base</h3>
+                    <p class="text-gray-700">Access our comprehensive knowledge base.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Browse Knowledge Base</a>
+                </div>
+                <div class="shadow-lg support-option">
+                    <h3 class="mb-4 text-xl font-bold">Submit a Ticket</h3>
+                    <p class="text-gray-700">Need further assistance? Submit a support ticket.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Submit Ticket</a>
+                </div>
+                <div class="shadow-lg support-option">
+                    <h3 class="mb-4 text-xl font-bold">Contact Support</h3>
+                    <p class="text-gray-700">Reach out to our support team directly.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Contact Support</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
