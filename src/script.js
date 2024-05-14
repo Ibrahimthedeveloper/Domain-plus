@@ -106,7 +106,81 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-//scroll light
+
+document.addEventListener('DOMContentLoaded', () => {
+    const supportButton = document.getElementById('supportButton');
+    const supportModal = document.getElementById('supportModal');
+    const closeModalButton = document.getElementById('closeModalButton');
+
+    supportButton.addEventListener('click', () => {
+        supportModal.classList.remove('hidden');
+    });
+
+    closeModalButton.addEventListener('click', () => {
+        supportModal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === supportModal) {
+            supportModal.classList.add('hidden');
+        }
+    });
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const supportOptions = document.querySelectorAll('.support-option');
+
+    supportOptions.forEach(option => {
+        option.addEventListener('mouseenter', () => {
+            option.classList.add('transform', 'scale-105');
+        });
+        option.addEventListener('mouseleave', () => {
+            option.classList.remove('transform', 'scale-105');
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const supportForm = document.getElementById('supportForm');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+
+    supportForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Clear form fields
+        supportForm.reset();
+
+        // Display confirmation message
+        confirmationMessage.classList.remove('hidden');
+
+        // Hide confirmation message after 5 seconds
+        setTimeout(() => {
+            confirmationMessage.classList.add('hidden');
+        }, 5000);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const summaries = document.querySelectorAll('summary');
+
+    summaries.forEach(summary => {
+        summary.addEventListener('click', function() {
+            this.parentNode.querySelector('details').toggleAttribute('open');
+        });
+    });
+});
+
+
 
 
 
