@@ -199,18 +199,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Add any necessary JavaScript code here
 document.addEventListener('DOMContentLoaded', function() {
-    const subscribeButton = document.querySelector('button');
-    subscribeButton.addEventListener('click', function() {
-      const emailInput = document.querySelector('input[name="email"]');
-      if (emailInput.value) {
-        alert(`Subscribed with email: ${emailInput.value}`);
-        emailInput.value = '';
-      } else {
-        alert('Please enter a valid email address.');
-      }
-    });
+  const subscribeButton = document.querySelector('button');
+  subscribeButton.addEventListener('click', function() {
+    const emailInput = document.querySelector('input[name="email"]');
+    if (emailInput.value) {
+      alert(`Subscribed with email: ${emailInput.value}`);
+      emailInput.value = '';
+    } else {
+      alert('Please enter a valid email address.');
+    }
   });
-  
+});
+
+
+
+
+// scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+    const goUpButton = document.getElementById('go-up');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+            goUpButton.classList.remove('opacity-0');
+            goUpButton.classList.add('opacity-100');
+        } else {
+            goUpButton.classList.remove('opacity-100');
+            goUpButton.classList.add('opacity-0');
+        }
+    });
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 
 
 
