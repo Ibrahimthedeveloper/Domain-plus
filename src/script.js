@@ -197,6 +197,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Add any necessary JavaScript code here
+document.addEventListener('DOMContentLoaded', function() {
+    const subscribeButton = document.querySelector('button');
+    subscribeButton.addEventListener('click', function() {
+      const emailInput = document.querySelector('input[name="email"]');
+      if (emailInput.value) {
+        alert(`Subscribed with email: ${emailInput.value}`);
+        emailInput.value = '';
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  });
+  
+
+
 
 
 

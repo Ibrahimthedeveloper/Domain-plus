@@ -16,10 +16,6 @@
     <style>
             footer{
                 background-color: rgb(17 24 39);
-                background-image: radial-gradient(gray 1px, transparent 1px);
-                background-size: 20px 20px;
-                background-repeat: repeat;
-                z-index: 100px;
             }
             /* Tailwind CSS */
 .hover-light::before {
@@ -41,11 +37,18 @@
       </style>
     <!-- HEADER -->
     <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
-        <nav class="bg-black lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
+        <nav class="bg-gray-400 lg:opacity w-full opacity-90 fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
             <!-- HEADER LOGO -->
-            <div class="container">
-                <a href="index.html"><img src="/images/logo (2).png" alt="Company Logo" class="w-[70px]"/></a>
-            </div>
+            <div class="flex items-center">
+                <img src="/images/logo (2).png" alt="logo" class="w-20" />
+                <div class="text-white">
+                  <p class="leading-3 text-center">
+                    <span class="pl-5 text-xl font-semibold tracking-widest text-white">Domain-Plus</span><br />
+                    <span class="pl-4 tracking-tighter">International Limited</span>
+                  </p>
+                </div>
+              </div>
+
             
             <!-- HEADER ICON MENU -->
             <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
@@ -53,7 +56,7 @@
                     <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
                   </div>
                 <!-- HEADER LINK MENU -->
-                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-20 lg:text-xl font-Rajdhani">
+                <ul class="hidden text-2xl font-semibold text-white lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
                     <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
                     <li><a href="about us.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
                     <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
@@ -312,7 +315,7 @@
         <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">OUR TESTIMONIALS</h3>
        <div class="flex flex-col items-center justify-center gap-12 px-20 pb-20 lg:flex-row lg:gap-8">
                 <!-- CEO DRAFT -->
-           <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
+           <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
                <div class="flex flex-col items-center py-6 hover:bg-blue-700">
                    <img src="/images/kayode-image.jpg" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-32"/>
                    <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
@@ -327,7 +330,7 @@
             </div>
 
             <!-- MANAGER WEALTH -->
-            <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
+            <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
                 <div class="flex flex-col items-center py-6 hover:bg-blue-700">
                     <img src="/images/cave-image.jpg" alt="Adeyemo Cave Manager Wealth Image" class="rounded-[50%] w-32"/>
         
@@ -343,7 +346,7 @@
             </div>
 
             <!-- DIRECTOR HOLICS -->
-            <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-black">
+            <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
                 <div class="flex flex-col items-center py-6 hover:bg-blue-700">
                     <img src="/images/cynthia-image.jpg" alt ="Cynthia Cole Director Hplics Image" class="rounded-[50%] w-32"/>
                     <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
@@ -362,73 +365,56 @@
 
 
     <!-- FOOTER -->
-    <footer class="w-full text-white bg-gray-800">
-        <div class="container flex flex-col items-center justify-center gap-12 px-6 py-12 mx-auto lg:flex-row lg:justify-between lg:items-start lg:gap-10 lg:px-12 lg:py-20">
-            <!-- COMPANY LOGO -->
-            <div>
-                <a href="index.html">
-                    <img src="/images/logo (2).png" alt="Company Logo" class="w-32 sm:w-36">
-                </a>
+    <footer class="px-6 py-10  bg-[rgb(17 24 39)] lg:flex lg:justify-evenly">
+        <div>
+          <div class="flex items-center py-3">
+            <img src="/images/logo (2).png" alt="logo" class="w-20" />
+            <div class="text-white">
+              <p class="leading-3 text-center">
+                <span class="pl-5 text-xl font-semibold tracking-widest text-white">Domain-Plus</span><br />
+                <span class="tracking-tighter ">International Limited</span>
+              </p>
             </div>
-
-            <div class="flex flex-col items-center gap-12 lg:items-start lg:flex-row lg:gap-10">
-                <!-- NAVIGATIONAL LINKS -->
-                <div class="flex flex-col items-center gap-5 lg:items-start">
-                    <h2 class="text-3xl font-black font-Rajdhani">Navigational</h2>
-                    <ul class="flex flex-col items-center gap-3 text-lg font-semibold lg:items-start">
-                        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
-                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
-                        <li><a href="solution.html" class="hover:text-blue-400">Solution</a></li>
-                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
-                        <li><a href="support.html" class="hover:text-blue-400">Support</a></li>
-                        <li><a href="contact.html" class="hover:text-blue-400">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- OFFICE LINKS -->
-                <div class="flex flex-col items-center gap-5 lg:items-start">
-                    <h2 class="text-3xl font-black font-Rajdhani">Office</h2>
-                    <!-- OFFICE ADDRESS -->
-                    <div class="flex flex-col items-center gap-5 lg:items-start">
-                        <div class="flex items-center gap-2">
-                            <ion-icon class="text-3xl hover:text-blue-400" name="location"></ion-icon>
-                            <p class="text-base font-Rajdhani font-semibold max-w-[300px]">2, Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria.</p>
-                        </div>
-
-                        <!-- CONTACT INFO -->
-                        <div class="flex items-center gap-2">
-                            <ion-icon class="text-3xl hover:text-blue-400" name="call"></ion-icon>
-                            <div class="flex gap-3">
-                                <a href="tel:08023121258" class="text-lg font-semibold hover:text-blue-400">08023121258</a>
-                                <a href="tel:08126290758" class="text-lg font-semibold hover:text-blue-400">08126290758</a>
-                            </div>
-                        </div>
-
-                        <!-- E-MAIL INFO -->
-                        <div class="flex items-center gap-2">
-                            <ion-icon class="text-3xl hover:text-blue-400" name="mail"></ion-icon>
-                            <a href="mailto:info@domain-plusltd.com" class="text-lg font-semibold hover:text-blue-400">info@domain-plusltd.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- OFFICE HOURS -->
-                <div class="flex flex-col items-center gap-4 lg:items-start">
-                    <h2 class="text-3xl font-black font-Rajdhani">Office Hours</h2>
-                    <!-- DAYS -->
-                    <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="text-white fill-current"><path d="M12.5 12.792V8.5q0-.213-.143-.357Q12.213 8 12 8t-.357.143q-.143.144-.143.357v4.379q0 .161.056.3q.056.14.186.271l3.05 3.05q.14.14.345.15q.203.01.363-.15t.16-.354q0-.194-.16-.354l-3-3ZM12 21q-1.663 0-3.118-.626q-1.455-.626-2.543-1.713q-1.087-1.088-1.713-2.543Q4 14.663 4 13q0-1.663.626-3.118q.626-1.455 1.713-2.543q1.088-1.087 2.543-1.713Q10.337 5 12 5q1.663 0 3.118.626q1.455.626 2.543 1.713q1.087 1.088 1.713 2.543Q20 11.337 20 13q0 1.663-.626 3.118q-.626 1.455-1.713 2.543q-1.088 1.087-2.543 1.713Q13.663 21 12 21Zm0-8ZM2.78 7.262q-.159-.16-.159-.354q0-.195.16-.354L5.554 3.78q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.353L3.488 7.262q-.14.14-.344.15q-.204.01-.363-.15Zm18.44 0q-.16.16-.355.16q-.194 0-.353-.16l-2.774-2.774q-.14-.14-.15-.344q-.01-.204.15-.363q.16-.16.354-.16q.195 0 .354.16l2.773 2.773q.14.14.15.344q.01.204-.15.364ZM12 20q2.906 0 4.953-2.047T19 13q0-2.906-2.047-4.953T12 6Q9.094 6 7.047 8.047T5 13q0 2.906 2.047 4.953T12 20Z"></path></svg>
-                        <h2 class="text-xl font-black">Monday - Friday: 9:00am - 6:00pm</h2>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <p class="text-white lg:max-w-96">
+            Domain Plus provides reliable domain registration, web hosting, and website development, ensuring a strong online presence with user-friendly tools and expert support.
+          </p>
+          <div class="flex items-center gap-4 py-3">
+            
+            <p class="text-white ">
+              Domain-Plus International Limited - DPIL
+            </p>
+          </div>
         </div>
-        <!-- COPYRIGHT -->
-        <div class="py-6 text-center border-t border-gray-700">
-            <p class="text-base font-semibold lg:text-lg font-Rajdhani">Domain-Plus International Limited &copy; 2024. All rights reserved | Powered by dervacHub</p>
+        <section class="flex gap-10 text-white md:gap-48 lg:gap-10 lg:px-20">
+          <div>
+            <p class="pb-3 text-2xl pt-7">SOLUTIONS</p>
+            <ul class="px-5 list-disc">
+              <li class="py-2"><a href="./activities.html#section1">Sage 300</a></li>
+              <li class="py-2"><a href="./activities.html#section2">Sage X3</a></li>
+              <li class="py-2"><a href="./activities.html#section3">Sage CRM</a></li>
+              <li class="py-2"><a href="./activities.html#section3">Sage 300 People</a></li>
+              <li class="py-2"><a href="./activities.html#section3">Acumatica</a></li>
+              <li class="py-2"><a href="./activities.html#section3">Microsoft Dynamic 365</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-3 text-2xl pt-7">QUICK LINKS</p>
+            <ul class="px-5 list-disc">
+              <li class="py-2"><a href="index.html">Home</a></li>
+              <li class="py-2"><a href="solution.html">Solution</a></li>
+              <li class="py-3"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="mt-5">
+          <p class="pb-3 text-2xl text-white ">NEWSLETTER</p>
+          <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-2 rounded-lg" />
+          <button class="w-full px-4 py-3 my-4 font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+            SUBSCRIBE
+          </button>
         </div>
-    </footer>
+      </footer>
 
 <a href="contact.html" class="fixed z-50 bottom-5 ">
     <img src="/images/let_s-chat-removebg-preview.png" alt="chat image" class="w-16 transition-opacity duration-300 opacity-50 hover:opacity-100">
