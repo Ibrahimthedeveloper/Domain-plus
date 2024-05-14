@@ -181,6 +181,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('supportModal');
+    const openModalButton = document.getElementById('openModalButton');
+    const closeModalButton = document.getElementById('closeModalButton');
+
+    openModalButton.addEventListener('click', function() {
+        modal.classList.remove('hidden');
+    });
+
+    closeModalButton.addEventListener('click', function() {
+        modal.classList.add('hidden');
+    });
+});
+
+
 
 
 
