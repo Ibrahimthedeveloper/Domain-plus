@@ -238,6 +238,54 @@ function scrollToTop() {
 
 
 
+//services modal section
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('#serviceModal');
+    const openModalButton = document.getElementById('openModalButton');
+    const closeModalButton = document.getElementById('serviceModalButton');
+
+    openModalButton.addEventListener('click', function() {
+        modal.classList.remove('hidden');
+    });
+
+    closeModalButton.addEventListener('click', function() {
+        modal.classList.add('hidden');
+    });
+});
+
+
+//testing new modal code
+
+document.addEventListener("DOMContentLoaded", () => {
+    const detailsElements = document.querySelectorAll("details");
+    const modal = document.getElementById("modal");
+    const modalContent = document.getElementById("modal-content");
+    const closeModalButton = document.getElementById("close-modal");
+  
+    detailsElements.forEach(details => {
+      const summary = details.querySelector("summary");
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        modalContent.innerHTML = details.innerHTML;
+        modal.classList.remove("hidden");
+      });
+    });
+  
+    closeModalButton.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+  
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  });
+  
+
+
+
 
 
 
