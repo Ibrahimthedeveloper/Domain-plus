@@ -1151,10 +1151,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
-}
-
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -1406,10 +1402,6 @@ video {
   padding-top: 3rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .pt-16 {
   padding-top: 4rem;
 }
@@ -1432,10 +1424,6 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -2325,10 +2313,6 @@ video {
     padding-bottom: 5rem;
   }
 
-  .lg\:pb-12 {
-    padding-bottom: 3rem;
-  }
-
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -2393,10 +2377,6 @@ video {
     padding-top: px;
   }
 
-  .lg\:pt-12 {
-    padding-top: 3rem;
-  }
-
   .lg\:text-left {
     text-align: left;
   }
@@ -2436,11 +2416,6 @@ video {
 
   .lg\:text-\[17px\] {
     font-size: 17px;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .lg\:text-lg {
