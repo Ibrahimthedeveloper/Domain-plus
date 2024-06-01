@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Add any necessary JavaScript code here
 document.addEventListener('DOMContentLoaded', function() {
-  const subscribeButton = document.querySelector('button');
+  const subscribeButton = document.querySelector('#sButton');
   subscribeButton.addEventListener('click', function() {
     const emailInput = document.querySelector('input[name="email"]');
     if (emailInput.value) {
