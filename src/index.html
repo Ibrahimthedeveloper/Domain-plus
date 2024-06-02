@@ -34,17 +34,34 @@
     transform: translateX(100%);
 }
 
-      </style>
+    </style>
+      <!-- MEDIA LINKS -->
+      <div class="px-2 bg-gradient-to-r from-blue-900 to-red-900 w-full h-full sticky top-0 z-50 py-2 flex items-center justify-between md:px-10">
+        <div class="flex gap-1 items-center pl-0 md:pl-5">
+            <ion-icon name="call" class="text-xl md:text-2xl hover:text-red-950"></ion-icon>
+            <p class="font-Rajdhani text-base font-extrabold md:text-red-950 md:text-xl">08023121258</p>
+        </div>
+
+        <div class="md:space-x-4">
+            <a href=""><ion-icon name="logo-facebook" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-whatsapp" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-tiktok" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a></a>
+            <a href="mailto:"><ion-icon name="mail-outline" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+        </div>
+      </div>
     <!-- HEADER -->
     <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
-        <nav class="bg-white lg:opacity w-full  fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
+        <nav class="bg-white lg:opacity w-full fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
             <!-- HEADER LOGO -->
             <div class="flex items-center">
-                <a href="index.html"><img src="/images/logo (2).png" alt="logo" class="w-20" /></a>
+                <a href="index.html"><img src="/images/logo (2).png" alt="logo" class="w-10 md:w-20" /></a>
                 <div class="text-white">
                   <p class="leading-3 text-center">
-                    <span class="pl-5 text-4xl font-semibold tracking-widest text-blue-900 font-Rajdhani">Domain-Plus</span><br />
-                    <span class="pl-4 text-3xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</span>
+                    <span class="pl-5 md:text-4xl font-semibold tracking-widest text-blue-900 font-Rajdhani">Domain-Plus</span><br />
+                    <span class="pl-4 md:text-3xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</span>
                   </p>
                 </div>
               </div>
@@ -52,23 +69,23 @@
             
             <!-- HEADER ICON MENU -->
             <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
-                <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
-                    <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
-                  </div>
+                <button class="border-[3px] border-[#2563eb] bg-red-800 hover:border-[3px] hover:border-red-800 transition-transform hover:scale-90 ease-linear duration-500 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="../images/icon-menu.svg" alt="menu"/>
+                  </button>
                 <!-- HEADER LINK MENU -->
-                <ul class="hidden text-2xl font-semibold text-red-700 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
-                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
-                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
-                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
-                    <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
-                    <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
-                    <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Support</a></li>
-                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+                <ul class="hidden text-2xl font-semibold text-red-800 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Home</a></li>
+                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Services</a></li>
+                    <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Solution</a></li>
+                    <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Blog</a></li>
+                    <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Support</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Contact</a></li>
                 </ul>
             </div>
             
               <div id="sideNav"
-                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
+                class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-700 bg-black">
                 
                 <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
                   <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
@@ -91,15 +108,15 @@
           </nav>
     
           <div onclick="exitNav()" id="sideBar" class="">
-          </div> 
+        </div> 
 
         <!-- HEADER SECTION FINANCIAL -->
         <div id="slideshow" class="bg-center bg-no-repeat bg-cover bg-pattern pt-11 lg:bg-none lg:pt-44" >
-            <div class="flex items-center justify-center gap-2 pt-10 pb-4 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
-                <img src="/images/asterisk.png" alt="Asterik image" class="w-10"/>
-                <p class="text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">At Domain Plus We Provide Financial Solution.</p>
+            <div class="flex items-center justify-center gap-2 pt-16 pb-3 mx-auto text-center md:pt-20 lg:pl-14 lg:justify-start sm:pb-6 lg:pb-8">
+                <img src="/images/asterisk.png" alt="Asterik image" class="w-5 sm:w-10"/>
+                <p class="text-base sm:text-2xl font-semibold text-white lg:pt-0 font-Rajdhani">At Domain Plus We Provide Financial Solution.</p>
             </div>
-            <h1 class="lg:pl-14 text-center lg:text-start text-4xl sm:text-5xl lg:text-7xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We Provide <span class="text-blue-600">Financial </span> <span class=" sm:text-blue-600 lg:text-white">Solution</span>.</h1>
+            <h1 class="lg:pl-14 text-center lg:text-start text-3xl sm:text-5xl lg:text-7xl text-white font-Rajdhani font-semibold md:font-bold lg:max-w-[650px]">We Provide <span class="text-blue-600">Financial </span> <span class=" sm:text-blue-600 lg:text-white">Solution</span>.</h1>
             <p class="px-5 sm:px-10 text-[#c6cecee0] text-center md:mx-auto lg:mx-0 font-semibold text-lg lg:text-slate-300 pt-4 pb-6 lg:text-start lg:pl-14 lg:pt-5 lg:pb-8 md:text-xl font-Rajdhani max-w-[750px] lg::max-w-[600px]">
                 Domain-Plus International Limited is one of the leading ICT consultancy and Training Providers in Nigeria. 
                 We assist our clients in achieving significant improvements in operating performance via state-of-the-art automation.
@@ -259,16 +276,16 @@
             <h3 class="text-5xl font-bold text-center font-Rajdhani">Our Strategic Partners</h3>
 
             <!-- CLIENTS COMPANY -->
-            <div class="flex flex-col items-center justify-center gap-20 py-10 md:flex-row">
-                <img src="/images/gold-microsft.png" alt="Gold partnership"/>
+            <div class="flex flex-col items-center justify-center gap-10 py-10 md:flex-row">
+                <img src="/images/microsoft.png" alt="Gold partnership"/>
                 <img src="/images/sage-delivery-partner.png" alt="sage delivery partner"/>
                 <img src="/images/sage-tech-partner.png" alt="sage tech partner"/>
-                <img src="/images/acumatica-log.png" alt="acumatica partner" class="w-44"/>
+                <img src="/images/acumatica-log.png" alt="acumatica partner" class="w-40"/>
             </div>
         </div>
 
         <!-- OUR RATINGS -->
-        <div class="bg-white">
+        <div class="bg-white pb-10">
             <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">WHAT WE HAVE ACQUIRED</h3>
             <div class="grid grid-cols-2 gap-6 md:px-10 md:flex md:items-center md:justify-center lg:gap-16">
                 <!-- YEARS OF EXPEIENCE -->
@@ -304,60 +321,7 @@
         </div>
     </section>
 
-    <!-- SECTION FIVE -->
-    <section class="mt-16 bg-gradient-to-tr from-[#edf1f5] via-slate-300 to-[#e5e9ee]">
-       <!-- OUR TESTIMONIALS  -->
-        <h3 class="py-16 text-3xl font-bold text-center md:text-5xl font-Rajdhani">OUR TESTIMONIALS</h3>
-       <div class="flex flex-col items-center justify-center gap-12 px-20 pb-20 lg:flex-row lg:gap-8">
-                <!-- CEO DRAFT -->
-           <div class="bg-gray-500 border-2 border-white rounded-md shadow-md shadow-black w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
-               <div class="flex flex-col items-center py-6 shadow-4xl hover:bg-blue-700">
-                   <img src="/images/kayode-image.jpg" alt="Kolade Ishola CEO Draft Image" class="rounded-[50%] w-32"/>
-                   <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
-                     Domain-Plus International Limited played a pivotal role in transforming our HR and payroll processes. Their comprehensive ICT 
-                     solutions streamlined our operations, enhancing efficiency and reducing costs. Their team of seasoned professionals delivered 
-                     top-notch service, making them our go-to ICT consultancy partner. Domain-Plus is indeed a reliable and innovative ICT consultancy,
-                      making a significant impact on our business
-                   </p>
-                   <h3 class="text-lg font-extrabold text-white font-Rajdhani">Kolade Ishola</h3>
-                   <h3 class="text-lg font-extrabold text-white font-Rajdhani">CEO DRAFT</h3>
-               </div>
-            </div>
-
-            <!-- MANAGER WEALTH -->
-            <div class="bg-gray-500 border-2 border-white rounded-md shadow-4xl w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
-                <div class="flex flex-col items-center py-6 hover:bg-blue-700">
-                    <img src="/images/cave-image.jpg" alt="Adeyemo Cave Manager Wealth Image" class="rounded-[50%] w-32"/>
-        
-                    <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
-                        As a business owner, partnering with Domain-Plus was a game-changer. Their expertise in computerization and ICT 
-                        solutions revolutionized our accounting, project costing, and asset management. Their commitment to delivering 
-                        high-quality training further empowered our team. Domain-Plus is indeed a reliable and innovative ICT consultancy,
-                         making a significant impact on our business.
-                    </p>
-                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">Adeyemo Cave</h3>
-                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">MANAGER WEALTH</h3>
-                </div>
-            </div>
-
-            <!-- DIRECTOR HOLICS -->
-            <div class="bg-gray-500 border-2 border-white rounded-md shadow-4xl w-[320px] sm:w-[400px] hover:border-[3px] hover:border-white">
-                <div class="flex flex-col items-center py-6 hover:bg-blue-700">
-                    <img src="/images/cynthia-image.jpg" alt ="Cynthia Cole Director Hplics Image" class="rounded-[50%] w-32"/>
-                    <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575 max-w-[400px] text-white">
-                        We have been working with Domain-Plus International Limited since 2018, and their services have exceeded our 
-                        expectations. Their dedicated team of solutions-certified professionals has not only provided us with cutting-edge 
-                        automation but also tailored their solutions to fit our unique needs. Their wealth of industry experience and commitment 
-                        to excellence make them a trusted partner. 
-                    </p>
-                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">Cynthia Cole</h3>
-                    <h3 class="text-lg font-extrabold text-white font-Rajdhani">DIRECTOR HOLICS</h3>
-                </div>
-            </div>
-            
-        </div>
-    </section> 
-
+   
 
     <!-- FOOTER -->
     <footer class="px-6 py-10  bg-[rgb(17 24 39)] lg:flex lg:justify-evenly">
