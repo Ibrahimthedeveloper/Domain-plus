@@ -34,6 +34,20 @@
     transform: translateX(100%);
 }
 
+       /* Hide default scrollbar */
+       .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Custom styles for smooth scrolling */
+  #scrollContainer {
+    scroll-behavior: smooth;
+  }
+
     </style>
       <!-- MEDIA LINKS -->
       <div class="px-2 bg-gradient-to-r from-blue-900 to-red-900 w-full h-full sticky top-0 z-50 py-2 flex items-center justify-between md:px-10">
@@ -273,15 +287,25 @@
     <section class="bg-gradient-to-tr from-[#edf1f5] via-slate-300 to-[#e5e9ee]">
         <!-- OUR STRATEGIC PARTNERS -->
         <div class="pt-10 md:pt-20">
-            <h3 class="text-5xl font-bold text-center font-Rajdhani">Our Strategic Partners</h3>
-
-            <!-- CLIENTS COMPANY -->
-            <div class="flex flex-col items-center justify-center gap-10 py-10 md:flex-row">
-                <img src="/images/microsoft.png" alt="Gold partnership"/>
-                <img src="/images/sage-delivery-partner.png" alt="sage delivery partner"/>
-                <img src="/images/sage-tech-partner.png" alt="sage tech partner"/>
-                <img src="/images/acumatica-log.png" alt="acumatica partner" class="w-40"/>
-            </div>
+            <div class="">
+              <h3 class="text-5xl font-bold text-center font-Rajdhani">Our Strategic Partners</h3>
+          
+              <!-- SCROLLABLE CLIENTS COMPANY -->
+              <div class="relative flex items-center justify-center py-10">
+                  <button id="scrollLeft" class="absolute left-0 z-10 p-2 bg-gray-300 rounded-full"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                  <div id="scrollContainer" class="flex overflow-x-auto gap-10 scrollbar-hide w-full max-w-2xl mx-auto">
+                      <img src="/images/microsoft.png" alt="Gold partnership" class="flex-shrink-0 "/>
+                      <img src="/images/sage-delivery-partner.png" alt="sage delivery partner" class="flex-shrink-0 "/>
+                      <img src="/images/sage-tech-partner.png" alt="sage tech partner" class="flex-shrink-0 "/>
+                      <img src="/images/acumatica-log.png" alt="acumatica partner" class="w-40 flex-shrink-0"/>
+                      <img src="/images/microsoft.png" alt="Gold partnership" class="flex-shrink-0 "/>
+                      <img src="/images/sage-delivery-partner.png" alt="sage delivery partner" class="flex-shrink-0 "/>
+                      <img src="/images/sage-tech-partner.png" alt="sage tech partner" class="flex-shrink-0 "/>
+                      <img src="/images/acumatica-log.png" alt="acumatica partner" class="w-40 flex-shrink-0"/>
+                  </div>
+                  <button id="scrollRight" class="absolute right-0 z-10 p-2 bg-gray-300 rounded-full"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+          </div>
         </div>
 
         <!-- OUR RATINGS -->
@@ -353,8 +377,8 @@
               <li class="py-2"><a href="solution.html#sage3x">Sage X3</a></li>
               <li class="py-2"><a href="solution.html#sagecrm">Sage CRM</a></li>
               <li class="py-2"><a href="solution.html#sage300people">Sage 300 People</a></li>
-              <li class="py-2"><a href="solution.html#acumatica">Acumatica</a></li>
-              <li class="py-2"><a href="solution.html#microsoftdynamic">Microsoft Dynamic 365</a></li>
+              <!-- <li class="py-2"><a href="solution.html#acumatica">Acumatica</a></li>
+              <li class="py-2"><a href="solution.html#microsoftdynamic">Microsoft Dynamic 365</a></li> -->
             </ul>
           </div>
           <div>

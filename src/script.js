@@ -282,6 +282,73 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollContainer = document.getElementById('scrollContainer');
+    const scrollLeftButton = document.getElementById('scrollLeft');
+    const scrollRightButton = document.getElementById('scrollRight');
+
+    // Function to scroll left
+    scrollLeftButton.addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: -200,  // Adjust this value based on your needs
+            behavior: 'smooth'
+        });
+    });
+
+    // Function to scroll right
+    scrollRightButton.addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: 200,  // Adjust this value based on your needs
+            behavior: 'smooth'
+        });
+    });
+
+    // Enable mouse drag to scroll
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        scrollContainer.classList.add('active');
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        scrollContainer.classList.remove('active');
+    });
+
+    scrollContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        scrollContainer.classList.remove('active');
+    });
+
+    scrollContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 3; // Adjust the scroll speed as needed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    // Enable touch to scroll
+    let startTouchX;
+
+    scrollContainer.addEventListener('touchstart', (e) => {
+        startTouchX = e.touches[0].pageX;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX;
+        const walk = (x - startTouchX) * 3; // Adjust the scroll speed as needed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+});
+
   
 
 
