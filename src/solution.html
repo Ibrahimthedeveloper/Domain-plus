@@ -25,36 +25,54 @@
         }
   </style>
   
-  <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
-    <nav class="bg-white lg:opacity w-full  fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
-        <!-- HEADER LOGO -->
-        <div class="flex items-center">
-            <a href="index.html"><img src="/images/logo (2).png" alt="logo" class="w-20" /></a>
-            <div class="text-white">
-              <p class="leading-3 text-center">
-                <span class="pl-5 text-4xl font-semibold tracking-widest text-blue-900 font-Rajdhani">Domain-Plus</span><br />
-                <span class="pl-4 text-3xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</span>
-              </p>
-            </div>
-          </div>
-
-        
-        <!-- HEADER ICON MENU -->
-        <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
-            <div class="border-[3px] border-[#2563eb] transition-transform hover:scale-90 ease-linear duration-300 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
-                <img src="/images/icon-menu.svg" alt="Menu Logo" class=""/>
-              </div>
-            <!-- HEADER LINK MENU -->
-            <ul class="hidden text-2xl font-semibold text-red-700 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
-                <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
-                <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About</a></li>
-                <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
-                <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
-                <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
-                <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Support</a></li>
-                <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
-            </ul>
+    <!-- MEDIA LINKS -->
+    <div class="px-2 bg-gradient-to-r from-blue-900 to-red-900 w-full h-full sticky top-0 z-50 py-2 flex items-center justify-between md:px-10">
+        <div class="flex gap-1 items-center pl-0 md:pl-5">
+            <ion-icon name="call" class="text-xl md:text-2xl hover:text-red-950"></ion-icon>
+            <p class="font-Rajdhani text-base font-extrabold md:text-red-950 md:text-xl">08023121258</p>
         </div>
+
+        <div class="md:space-x-4">
+            <a href=""><ion-icon name="logo-facebook" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-whatsapp" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-tiktok" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a></a>
+            <a href="mailto:"><ion-icon name="mail-outline" class="text-xl md:text-3xl hover:text-blue-700"></ion-icon></a>
+        </div>
+      </div>
+    <!-- HEADER -->
+    <header class="lg:bg-pattern lg:bg-cover lg:opacity-100 lg:bg-no-repeat lg:bg-center">
+        <nav class="bg-white lg:opacity w-full fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
+            <!-- HEADER LOGO -->
+            <div class="flex items-center">
+                <a href="index.html"><img src="/images/logo (2).png" alt="logo" class="w-10 md:w-20" /></a>
+                <div class="text-white">
+                  <p class="leading-3 text-center">
+                    <span class="pl-5 md:text-4xl font-semibold tracking-widest text-blue-900 font-Rajdhani">Domain-Plus</span><br />
+                    <span class="pl-4 md:text-3xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</span>
+                  </p>
+                </div>
+              </div>
+
+            
+            <!-- HEADER ICON MENU -->
+            <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
+                <button class="border-[3px] border-[#2563eb] bg-red-800 hover:border-[3px] hover:border-red-800 transition-transform hover:scale-90 ease-linear duration-500 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
+                    <img src="../images/icon-menu.svg" alt="menu"/>
+                  </button>
+                <!-- HEADER LINK MENU -->
+                <ul class="hidden text-2xl font-semibold text-red-800 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+                    <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Home</a></li>
+                    <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Services</a></li>
+                    <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Solution</a></li>
+                    <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Blog</a></li>
+                    <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Support</a></li>
+                    <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 active:text-blue-900 focus:text-red-800">Contact</a></li>
+                </ul>
+            </div>
         
           <div id="sideNav"
             class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
@@ -131,7 +149,7 @@
     </section>
 
         <!-- SAGE CRM -->
-        <section id="sagecrm" class="bg-[#f5f5f5]">
+        <section id="sagecrm" class="bg-[#cbd5e1]">
             <div class="flex flex-col items-center justify-center gap-10 px-8 mx-auto pl-7 md:pl-12 lg:pl-20 py-7 lg:px-7 lg:py-10 lg:flex-row lg:gap-8">
                 <!-- SAGE LOGO -->
                 <div class="sub_container">
@@ -189,11 +207,11 @@
 
         
         <!-- SECTION SAGE X3 -->
-        <section class="bg-[#f5f5f5]" id="sage3x">
+        <section class="bg-[#cbd5e1]" id="sage3x">
             <div class="flex flex-col items-center justify-center gap-10 px-8 mx-auto pl-7 md:pl-12 lg:pl-20 py-7 lg:px-7 lg:py-10 lg:flex-row lg:gap-8">
                 <!-- SAGE LOGO -->
                 <div class="sub_container">
-                    <img src="/images/sage-x3.png" alt="Sage Logo" class="w-40"/>
+                    <img src="/images/x3-logo.png" alt="Sage Logo" class="w-40"/>
                     <p class="text-center md:mx-auto lg:mx-0 text-base pt-4 lg:text-start lg:pt-5 font-Rajdhani max-w-[700px] lg::max-w-[600px]">
                         Sage X3, also known as Sage Business Cloud Enterprise Management is an ERP package from the Sage group. Sage X3 can
                         handle the complete data flow of large-scale organizations and can also be perfect for SMEs as well.
@@ -216,7 +234,7 @@
                     </p>
                 </div>
                 <!-- SAGE 300 DASHBOARD IMAGE -->
-                    <img src="/images/sage-x3-cloud.png" alt="Sage x3 cloud Image" class="w-[500px]"/>
+                    <img src="/images/Sage-X3-Diagram2.jpg" alt="Sage x3 cloud Image" class="w-[500px] rounded-[50%]"/>
                  
             </div>
 
