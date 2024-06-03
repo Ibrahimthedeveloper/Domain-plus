@@ -41,9 +41,9 @@ function openNav() {
 
 const slideshow = document.getElementById('slideshow');
 const images = [
-    '/images/slider-mainbg-01.jpg',
+    './images/slider-mainbg-01.jpg',
     // '/images/slider-mainbg-02.jpg',
-    '/images/pagetitle-bg.jpg',
+    './images/pagetitle-bg.jpg',
     // Add more image URLs as needed
 ];
 let index = 0;
