@@ -1884,6 +1884,11 @@ video {
   color: rgb(69 10 10 / var(--tw-text-opacity));
 }
 
+.hover\:text-green-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2152,16 +2157,16 @@ video {
     padding-left: 1.25rem;
   }
 
+  .md\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
 
   .md\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .md\:pt-2 {
-    padding-top: 0.5rem;
   }
 
   .md\:text-2xl {
