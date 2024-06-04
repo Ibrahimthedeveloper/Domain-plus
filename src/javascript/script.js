@@ -283,6 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   document.addEventListener('DOMContentLoaded', function() {
     const scrollContainer = document.getElementById('scrollContainer');
     const scrollLeftButton = document.getElementById('scrollLeft');
@@ -349,7 +350,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const modal = document.getElementById('modal');
+//     const modalTitle = document.getElementById('modal-title');
+//     const modalContent = document.getElementById('modal-content');
+//     const closeModal = document.getElementById('close-modal');
+
+//     document.querySelectorAll('details > summary').forEach(summary => {
+//       summary.addEventListener('click', () => {
+//         const title = summary.closest('div').querySelector('p').innerText;
+//         const content = summary.nextElementSibling.cloneNode(true);
+//         modalTitle.innerText = title;
+//         modalContent.innerHTML = '';
+//         modalContent.appendChild(content);
+//         modal.classList.add('open');
+//       });
+//     });
+
+//     closeModal.addEventListener('click', () => {
+//       modal.classList.remove('open');
+//     });
+
+//     modal.addEventListener('click', (e) => {
+//       if (e.target === modal) {
+//         modal.classList.remove('open');
+//       }
+//     });
+//   });
+
   
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const readMore = document.querySelector("details > summary");
+    const modal = document.getElementById("modal");
+    const closeModalButton = document.getElementById("close-modal");
+
+    readMore.addEventListener("click", function() {
+        modal.classList.remove("hidden");
+    });
+
+    closeModalButton.addEventListener("click", function() {
+        modal.classList.add("hidden");
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+});
 
 
 
