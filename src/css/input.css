@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header{
+    background-image: url('../images/pagetitle-bg.jpg');
+}
+
+.hover-light::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.hover-light:hover::before {
+    transform: translateX(100%);
+}
+
+       /* Hide default scrollbar */
+       .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Custom styles for smooth scrolling */
+  #scrollContainer {
+    scroll-behavior: smooth;
+  }
+
+footer{
+    background-color:  rgb(17 24 39);
+}
