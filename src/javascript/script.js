@@ -12,26 +12,26 @@ function openNav() {
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('myForm');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting
+    // form.addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Prevent the form from submitting
 
-        // Perform form validation
-        // Example: Check if input fields are not empty
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const select = document.getElementById('select').value.trim();
+    //     // Perform form validation
+    //     // Example: Check if input fields are not empty
+    //     const name = document.getElementById('name').value.trim();
+    //     const email = document.getElementById('email').value.trim();
+    //     const message = document.getElementById('message').value.trim();
+    //     const select = document.getElementById('select').value.trim();
 
-        if (!name || !email || !message || !select) {
-            alert('Please fill out all fields.'); // Display an error message
-            return;
-        }
+    //     if (!name || !email || !message || !select) {
+    //         alert('Please fill out all fields.'); // Display an error message
+    //         return;
+    //     }
 
-        // Form data is valid, you can submit the form data or perform other actions here
-        alert('Form submitted successfully!'); // Display success message
-        // Clear all form fields
-        form.reset();
-    });
+    //     // Form data is valid, you can submit the form data or perform other actions here
+    //     alert('Form submitted successfully!'); // Display success message
+    //     // Clear all form fields
+    //     form.reset();
+    // });
 });
 
 
@@ -48,13 +48,13 @@ const images = [
 ];
 let index = 0;
 
-function changeBackground() {
-    index = (index + 1) % images.length;
-    slideshow.style.backgroundImage = "url('" + images[index] + "')";
-    setTimeout(changeBackground, 5000); // Change image every 5 seconds
-}
+// function changeBackground() {
+//     index = (index + 1) % images.length;
+//     slideshow.style.backgroundImage = "url('" + images[index] + "')";
+//     setTimeout(changeBackground, 5000); // Change image every 5 seconds
+// }
 
-changeBackground(); // Start the slideshow
+// changeBackground(); // Start the slideshow
   
 
 //arrow up section
@@ -112,13 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const supportModal = document.getElementById('supportModal');
     const closeModalButton = document.getElementById('closeModalButton');
 
-    supportButton.addEventListener('click', () => {
-        supportModal.classList.remove('hidden');
-    });
+    // supportButton.addEventListener('click', () => {
+    //     supportModal.classList.remove('hidden');
+    // });
 
-    closeModalButton.addEventListener('click', () => {
-        supportModal.classList.add('hidden');
-    });
+    // closeModalButton.addEventListener('click', () => {
+    //     supportModal.classList.add('hidden');
+    // });
 
     // Close modal when clicking outside of it
     window.addEventListener('click', (event) => {
@@ -153,20 +153,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const supportForm = document.getElementById('supportForm');
     const confirmationMessage = document.getElementById('confirmationMessage');
 
-    supportForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    // supportForm.addEventListener('submit', (event) => {
+    //     event.preventDefault();
 
-        // Clear form fields
-        supportForm.reset();
+    //     // Clear form fields
+    //     supportForm.reset();
 
-        // Display confirmation message
-        confirmationMessage.classList.remove('hidden');
+    //     // Display confirmation message
+    //     confirmationMessage.classList.remove('hidden');
 
-        // Hide confirmation message after 5 seconds
-        setTimeout(() => {
-            confirmationMessage.classList.add('hidden');
-        }, 5000);
-    });
+    //     // Hide confirmation message after 5 seconds
+    //     setTimeout(() => {
+    //         confirmationMessage.classList.add('hidden');
+    //     }, 5000);
+    // });
 });
 
 
@@ -186,13 +186,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const openModalButton = document.getElementById('openModalButton');
     const closeModalButton = document.getElementById('closeModalButton');
 
-    openModalButton.addEventListener('click', function() {
-        modal.classList.remove('hidden');
-    });
+    // openModalButton.addEventListener('click', function() {
+    //     modal.classList.remove('hidden');
+    // });
 
-    closeModalButton.addEventListener('click', function() {
-        modal.classList.add('hidden');
-    });
+    // closeModalButton.addEventListener('click', function() {
+    //     modal.classList.add('hidden');
+    // });
 });
 
 
@@ -200,15 +200,15 @@ document.addEventListener('DOMContentLoaded', function() {
 // Add any necessary JavaScript code here
 document.addEventListener('DOMContentLoaded', function() {
   const subscribeButton = document.querySelector('#sButton');
-  subscribeButton.addEventListener('click', function() {
-    const emailInput = document.querySelector('input[name="email"]');
-    if (emailInput.value) {
-      alert(`Subscribed with email: ${emailInput.value}`);
-      emailInput.value = '';
-    } else {
-      alert('Please enter a valid email address.');
-    }
-  });
+//   subscribeButton.addEventListener('click', function() {
+//     const emailInput = document.querySelector('input[name="email"]');
+//     if (emailInput.value) {
+//       alert(`Subscribed with email: ${emailInput.value}`);
+//       emailInput.value = '';
+//     } else {
+//       alert('Please enter a valid email address.');
+//     }
+//   });
 });
 
 
@@ -245,13 +245,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const openModalButton = document.getElementById('openModalButton');
     const closeModalButton = document.getElementById('serviceModalButton');
 
-    openModalButton.addEventListener('click', function() {
-        modal.classList.remove('hidden');
-    });
+    // openModalButton.addEventListener('click', function() {
+    //     modal.classList.remove('hidden');
+    // });
 
-    closeModalButton.addEventListener('click', function() {
-        modal.classList.add('hidden');
-    });
+    // closeModalButton.addEventListener('click', function() {
+    //     modal.classList.add('hidden');
+    // });
 });
 
 
@@ -272,9 +272,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-    closeModalButton.addEventListener("click", () => {
-      modal.classList.add("hidden");
-    });
+    // closeModalButton.addEventListener("click", () => {
+    //   modal.classList.add("hidden");
+    // });
   
     window.addEventListener("click", (event) => {
       if (event.target === modal) {
@@ -290,122 +290,176 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollRightButton = document.getElementById('scrollRight');
 
     // Function to scroll left
-    scrollLeftButton.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            left: -200,  // Adjust this value based on your needs
-            behavior: 'smooth'
-        });
+    // scrollLeftButton.addEventListener('click', () => {
+    //     scrollContainer.scrollBy({
+    //         left: -200,  // Adjust this value based on your needs
+    //         behavior: 'smooth'
+    //     });
     });
 
     // Function to scroll right
-    scrollRightButton.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            left: 200,  // Adjust this value based on your needs
-            behavior: 'smooth'
-        });
-    });
+    // scrollRightButton.addEventListener('click', () => {
+    //     scrollContainer.scrollBy({
+    //         left: 200,  // Adjust this value based on your needs
+    //         behavior: 'smooth'
+    //     });
+    // });
 
     // Enable mouse drag to scroll
     let isDown = false;
     let startX;
     let scrollLeft;
 
-    scrollContainer.addEventListener('mousedown', (e) => {
-        isDown = true;
-        scrollContainer.classList.add('active');
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-    });
+    // scrollContainer.addEventListener('mousedown', (e) => {
+    //     isDown = true;
+    //     scrollContainer.classList.add('active');
+    //     startX = e.pageX - scrollContainer.offsetLeft;
+    //     scrollLeft = scrollContainer.scrollLeft;
+    // });
 
-    scrollContainer.addEventListener('mouseleave', () => {
-        isDown = false;
-        scrollContainer.classList.remove('active');
-    });
+    // scrollContainer.addEventListener('mouseleave', () => {
+    //     isDown = false;
+    //     scrollContainer.classList.remove('active');
+    // });
 
-    scrollContainer.addEventListener('mouseup', () => {
-        isDown = false;
-        scrollContainer.classList.remove('active');
-    });
+    // scrollContainer.addEventListener('mouseup', () => {
+    //     isDown = false;
+    //     scrollContainer.classList.remove('active');
+    // });
 
-    scrollContainer.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 3; // Adjust the scroll speed as needed
-        scrollContainer.scrollLeft = scrollLeft - walk;
-    });
+    // scrollContainer.addEventListener('mousemove', (e) => {
+    //     if (!isDown) return;
+    //     e.preventDefault();
+    //     const x = e.pageX - scrollContainer.offsetLeft;
+    //     const walk = (x - startX) * 3; // Adjust the scroll speed as needed
+    //     scrollContainer.scrollLeft = scrollLeft - walk;
+    // });
 
     // Enable touch to scroll
     let startTouchX;
 
-    scrollContainer.addEventListener('touchstart', (e) => {
-        startTouchX = e.touches[0].pageX;
-        scrollLeft = scrollContainer.scrollLeft;
+    // scrollContainer.addEventListener('touchstart', (e) => {
+    //     startTouchX = e.touches[0].pageX;
+    //     scrollLeft = scrollContainer.scrollLeft;
+    // });
+
+    // scrollContainer.addEventListener('touchmove', (e) => {
+    //     const x = e.touches[0].pageX;
+    //     const walk = (x - startTouchX) * 3; // Adjust the scroll speed as needed
+    //     scrollContainer.scrollLeft = scrollLeft - walk;
+    // });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup');
+    const openPopupButton = document.getElementById('openPopup');
+    const closePopupButton = document.getElementById('closePopup');
+
+    // openPopupButton.addEventListener('click', function () {
+    //     console.log("clicked")
+    //   popup.classList.remove('hidden');
+    // });
+
+    // closePopupButton.addEventListener('click', function () {
+    //   popup.classList.add('hidden');
+    // });
+
+    // Optional: Close the pop-up when clicking outside of it
+    window.addEventListener('click', function (e) {
+      if (e.target === popup) {
+        popup.classList.add('hidden');
+      }
     });
+  });
 
-    scrollContainer.addEventListener('touchmove', (e) => {
-        const x = e.touches[0].pageX;
-        const walk = (x - startTouchX) * 3; // Adjust the scroll speed as needed
-        scrollContainer.scrollLeft = scrollLeft - walk;
-    });
-});
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const modal = document.getElementById('modal');
-//     const modalTitle = document.getElementById('modal-title');
-//     const modalContent = document.getElementById('modal-content');
-//     const closeModal = document.getElementById('close-modal');
-
-//     document.querySelectorAll('details > summary').forEach(summary => {
-//       summary.addEventListener('click', () => {
-//         const title = summary.closest('div').querySelector('p').innerText;
-//         const content = summary.nextElementSibling.cloneNode(true);
-//         modalTitle.innerText = title;
-//         modalContent.innerHTML = '';
-//         modalContent.appendChild(content);
-//         modal.classList.add('open');
-//       });
-//     });
-
-//     closeModal.addEventListener('click', () => {
-//       modal.classList.remove('open');
-//     });
-
-//     modal.addEventListener('click', (e) => {
-//       if (e.target === modal) {
-//         modal.classList.remove('open');
-//       }
-//     });
-//   });
-
-  
+const openModal = ()=>{
+    const popup = document.getElementById('popup');
+    popup.classList.remove('hidden');
+}
 
 
+const closeModal = () =>{
+    const popup = document.getElementById('popup');
+    popup.classList.add('hidden');
+}
+
+const openModals = ()=>{
+    const popup = document.getElementById('popups');
+    popup.classList.remove('hidden');
+}
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const readMore = document.querySelector("details > summary");
-    const modal = document.getElementById("modal");
-    const closeModalButton = document.getElementById("close-modal");
+const closeModals = () =>{
+    const popup = document.getElementById('popups');
+    popup.classList.add('hidden');
+}
 
-    readMore.addEventListener("click", function() {
-        modal.classList.remove("hidden");
-    });
-
-    closeModalButton.addEventListener("click", function() {
-        modal.classList.add("hidden");
-    });
-
-    window.addEventListener("click", function(event) {
-        if (event.target === modal) {
-            modal.classList.add("hidden");
-        }
-    });
-});
+const openModalone = ()=>{
+    const popup = document.getElementById('popupone');
+    popup.classList.remove('hidden');
+}
 
 
+const closeModalone = () =>{
+    const popup = document.getElementById('popupone');
+    popup.classList.add('hidden');
+}
 
+const openModaltwo = ()=>{
+    const popup = document.getElementById('popuptwo');
+    popup.classList.remove('hidden');
+}
+
+
+const closeModaltwo = () =>{
+    const popup = document.getElementById('popuptwo');
+    popup.classList.add('hidden');
+}
+
+const openModalthree = ()=>{
+    const popup = document.getElementById('popupthree');
+    popup.classList.remove('hidden');
+}
+
+
+const closeModalthree = () =>{
+    const popup = document.getElementById('popupthree');
+    popup.classList.add('hidden');
+}
+
+const openModalfour = ()=>{
+    const popup = document.getElementById('popupfour');
+    popup.classList.remove('hidden');
+}
+
+
+const closeModalfour = () =>{
+    const popup = document.getElementById('popupfour');
+    popup.classList.add('hidden');
+}
+
+const openModalfive = ()=>{
+    const popup = document.getElementById('popupfive');
+    popup.classList.remove('hidden');
+}
+
+
+const closeModalfive = () =>{
+    const popup = document.getElementById('popupfive');
+    popup.classList.add('hidden');
+}
+
+const openModalsix = ()=>{
+    const popup = document.getElementById('popupsix');
+    popup.classList.remove('hidden');
+}
+
+
+const closeModalsix = () =>{
+    const popup = document.getElementById('popup');
+    popup.classList.add('hidden');
+}
 
 
 

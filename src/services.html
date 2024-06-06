@@ -12,14 +12,15 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <link rel="shortcut icon" href="./images/logo (2).png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="font-rajdhani">
     <!-- HEADER -->
   <!-- MEDIA LINKS -->
-  <div class="px-2 bg-gradient-to-r from-blue-900 to-red-900 w-full h-full sticky top-0 z-50 py-2 flex items-center justify-between md:px-10">
-    <div class="flex gap-1 items-center pl-0 md:pl-5">
-        <ion-icon name="call" class="text-xl md:text-2xl text-white hover:text-red-950"></ion-icon>
-        <p class="font-Rajdhani text-base font-extrabold text-white hover:text-red-950 md:text-xl">08023121258</p>
+  <div class="sticky top-0 z-50 flex items-center justify-between w-full h-full px-2 py-2 bg-gradient-to-r from-blue-900 to-red-900 md:px-10">
+    <div class="flex items-center gap-1 pl-0 md:pl-5">
+        <ion-icon name="call" class="text-xl text-white md:text-2xl hover:text-red-950"></ion-icon>
+        <p class="text-base font-extrabold text-white font-Rajdhani hover:text-red-950 md:text-xl">08023121258</p>
     </div>
 
     <div class="md:space-x-4">
@@ -32,15 +33,15 @@
     </div>
   </div>
   
-    <header class="bg-cover opacity-100 bg-no-repeat bg-center">
+    <header class="bg-center bg-no-repeat bg-cover opacity-100">
         <nav class="bg-white lg:opacity w-full  fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] lg:border-slate-500">
             <!-- HEADER LOGO -->
             <div class="flex items-center">
               <a href="index.html"><img src="./images/logo (2).png" alt="logo" class="w-10 md:w-20" /></a>
               <div class="text-white">
                 <p class="leading-3 text-center">
-                  <a href="index.html" class="pl-5 md:text-4xl font-semibold tracking-widest text-blue-900 font-Rajdhani">Domain-Plus</a><br />
-                  <a href="index.html" class="pl-4 md:text-3xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</a>
+                  <a href="index.html" class="pl-5 font-semibold tracking-widest text-blue-900 md:text-4xl font-Rajdhani">Domain-Plus</a><br />
+                  <a href="index.html" class="pl-4 font-semibold tracking-tighter text-red-900 md:text-3xl font-Rajdhani">International Limited</a>
                 </p>
               </div>
           </div>
@@ -87,8 +88,8 @@
     
           <div onclick="exitNav()" id="sideBar" class="">
           </div> 
-          <div class="bg-cover bg-no-repeat bg-center bg-headbg pt-11 lg:pt-28 lg:flex lg:flex-col">
-              <div class=" lg:pl-14 pt-32 ">
+          <div class="bg-center bg-no-repeat bg-cover bg-headbg pt-11 lg:pt-28 lg:flex lg:flex-col">
+              <div class="pt-32 lg:pl-14">
                   <div class="flex px-5 lg:flex">
                       <img src="./images/asterisk.png" alt="Asterik image" class="w-10"/>
                       <p class="px-5 text-2xl font-bold text-white">What We Offer <span class="lg:pl-1">You</span></p>
@@ -107,166 +108,151 @@
     </section>
     <!-- specialities section -->
     <section class="lg:pb-24 lg:bg-slate-100">
-        <div class="lg:flex lg:justify-center">        
-          <div>
-            <img src="./images/finance and accounting.png" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px]">
-            <div class="pl-5">
-                <p class="text-xl font-bold">Finance and Accounting</p>
-                <!-- Finance and Accounting Section -->
-                <section>
-                    <details>
-                        <summary class="cursor-pointer text-blue-600 list-none font-semibold">
-                            <span>Read More</span>
-                        </summary>
-                        <p class="text-base text-slate-900 w-96">As your organization grows, managing finances gets tougher. Without integrated automation, complexity leads to inefficiencies and missed revenue.</p>
-                        <p class="text-base text-slate-900 w-96 justify-center">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization.</p>
-                    </details>
-                </section>
-    
-                <!-- Modal Structure -->
-                <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
-                    <div class="bg-white p-6 rounded-lg shadow-lg mt-10 lg:w-1/2">
-                        <div class="flex justify-between items-center">
-                            <h2 class="text-xl font-bold">Modal Title</h2>
-                            <button id="close-modal" class="text-red-600 text-xl">&times;</button>
-                        </div>
-                        <div id="modal-content">
-                            <!-- Dynamic content will be injected here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-            <div>
-                <img src="./images/fleet-management.avif" alt="fleet-management image" class="w-[390px] px-5 pt-10 pb-5 lg:h-[300px] lg:w-[450px]">
-                <p class="text-xl font-bold pl-5">Fleet Management and Tracking</p>
-                     <!-- Finance and Accounting Section -->
-                           <section class="pl-5">
-    <details>
-      <summary class="cursor-pointer text-blue-600 list-none font-semibold"><span class="">Read More</span></summary>
-      <p class="text-base text-slate-900 w-96">Connected systems automatically transmit data to your platform, where it's analyzed and reported as key performance indicators. No more chasing time <span class=""> wasted data—focus on making the right decisions.</span> <br></p>
-      <p class="text-base text-slate-900 w-96 justify-center">Using just one platform, you can access all the connected services designed to help you reduce costs, reduce your carbon footprint, and bring your company into the age of new mobility solutions.</p>
-    </details>
-  </section>
-
-  <!-- Modal Structure -->
-  <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-1/2">
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-bold">Fleet-management and Tracking</h2>
-        <button id="close-modal" class="text-red-600 text-xl">&times;</button>
-      </div>
-      <div id="modal-content">
-        <!-- Dynamic content will be injected here -->
-      </div>
-    </div>
-  </div>
-                
-            </div>
-    
-            <div>
-                <img src="./images/payroll.webp" alt="payroll image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[460px]">
-                <div class="pl-5">
-                    
-                    <p class="text-xl font-bold ">Payroll and Human Resource Management</p>
-                    <section class="">
-                      <details>
-                        <summary class="cursor-pointer text-blue-600 list-none font-semibold"><span class="">Read More</span></summary>
-                        <p class="text-base text-slate-900 w-96 justify-center">Prevent the waste of resources that results from  disparate or poorly integrated systems; reduce costs  and improve productivity through  a solution that  provides all the tools you <span class=""></span> need to drive HR and  payroll in one integrated, state-of-the-art system.  </p>
-                        <p class="text-base text-slate-900 w-96 justify-center">Many HR departments spend most of their time processing employee information. This is because they have three or more HR systems in place. The answer to improving productivity in these circumstances is integration. </p>
-                      </details>
-                    </section>
-                  
-                    <!-- Modal Structure -->
-                    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
-                      <div class="bg-white p-6 rounded-lg shadow-lg w-1/2">
-                        <div class="flex justify-between items-center mb-4">
-                          <h2 class="text-xl font-bold">Payroll and Human Resource Management</h2>
-                          <p class="px-5 font-light text-md text-slate-400 ">Prevent the waste of resources that results from  disparate or poorly integrated systems; reduce costs  and improve productivity through  a solution that  provides all the tools you <span class=""></span> need to drive HR and  payroll in one integrated, state-of-the-art system.  </p>
-                        <p class="font-light justify-center text-md text-slate-400 lg:w-[px] px-5">Many HR departments spend most of their time processing employee information. This is because they have three or more HR systems in place. The answer to improving productivity in these circumstances is integration. </p>
-                          <button id="close-modal" class="text-red-600 text-xl">&times;</button>
-                        </div>
-                        <div id="modal-content">
-                          <!-- Dynamic content will be injected here -->
-                        </div>
-                      </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-
-        <div class="lg:flex">
-            
-            <div>
-                <img src="./images/procurement management.jpg" alt="Procurement image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-                <div class="pl-5">
-                    
-                    <p class="text-xl font-bold">Procurement Management </p>
-                    <details>
-                        <summary class="font-semibold text-blue-600 list-none cursor-pointer">Read More</summary>
-                        <p class="text-base text-slate-900 w-96 justify-center">Procurement Management, an ERP add-on,automates core procurement tasks like purchasing planning and vendor invoice payment. It ensures rapid processes and integrates seamlessly with accounting and warehouse  management for success.</p>
-                        <p class="text-base text-slate-900 w-96 justify-center">With an ERP Solution, you gain a detailed view of your vendors and support for an integrated, centralized vendor data repository so you can make more effective purchasing decisions, identify opportunities for cost savings, and better manage supplier relationships.</p>
-                      </details>
-                </div>
-            </div>
+       <div class="lg:flex lg:justify-center">
+         <div>
+           <img src="./images/finance and accounting.png" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px]">
+           <div class="pl-5">
+               <p class="text-xl font-bold">Finance and Accounting</p>
+               <div id="popup" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                 <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                   <h2 class="mb-4 text-xl font-bold">Finance and Accounting</h2>
+                   <p class="text-base text-slate-900 w-96">As your organization grows, managing finances gets tougher. Without integrated automation, complexity leads to inefficiencies and missed revenue.</p>
+                   <p class="justify-center text-base text-slate-900 w-96">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization.</p>
+                   <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModal()">Close</button>
+                 </div>
+               </div>
+               <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModal()">Read More</p>
+           </div>
+         </div>    
+         
+               <div>
+                 <img src="./images/fleet-management.avif" alt="fleet-management image" class="w-[390px] px-5 pt-10 pb-5 lg:h-[300px] lg:w-[450px]">
+                 <div class="pl-5">
+                     <p class="text-xl font-bold">Fleet Management and Tracking</p>
+                     <div id="popups" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                       <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                         <h2 class="mb-4 text-xl font-bold">Fleet Management and Tracking</h2>
+                         <p class="text-base text-slate-900 w-96">Connected systems automatically transmit data to your platform, where it's analyzed and reported as key performance indicators. No more chasing time <span class=""> wasted data—focus on making the right decisions.</p>
+                         <p class="justify-center text-base text-slate-900 w-96">Using just one platform, you can access all the connected services designed to help you reduce costs, reduce your carbon footprint, and bring your company into the age of new mobility solutions.</p>
+                         <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModals()">Close</button>
+                       </div>
+                     </div>
+                     <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModals()">Read More</p>
+                 </div>
+               </div>        
                
-            <div>
-                <img src="./images/inventory management.webp" alt="inventory management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px] lg:h-[330px]">
-                <div class="pl-5">
-                    
-                    <p class="text-xl font-bold ">Inventory Management</p>
-                    <details>
-                        <summary class="font-semibold text-blue-600 list-none cursor-pointer">Read More</summary>
-                        <p class="text-base text-slate-900 w-96 justify-center"> Inventory management is critical for business success, yet  often overlooked. Our strategic platform provides real-time inventory tracking and management, ensuring your business stays on track.</p>
-                        <p class="text-base text-slate-900 w-96 justify-center">An effective ERP system enables streamlined warehouse stock tracking, eliminating overstocking and understocking issues. Investing in inventory management yields excellent ROI, ensuring timely product delivery and informed inventory ordering for market success.</p>
-                      </details>
-                </div>
-            </div>
+           <div>
+             <div>
+               <img src="./images/payroll.webp" alt="fleet-management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[460px]" />
+               <div class="pl-5">
+                   <p class="text-xl font-bold">Payroll and Human Resource Management</p>
+                   <div id="popupone" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                     <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                       <h2 class="mb-4 text-xl font-bold">Payroll and Human Resource Management</h2>
+                       <p class="text-base text-slate-900 w-96">Prevent the waste of resources that results from  disparate or poorly integrated systems; reduce costs  and improve productivity through  a solution that  provides all the tools you  need to drive HR and  payroll in one integrated, state-of-the-art system.</p>
+                       <p class="justify-center text-base text-slate-900 w-96">Many HR departments spend most of their time processing employee information. This is because they have three or more HR systems in place. The answer to improving productivity in these circumstances is integration.</p>
+                       <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalone()">Close</button>
+                     </div>
+                   </div>
+                   <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalone()">Read More</p>
+               </div>
+             </div>        
+         </div>
+         
+       </div>    
     
+        <div class="lg:flex">
+
+          <div>
             <div>
-                <img src="./images/warehouse management image.jpeg" alt="warehouse management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-                <div class="pl-5">
-                    
-                    <p class="text-xl font-bold ">Warehouse Management</p>
-                    <details>   
-                        <summary class="font-semibold text-blue-600 list-none cursor-pointer">Read More</summary>
-                        <p class="text-base text-slate-900 w-96 justify-center ">Daily planning and controlling of resources in the warehouse is crucial and involves processes not only related to transporting and storing but also keeping track of your inventory.</p>
-                        <p class="text-base text-slate-900 w-96 justify-center">The need for flexible and scalable warehousing and distribution solutions is growing as supply chain operators try to overcome labor shortages, increasing costs, and rising consumer demands. Warehouse Management improves the quality of work, boosts efficiency, saves space, organizes labor, increases security, and guarantees client satisfaction.</p>
-                    </details>
+              <img src="./images/procurement management.jpg" alt="Procurement image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
+              <div class="pl-5">
+                  <p class="text-xl font-bold">Procurement Management </p>
+                  <div id="popuptwo" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                    <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                      <h2 class="mb-4 text-xl font-bold">Procurement Management </h2>
+                      <p class="text-base text-slate-900 w-96">Procurement Management, an ERP add-on,automates core procurement tasks like purchasing planning and vendor invoice payment. It ensures rapid processes and integrates seamlessly with accounting and warehouse  management for success.</p>
+                      <p class="justify-center text-base text-slate-900 w-96">With an ERP Solution, you gain a detailed view of your vendors and support for an integrated, centralized vendor data repository so you can make more effective purchasing decisions, identify opportunities for cost savings, and better manage supplier relationships.</p>
+                      <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModaltwo()">Close</button>
+                    </div>
+                  </div>
+                  <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModaltwo()">Read More</p>
+              </div>
+            </div>        
+          </div>
+            
+          <div>
+            <div>
+              <img src="./images/inventory management.webp" alt="inventory management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px] lg:h-[330px]">
+              <div class="pl-5">
+                  <p class="text-xl font-bold">Inventory Management</p>
+                  <div id="popupthree" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                    <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                      <h2 class="mb-4 text-xl font-bold">Inventory Management</h2>
+                      <p class="text-base text-slate-900 w-96"> Inventory management is critical for business success, yet  often overlooked. Our strategic platform provides real-time inventory tracking and management, ensuring your business stays on track.</p>
+                      <p class="justify-center text-base text-slate-900 w-96">An effective ERP system enables streamlined warehouse stock tracking, eliminating overstocking and understocking issues. Investing in inventory management yields excellent ROI, ensuring timely product delivery and informed inventory ordering for market success.</p>
+                      <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalthree()">Close</button>
+                    </div>
+                  </div>
+                  <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalthree()">Read More</p>
+              </div>
+            </div>        
+          </div>
+    
+          <div>
+            <img src="./images/warehouse management image.jpeg" alt="warehouse management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
+            <div class="pl-5">
+                <p class="text-xl font-bold">Warehouse Management</p>
+                <div id="popupfour" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                  <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                    <h2 class="mb-4 text-xl font-bold">Warehouse Management</h2>
+                    <p class="text-base text-slate-900 w-96">Daily planning and controlling of resources in the warehouse is crucial and involves processes not only related to transporting and storing but also keeping track of your inventory.</p>
+                    <p class="justify-center text-base text-slate-900 w-96">The need for flexible and scalable warehousing and distribution solutions is growing as supply chain operators try to overcome labor shortages, increasing costs, and rising consumer demands. Warehouse Management improves the quality of work, boosts efficiency, saves space, organizes labor, increases security, and guarantees client satisfaction.</p>
+                    <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalfour()">Close</button>
+                  </div>
                 </div>
-            </div>  
-        </div>
+                <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalfour()">Read More</p>
+            </div>
+          </div> 
+            
+      </div>
 
          <div class="lg:flex lg:justify-center lg:gap-10">
-            
-             <div>
-                 <img src="./images/customer-relationship-management-businessman.webp" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-                 <div class="pl-5">
-                    
-                     <p class="text-xl font-bold ">Customer Relationship Management</p>
-                     <details>
-                         <summary class="font-semibold text-blue-600 list-none cursor-pointer">Read More</summary>
-                         <p class="text-base text-slate-900 w-96 justify-center">Our CRM platform enhances customer relationships, empowering businesses to thrive. With tools for contact management and personalized communication, our solution drives revenue growth and fosters lasting connections.</p>
-                         <p class="text-base text-slate-900 w-96 justify-center">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization</p>
-                       </details>
+          
+           <div>
+             <img src="./images/customer-relationship-management-businessman.webp" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
+             <div class="pl-5">
+                 <p class="text-xl font-bold">Customer Relationship Management</p>
+                 <div id="popupfive" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                   <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                     <h2 class="mb-4 text-xl font-bold">Customer Relationship Management</h2>
+                     <p class="text-base text-slate-900 w-96">Our CRM platform enhances customer relationships, empowering businesses to thrive. With tools for contact management and personalized communication, our solution drives revenue growth and fosters lasting connections.</p>
+                     <p class="justify-center text-base text-slate-900 w-96">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization</p>
+                     <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalfive()">Close</button>
+                   </div>
                  </div>
+                 <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalfive()">Read More</p>
              </div>
-     
-             <div>
-                 <img src="./images/MyIC_Article_91981.jpeg" alt="business intelligence and reporting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px] lg:h-[300px]">
-                 <div class="pl-5">
-                    
-                     <p class="text-xl font-bold ">Business Intelligence and Reporting</p>
-                     <details>
-                         <summary class="font-semibold text-blue-600 list-none cursor-pointer">Read More</summary>
-                         <p class="text-base text-slate-900 w-96 justify-center">Transforming raw data into actionable insights poses a persistent challenge for organizations. Information scattered across systems and employees' knowledge requires manual reconciliation, hindering decision-making.Our solution streamlines data integration and analysis empowering informed decisions and driving business success.</p>
-                         <p class="text-base text-slate-900 w-96 justify-center">An ERP application provides integrated reporting and analytic tools to help you access the critical organizational Information you need with ease.</p>
-                       </details>
+           </div>
+  
+           <div>
+             <img src="./images/MyIC_Article_91981.jpeg" alt="business intelligence and reporting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px] lg:h-[300px]">
+             <div class="pl-5">
+                 <p class="text-xl font-bold">Business Intelligence and Reporting</p>
+                 <div id="popupsix" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+                   <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
+                     <h2 class="mb-4 text-xl font-bold">Business Intelligence and Reporting</h2>
+                     <p class="text-base text-slate-900 w-96">Transforming raw data into actionable insights poses a persistent challenge for organizations. Information scattered across systems and employees' knowledge requires manual reconciliation, hindering decision-making.Our solution streamlines data integration and analysis empowering informed decisions and driving business success.</p>
+                     <p class="justify-center text-base text-slate-900 w-96">An ERP application provides integrated reporting and analytic tools to help you access the critical organizational Information you need with ease.</p>
+                     <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalsix()">Close</button>
+                   </div>
                  </div>
+                 <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalsix()">Read More</p>
              </div>
+           </div>
+           
          </div>
-        
+
     </section>
 
       <!-- FOOTER  -->
@@ -280,7 +266,7 @@
                     <span class="pl-5 text-xl font-semibold tracking-widest text-white">Domain-Plus</span><br />
                     <span class="tracking-tighter ">International Limited</span>
                   </p>
-                </div>
+              </div>
               </div>
               <p class="text-white lg:max-w-96">
                 Domain Plus provides reliable domain registration, web hosting, and website development, ensuring a strong online presence with user-friendly tools and expert support.
@@ -332,9 +318,9 @@
         </div>
 
             <!-- DOMAIN PLUS COPYRIGHT -->
-            <div class="bg-white  text-black font-bold flex items-center justify-center md:justify-between px-20 py-2">
-                <p class="font-Rajdhani text-sm lg:text-lg">Copyright &copy 2024 Domain-Plus International Limited. All right reserved</p>
-                <p class="font-Rajdhani text-sm lg:text-lg">Powered by dervac</p>
+            <div class="flex items-center justify-center px-20 py-2 font-bold text-black bg-white md:justify-between">
+                <p class="text-sm font-Rajdhani lg:text-lg">Copyright &copy 2024 Domain-Plus International Limited. All right reserved</p>
+                <p class="text-sm font-Rajdhani lg:text-lg">Powered by dervac</p>
             </div>
       </footer>
 
