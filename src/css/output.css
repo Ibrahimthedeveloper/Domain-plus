@@ -1211,10 +1211,6 @@ video {
   background-image: url('../images/pagetitle-bg.jpg');
 }
 
-.bg-pattern {
-  background-image: url('./images/slider-mainbg-01.jpg');
-}
-
 .from-\[\#edf1f5\] {
   --tw-gradient-from: #edf1f5 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(237 241 245 / 0) var(--tw-gradient-to-position);
@@ -2454,10 +2450,6 @@ footer{
   .lg\:bg-slate-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-  }
-
-  .lg\:bg-none {
-    background-image: none;
   }
 
   .lg\:bg-pattern {
