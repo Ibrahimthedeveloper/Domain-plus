@@ -457,10 +457,20 @@ const openModalsix = ()=>{
 
 
 const closeModalsix = () =>{
-    const popup = document.getElementById('popup');
+    const popup = document.getElementById('popupsix');
     popup.classList.add('hidden');
 }
 
+const openSupportmodal = () => {
+    console.log('this is being clicked');
+    const  Modal = document.getElementById('supportModal')
+    Modal.classList.remove('hidden')
+}
+
+const closeSupportModal = () => {
+    const  Modal = document.getElementById('supportModal')
+    Modal.classList.add('hidden')
+}
 
 
 

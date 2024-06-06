@@ -106,7 +106,7 @@
             <div class="text-center lg:text-left">
                 <h1 class="text-4xl font-extrabold text-gray-800 lg:text-5xl">Getting Support from <span class="text-blue-600">Domain-Plus</span></h1>
                 <p class="mt-5 text-2xl text-gray-600 lg:text-3xl">If you need any support with any of Domain-Plus's business or practice products, we're here to help.</p>
-                <button id="supportButton" class="px-6 py-3 mt-8 font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Get Support</button>
+                <button id="supportButton" class="px-6 py-3 mt-8 font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="openSupportModal()">Get Support</button>
             </div>
             <div class="mt-5 lg:mt-0">
                 <img src="./images/business-consulting-partnership.jpg" alt="Financial website design image" class="w-full max-w-md mx-auto lg:max-w-none lg:w-[500px] rounded-lg shadow-md">
@@ -114,7 +114,7 @@
         </section>
     
         <!-- Modal -->
-        <div id="supportModal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black bg-opacity-50">
+        <div id="Modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black bg-opacity-50">
             <div class="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
                 <h2 class="mb-4 text-2xl font-bold">Support Options</h2>
                 <p class="mb-6">Here are some ways you can get support from Domain-Plus:</p>
@@ -123,7 +123,7 @@
                     <li>Phone: +1 234 567 890</li>
                     <li>Live Chat: Available 24/7 on our website</li>
                 </ul>
-                <button id="closeModalButton" class="px-6 py-3 font-bold text-white bg-gray-600 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">Close</button>
+                <button id="closeModalButton" class="px-6 py-3 font-bold text-white bg-gray-600 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50" onclick="closeSuportModal()">Close</button>
             </div>
         </div>
         
