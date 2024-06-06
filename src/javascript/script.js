@@ -461,14 +461,14 @@ const closeModalsix = () =>{
     popup.classList.add('hidden');
 }
 
-const openSupportmodal = () => {
+const openSupportModal = () => {
     console.log('this is being clicked');
-    const  Modal = document.getElementById('supportModal')
+    const  Modal = document.getElementById('Modal')
     Modal.classList.remove('hidden')
 }
 
 const closeSupportModal = () => {
-    const  Modal = document.getElementById('supportModal')
+    const  Modal = document.getElementById('Modal')
     Modal.classList.add('hidden')
 }
 
