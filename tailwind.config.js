@@ -9,10 +9,14 @@ module.exports = {
     
     extend: {
       backgroundImage: {
-        'pattern': "url('./images/slider-mainbg-01.jpg')",
+        'pattern': "url('../images/slider-mainbg-01.jpg')",
         'headbg': "url('../images/pagetitle-bg.jpg')",
-        'business': "url('./images/project.jpg')",
-        'shadow-4xl': '0 0 5px 0 rgba(0, 0, 0, 0.2)',
+        'business': "url('../images/project.jpg')",
+        'consulting': "url('../images/consultong.jpg')",
+        'transform': "url('../images/person_analyze.jpg')",
+        'solution': "url('../images/analysis.jpg')",
+        'solutioncreative': "url('../images/solutioncreative.jpg')",
+        'support': "url('../images/internet_support.jpg')",
       }
     },
 
