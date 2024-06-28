@@ -2,7 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 
+.scrolling-wrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scrolling-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: 200%; /* Adjust width according to the number of logos */
+}
+
+.scrolling-container img {
+  width: 20%; /* Each logo takes up 20% of the container */
+  flex-shrink: 0;
+}
 
 .hover-light::before {
     content: "";
