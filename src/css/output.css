@@ -753,6 +753,10 @@ video {
   height: 3.5rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-56 {
   height: 14rem;
 }
@@ -767,6 +771,18 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .min-h-screen {
@@ -807,6 +823,14 @@ video {
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .w-60 {
@@ -853,6 +877,14 @@ video {
   width: 100%;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -879,6 +911,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .grow {
@@ -999,10 +1035,10 @@ video {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-20 > :not([hidden]) ~ :not([hidden]) {
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1015,6 +1051,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1572,6 +1620,10 @@ video {
   padding-top: 2.25rem;
 }
 
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1886,19 +1938,12 @@ video {
 .scrolling-wrapper {
   display: flex;
   overflow: hidden;
-  position: relative;
-  width: 100%;
+  white-space: nowrap;
 }
 
-.scrolling-container {
-  display: flex;
+.scrolling-content {
+  display: inline-flex;
   animation: scroll 20s linear infinite;
-  width: 300%;
-}
-
-.scrolling-container img {
-  width: 5%;
-  flex-shrink: 0;
 }
 
 .hover-light::before {
@@ -2450,6 +2495,14 @@ footer{
     height: 330px;
   }
 
+  .lg\:h-28 {
+    height: 7rem;
+  }
+
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2500,6 +2553,18 @@ footer{
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-32 {
+    width: 8rem;
+  }
+
+  .lg\:w-52 {
+    width: 13rem;
+  }
+
+  .lg\:w-44 {
+    width: 11rem;
   }
 
   .lg\:max-w-5xl {
@@ -2689,6 +2754,10 @@ footer{
 
   .lg\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .lg\:pl-0 {
+    padding-left: 0px;
   }
 
   .lg\:text-left {
