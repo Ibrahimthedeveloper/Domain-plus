@@ -1222,17 +1222,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
 }
 
 .bg-consulting {
@@ -1765,11 +1756,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1977,8 +1963,8 @@ footer{
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-opacity-90:hover {
-  --tw-bg-opacity: 0.9;
+.hover\:bg-opacity-70:hover {
+  --tw-bg-opacity: 0.7;
 }
 
 .hover\:font-bold:hover {
@@ -2283,29 +2269,9 @@ footer{
     padding-right: 2.5rem;
   }
 
-  .md\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-44 {
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .md\:py-0 {
@@ -2313,9 +2279,9 @@ footer{
     padding-bottom: 0px;
   }
 
-  .md\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .md\:pl-12 {
@@ -2330,6 +2296,10 @@ footer{
     padding-left: 1.25rem;
   }
 
+  .md\:pl-60 {
+    padding-left: 15rem;
+  }
+
   .md\:pt-2 {
     padding-top: 0.5rem;
   }
@@ -2340,14 +2310,6 @@ footer{
 
   .md\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .md\:pl-60 {
-    padding-left: 15rem;
-  }
-
-  .md\:pt-5 {
-    padding-top: 1.25rem;
   }
 
   .md\:text-2xl {
@@ -2677,10 +2639,6 @@ footer{
 
   .lg\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .lg\:pl-60 {
-    padding-left: 15rem;
   }
 
   .lg\:pt-0 {

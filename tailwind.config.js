@@ -17,6 +17,18 @@ module.exports = {
         'solution': "url('../images/analysis.jpg')",
         'solutioncreative': "url('../images/solutioncreative.jpg')",
         'support': "url('../images/internet_support.jpg')",
+        'sys': "url('../images/business-person.jpg')",
+        'digital': "url('../images/digital.jpg')",
+        'accounting': "url('../images/finance-accounting.jpeg')",
+        'IT': "url('../images/IT_Consultant.jpg')",
+        'artificial': "url('../images/tech_artificial.jpeg')",
+        'light': "url('../images/tech_light.jpeg')",
+        'api': "url('../images/tech_success.jpeg')",
+        'work': "url('../images/tech_work.jpeg')",
+        'sage': "url('../images/sage_solution.jpeg')",
+        'microsoft': "url('../images/microsoft_solution.jpeg')",
+        'instana': "url('../images/intana_solution.jpeg')",
+        'quickbook': "url('../images/quickbook_solution.jpeg')",
       }
     },
 
