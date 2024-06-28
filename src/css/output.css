@@ -1235,10 +1235,6 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-business {
-  background-image: url('../images/project.jpg');
-}
-
 .bg-consulting {
   background-image: url('../images/consultong.jpg');
 }
@@ -1263,12 +1259,12 @@ video {
   background-image: url('../images/solutioncreative.jpg');
 }
 
-.bg-transform {
-  background-image: url('../images/person_analyze.jpg');
-}
-
 .bg-support {
   background-image: url('../images/internet_support.jpg');
+}
+
+.bg-transform {
+  background-image: url('../images/person_analyze.jpg');
 }
 
 .from-\[\#edf1f5\] {
