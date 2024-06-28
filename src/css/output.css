@@ -999,6 +999,12 @@ video {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1887,13 +1893,11 @@ video {
 .scrolling-container {
   display: flex;
   animation: scroll 20s linear infinite;
-  width: 200%;
-  /* Adjust width according to the number of logos */
+  width: 300%;
 }
 
 .scrolling-container img {
-  width: 20%;
-  /* Each logo takes up 20% of the container */
+  width: 5%;
   flex-shrink: 0;
 }
 
