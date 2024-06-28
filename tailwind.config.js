@@ -17,7 +17,7 @@ module.exports = {
         'solution': "url('../images/analysis.jpg')",
         'solutioncreative': "url('../images/solutioncreative.jpg')",
         'support': "url('../images/internet_support.jpg')",
-        'sys': "url('../images/business-person.jpg')",
+        'system': "url('../images/business-person.jpg')",
         'digital': "url('../images/digital.jpg')",
         'accounting': "url('../images/finance-accounting.jpeg')",
         'IT': "url('../images/IT_Consultant.jpg')",
