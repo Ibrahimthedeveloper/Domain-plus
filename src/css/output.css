@@ -1226,6 +1226,10 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-artificial {
+  background-image: url('../images/tech_artificial.jpeg');
+}
+
 .bg-consulting {
   background-image: url('../images/consultong.jpg');
 }
@@ -1240,6 +1244,18 @@ video {
 
 .bg-headbg {
   background-image: url('../images/pagetitle-bg.jpg');
+}
+
+.bg-microsoft {
+  background-image: url('../images/microsoft_solution.jpeg');
+}
+
+.bg-quickbook {
+  background-image: url('../images/quickbook_solution.jpeg');
+}
+
+.bg-sage {
+  background-image: url('../images/sage_solution.jpg');
 }
 
 .bg-solution {
@@ -1456,6 +1472,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1542,6 +1562,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-48 {
+  padding-top: 12rem;
 }
 
 .pt-5 {
@@ -1744,6 +1768,11 @@ video {
 .text-red-900 {
   --tw-text-opacity: 1;
   color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .text-slate-900 {

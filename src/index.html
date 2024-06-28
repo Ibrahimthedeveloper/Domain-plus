@@ -212,59 +212,52 @@
 
   <!-- BUSINESS BRIEFING -->
     <section>
-      <main>
+      <main class="grid md:grid-cols-2">
+        <!-- SAGE -->
+        <div class="bg-sage bg-cover bg-no-repeat bg-center">
+          <div onmouseover="Sage()" onmouseout="sageCrm()" class="pt-48 pb-16 pl-5 bg-black bg-opacity-50 hover:bg-opacity-70 hover:transition-all hover:duration-1000">
+            <h1 class="text-4xl text-slate-200 font-semibold">Sage</h1>
 
+            <p hidden id="sage" class="text-white">
+              Sage is an enterprise resource planning (ERP) software system that serves small and medium-sized businesses in professional services, financial services, the public sector, and other markets such as distribution and wholesale.
+            </p>
+          </div>
+        </div>
+
+        <!-- MICROSOFT -->
+        <div onmouseover="Microsoft()" onmouseout="microsoftDynamics()" class="bg-microsoft bg-cover bg-no-repeat bg-center">
+          <div class="pt-48 pb-16 pl-5 bg-black bg-opacity-50 hover:bg-opacity-70 hover:transition-all hover:duration-1000">
+            <h1 class="text-4xl text-slate-200 font-semibold">Microsoft</h1>
+
+            <p hidden id="microsoft" class="text-white">
+              Microsoft Dynamics Business Central offers a host of time-saving, easy-to-use features that bring real value to your business,
+              business management solution for mid-sized organizations and helps you manage your business.
+            </p>
+          </div>
+        </div>
+
+         <!-- ACUMATICA -->
+         <div class="bg-artificial bg-cover bg-no-repeat bg-center">
+          <div onmouseover="Acumatica()" onmouseout="acumTica()" class="pt-48 pb-16 pl-5 bg-black bg-opacity-50 hover:bg-opacity-70 hover:transition-all hover:duration-1000">
+            <h1 class="text-4xl text-slate-200 font-semibold">Acumatica</h1>
+
+            <p hidden id="acumatica" class="text-white">
+              Acumatica is born in the cloud, built to meet the ever-evolving needs of midmarket companies and their customers. This software automates major business processes at a much lower cost than traditional solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- QUICKBOOKS -->
+        <div onmouseover="Quickbooks()" onmouseout="quickBooks()" class="bg-quickbook bg-cover bg-no-repeat bg-center">
+          <div class="pt-48 pb-16 pl-5 bg-black bg-opacity-50 hover:bg-opacity-70 hover:transition-all hover:duration-1000">
+            <h1 class="text-4xl text-slate-200 font-semibold">Quick Books</h1>
+
+            <p hidden id="quick" class="text-white">
+              Manage your business on-the-go with the QuickBooks mobile app. Create and send custom online invoices anytime, anywhere, from any device.
+            </p>
+          </div>
+        </div>
       </main>
-    </section>
-
-    <!-- SECTION TWO -->
-    <section class="bg-[#edf1f5]">
-        <h3 class="text-lg font-bold text-center text-blue-600 font-Rajdhani md:pt-20">WHAT WE DO</h3>
-        <h3 class="pt-5 text-3xl font-bold text-center sm:text-2xl md:text-4xl xl:text-5xl font-Rajdhani md:pt-8">Where Dreams Get Wings!</h3>
-        <!-- WHAT WE DO -->
-        <div class="flex flex-col items-center justify-center gap-10 pb-12 lg:flex-row md:gap-6">
-            <!-- IT CONSULTING -->
-            <div class="pt-10">
-                <!-- IT CONSULTING IMAGE -->
-                <img src="./images/consulting.png" alt="IT Consulting" class="w-[320px]  md:w-[350px] lg:w-[320px] rounded-t-md shadow-4xl"/>
-                <!-- IT CONSULTNG TEXT -->
-                <div class="bg-white shadow-4xl rounded-b-md w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">IT CONSULTING</h3>
-                    <p class="text-center text-base py-5 px-9 font-Rajdhani text-[#717575]">
-                        Our Company is one of the leading ICT consultancy in Nigeria. Our unique structure consisting of over 15 seasoned and skillful solutions-certified professionals/Consultants with real industry experience,
-                        assures our clients of the best services at all times.
-                    </p>
-                </div>
-            </div>
-
-            <!-- BUSINESS MANAGEMENT SOLUTIONS -->
-            <div class="pt-10">
-                <!-- BUSINESS MANAGEMENT SOLUTIONS IMAGE -->
-                <img src="./images/business-management.png" alt="Business Management Solution" class="md:h-[180px] w-[320px] md:w-[350px] shadow-4xl lg:w-[320px] rounded-t-md"/>
-                <!-- BUSINESS MANAGEMENT SOLUTIONS TEXT -->
-                <div class="bg-white shadow-4xl rounded-b-md  w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">BUSINESS MANAGEMENT SOLUTIONS</h3>
-                    <p class="text-center text-base py-5 px-4 lg:text-[17px] font-Rajdhani text-[#717575]">
-                        We assist our clients in achieving significant improvements in operating performance via state-of-the-art automation and
-                        our uniqueness professionals, with real industry experiences and committment to our business clients.
-                    </p>
-                </div>
-            </div>
-
-            <!-- BUSINESS CONSULTING PARTNERSHIP -->
-            <div class="pt-10 ">
-                <!-- BUSINESS CONSULTING PARTNERSHIP IMAGE -->
-                <img src="./images/business-consulting-partnership.jpg" alt="Business Consulting Partnership" class="w-[320px] md:w-[350px] lg:w-[320px] shadow-4xl rounded-t-md"/>
-                <!-- BUSINESS CONSULTING PARTNERSHIP TEXT -->
-                <div class="bg-white shadow-4xl rounded-b-md w-[320px] md:w-[350px] lg:w-[320px]">
-                    <h3 class="pt-4 text-xl font-bold text-center font-Rajdhani">BUSINESS CONSULTING PARTNERSHIP</h3>
-                    <p class="text-center text-base py-5 px-3 lg:text-lg font-Rajdhani text-[#717575] max-w-[400px]">
-                        As a professional services firm of Business and Computer Software consultants with a special interest in 
-                        computerization of Government/businesses and the facilitation of high-quality.
-                    </p>
-                </div>
-            </div>
-        </div> 
     </section>
 
     <!-- SECTION THREE -->
@@ -472,25 +465,66 @@
 
     <!-- JAVASCRIPT WORK FOR MENU -->
     <script>
-        const unHid = () => {
-                 const hid = document.querySelector('#drop');
-                 hid.hidden = false;
-             }
+      const unHid = () => {
+        const hid = document.querySelector('#drop');
+        hid.hidden = false;
+      }
       
-             const out = () => {
-                 const held = document.querySelector('#drop');
-                 held.hidden = true;
-             }
+      const out = () => {
+        const held = document.querySelector('#drop');
+        held.hidden = true;
+        }
      
-             const Hid = () => {
-                 const hid = document.querySelector('#hid');
-                 hid.hidden = false;
-             }
+        const Hid = () => {
+          const hid = document.querySelector('#hid');
+          hid.hidden = false;
+        }
       
-             const outen = () => {
-                 const held = document.querySelector('#hid');
-                 held.hidden = true;
-             }
+        const outen = () => {
+          const held = document.querySelector('#hid');
+            held.hidden = true;
+        }
+
+        const Sage = () => {
+          const sage = document.querySelector('#sage')
+          sage.hidden = false;
+        }
+
+        const sageCrm = () => {
+          const sage = document.querySelector('#sage')
+          sage.hidden = true;
+        }
+
+        const Microsoft = () => {
+          const microsoft = document.querySelector('#microsoft')
+          microsoft.hidden = false;
+        }
+
+        const microsoftDynamics = () => {
+          const microsoft = document.querySelector('#microsoft')
+          microsoft.hidden = true;
+        }
+
+        const Acumatica = () => {
+          const acumatica = document.querySelector('#acumatica')
+          acumatica.hidden = false;
+        }
+
+        const acumTica = () => {
+          const acumatica = document.querySelector('#acumatica')
+          acumatica.hidden = true;
+        }
+
+        const Quickbooks = () => {
+          const quick = document.querySelector('#quick')
+          quick.hidden = false;
+        }
+
+        const quickBooks = () => {
+          const quick = document.querySelector('#quick')
+          quick.hidden = true;
+        }
+
        let currentIndex = 0;
        const slides = document.querySelectorAll('.slide');
        const totalSlides = slides.length;

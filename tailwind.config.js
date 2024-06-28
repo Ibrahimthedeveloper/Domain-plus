@@ -25,7 +25,7 @@ module.exports = {
         'light': "url('../images/tech_light.jpeg')",
         'api': "url('../images/tech_success.jpeg')",
         'work': "url('../images/tech_work.jpeg')",
-        'sage': "url('../images/sage_solution.jpeg')",
+        'sage': "url('../images/sage_solution.jpg')",
         'microsoft': "url('../images/microsoft_solution.jpeg')",
         'instana': "url('../images/intana_solution.jpeg')",
         'quickbook': "url('../images/quickbook_solution.jpeg')",
