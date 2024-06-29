@@ -705,6 +705,10 @@ video {
   margin-top: 4rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -719,10 +723,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -1951,7 +1951,7 @@ video {
   width: 170px;
   height: 140%;
   background-image: linear-gradient(#17007c, #68020b);
-  animation: rotate 6s linear infinite;
+  animation: rotate 8s linear infinite;
 }
 
 .box::after{
@@ -2282,10 +2282,6 @@ footer{
 
   .md\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:mt-32 {

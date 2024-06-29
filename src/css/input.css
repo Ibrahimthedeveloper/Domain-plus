@@ -36,7 +36,7 @@
   width: 170px;
   height: 140%;
   background-image: linear-gradient(#17007c, #68020b);
-  animation: rotate 6s linear infinite;
+  animation: rotate 8s linear infinite;
 }
 
 .box::after{
