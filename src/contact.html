@@ -104,21 +104,21 @@
 </header>
 
     <!-- address section -->
-    <section class="py-20 lg:flex lg:justify-between lg:px-10 lg:py-20 lg:bg-slate-100 ">
+    <section class="py-20 lg:flex lg:justify-between lg:px-10 lg:py-20 ">
         
         <section class="flex flex-col gap-10 pt-16 pl-5 ">
             <div class="flex flex-col gap-2 ">
-                <p class="text-lg font-semibold hover:font-bold">Address</p>
-                <p class="text-gray-400 hover:text-blue-600">2 Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria</p>
+                <p class="text-lg font-semibold hover:font-bold cursor-pointer">Address</p>
+                <p class="text-gray-400 hover:text-blue-600 cursor-pointer">2 Adaranijo street, opposite Pedro Police Station, Palmgroove, Lagos, Nigeria</p>
             </div>
     
             <div class="flex flex-col gap-2 ">
-                <p class="text-lg font-semibold hover:font-bold ">Phone Number</p>
-                <p class="text-gray-400 hover:text-blue-600">Call us: 08126290758 </p>
+                <p class="text-lg font-semibold hover:font-bold  cursor-pointer">Phone Number</p>
+                <p class="text-gray-400 hover:text-blue-600 cursor-pointer">Call us: 08126290758 </p>
             </div>
             
             <div class="flex flex-col gap-2 ">
-                <p class="text-lg font-semibold hover:font-bold">E-mail Address</p>
+                <p class="text-lg font-semibold hover:font-bold cursor-pointer">E-mail Address</p>
                  <a href="mailto:info@domain-plusltd.com" class="text-gray-400 hover:text-blue-600">info@domain-plusltd.com</a>
     
                 </p>
@@ -133,37 +133,59 @@
             <!-- forms👇🏼 -->
             <section>
                 <div>
-                    <form action="#" id="myForm" class="flex flex-col gap-5">
-                        <div class="flex flex-col gap-5 lg:flex lg:flex-row">
+                    <form action="#" id="myForm" class="flex flex-col gap-5 lg:flex">
+                        <div class="flex flex-col lg:flex lg:flex-row ">
                           <div>
                             <label for="" class="font-medium">First name <span class="">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Name" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="text" name="name" id="name" placeholder="Name" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100  border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none rounded-lg">
                           </div>
                           <div>
                             <label for="" class="font-medium"> Last name <span>*</span></label>
-                            <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 rounded-lg text-sm font-bold text-gray-900 bg-gray-100 border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
                           </div>
-                            <!-- <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none"> -->
                         </div>
+                        <!--  -->
                         <div class="flex flex-col gap-5 lg:flex lg:flex-row">
-                            <input type="text" name="number" id="number" required placeholder="Phone no" class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
-                            <section class="pb-5">
-                                <select name="select" id="select" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 w-80 shadow-gray-500 lg:w-[350px] out-of-range:">
-                                    <option value="">Select</option>
-                                    <option value="Finance and Accounting">Finance and Accounting</option>
-                                    <option value="Fleet Management and Tracking">Fleet Management and Tracking</option>
-                                    <option value="Payroll and Human Resource Management">Payroll and Human Resource Management</option>
-                                    <option value="Procurement Management">Procurement Management</option> 
-                                    <option value="Inventory Management">Inventory Management</option>
-                                    <option value="Warehouse Management">Warehouse Management</option>
-                                    <option value="Customer Relationship Management">Customer Relationship Management</option>
-                                    <option value="Business Intelligence and Reporting">Business Intelligence and Reporting</option>
-                                </select>
-                            </section>
+                          <div class="flex flex-col lg:flex lg:flex-row lg:gap-12">
+                            <div>
+                              <label for="" class="font-medium">Email<span class="">*</span></label>
+                              <input type="text" name="name" id="name" placeholder="Name" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 rounded-lg border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            </div>
+                            <div>
+                              <label for="" class="font-medium">Phone number<span>*</span></label>
+                              <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 rounded-lg border-gray-500 w-80 shadow-gray-500 lg:w-[350px] outline-none">
+                            </div>
+                          </div>
                         </div>
-                        <div class="flex flex-col gap-5">
-                            <textarea name="message" id="message" placeholder="Message" required class="justify-center pt-5 pl-5 text-sm font-bold text-gray-900 bg-gray-100 border border-gray-500 h-56 w-80 shadow-gray-500 lg:w-[720px]"></textarea>
-                            <button type="submit" class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
+                        <!--  -->
+                        <div>
+                          <div class="lg:flex lg:flex-col">
+                            <label for="" class="font-medium">Company name<span>*</span></label>
+                            <input type="email" name="email" id="email" placeholder="E-mail" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-900 bg-gray-100 rounded-lg border-gray-500 w-80 shadow-gray-500 lg:w-[738px] outline-none">
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="flex flex-col">
+                          <label for="" class="font-medium">Let us know your requirements</label>
+                            <textarea name="message" id="message" placeholder="Message" required class="justify-center pt-5 pl-5 text-sm font-bold text-gray-900 bg-gray-100 rounded-lg border-gray-500 h-20 w-80 shadow-gray-500 lg:w-[738px]"></textarea>
+                            <!-- <button type="submit" class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button> -->
+                        </div>
+                        <div>
+                          <section class="pb-5">
+                            <label for="" class="font-medium">How many employees wok for your organisation?</label>
+                            <select name="select" id="select" required class="justify-center h-10 pl-5 text-sm font-bold text-gray-200 bg-gray-100 rounded-lg border-gray-500 w-80 shadow-gray-500 lg:w-[738px] out-of-range:">
+                                <option value="" class="text-gray-200">Please Select</option>
+                                <option value="">05-10</option>
+                                <option value="">10-20</option>
+                                <option value="">20-30</option>
+                                <option value="">30-40</option> 
+                                <option value="">40-50</option>
+                                <option value="">More</option>
+                                <!-- <option value="Customer Relationship Management"></option>
+                                <option value="Business Intelligence and Reporting"></option> -->
+                            </select>
+                        </section>
+                         <button type="submit" class="font-semibold text-white bg-blue-500 rounded-tr-md rounded-br-xl rounded-tl-xl w-80 h-14 rounded-bl-md lg:m-auto  lg:w-[720px]">Submit</button>
                         </div>
                     </form>
                 </div>
