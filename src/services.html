@@ -17,19 +17,20 @@
 <body class="font-rajdhani">
     <!-- HEADER -->
   <!-- MEDIA LINKS -->
-  <div class="sticky top-0 z-50 flex items-center justify-between w-full h-full px-2 py-2 bg-gradient-to-r from-blue-900 to-red-900 md:px-10">
-    <div class="flex items-center gap-1 pl-0 md:pl-5">
-        <ion-icon name="call" class="text-xl text-white md:text-2xl hover:text-red-950"></ion-icon>
-        <p class="text-base font-extrabold text-white font-Rajdhani hover:text-red-950 md:text-xl">08023121258</p>
+  <div class="sticky  grid grid-cols-2 top-0 z-50 bg-[#0e2b5c]">
+    <div class=" py-1 w-full h-full flex items-center pl-5 lg:pl-10">
+     
     </div>
 
-    <div class="md:space-x-4">
-        <a href=""><ion-icon name="logo-facebook" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-twitter" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-instagram" class="text-xl text-white md:text-3xl hover:text-red-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-whatsapp" class="text-xl text-white md:text-3xl hover:text-green-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-linkedin" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a></a>
-        <a href="mailto:"><ion-icon name="mail-outline" class="text-xl text-white md:text-3xl hover:text-red-700"></ion-icon></a>
+    <div href="" class=" w-full h-full py-1 pr-5 flex items-center space-x-1 md:space-x-2 justify-end md:pr-10">
+      <a href="contact.html" class="flex items-center text-xs md:text-lg font-semibold space-x-1 md:space-x-2 justify-start">
+        <span class="block text-white hover:text-red-950">Contact Us:</span>
+        <ion-icon name="call-outline" class="text-white hover:text-red-950"></ion-icon>
+      </a>
+      <a href="mailto:" class="flex items-center text-xs md:text-lg font-semibold space-x-1 md:space-x-2 justify-start">
+        <span class="block text-white hover:text-red-950">Send Mail:</span>
+        <ion-icon name="mail-outline" class="text-white hover:text-red-950"></ion-icon>
+      </a>
     </div>
   </div>
   
@@ -107,153 +108,70 @@
 
     </section>
     <!-- specialities section -->
-    <section class="lg:pb-24 lg:bg-slate-100">
-       <div class="lg:flex lg:justify-center">
-         <div>
-           <img src="./images/finance and accounting.png" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px]">
-           <div class="pl-5">
-               <p class="text-xl font-bold">Finance and Accounting</p>
-               <div id="popup" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                 <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                   <h2 class="mb-4 text-xl font-bold">Finance and Accounting</h2>
-                   <p class="text-base text-slate-900 w-96">As your organization grows, managing finances gets tougher. Without integrated automation, complexity leads to inefficiencies and missed revenue.</p>
-                   <p class="justify-center text-base text-slate-900 w-96">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization.</p>
-                   <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModal()">Close</button>
-                 </div>
-               </div>
-               <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModal()">Read More</p>
-           </div>
-         </div>    
-         
-               <div>
-                 <img src="./images/fleet-management.avif" alt="fleet-management image" class="w-[390px] px-5 pt-10 pb-5 lg:h-[300px] lg:w-[450px]">
-                 <div class="pl-5">
-                     <p class="text-xl font-bold">Fleet Management and Tracking</p>
-                     <div id="popups" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                       <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                         <h2 class="mb-4 text-xl font-bold">Fleet Management and Tracking</h2>
-                         <p class="text-base text-slate-900 w-96">Connected systems automatically transmit data to your platform, where it's analyzed and reported as key performance indicators. No more chasing time <span class=""> wasted data—focus on making the right decisions.</p>
-                         <p class="justify-center text-base text-slate-900 w-96">Using just one platform, you can access all the connected services designed to help you reduce costs, reduce your carbon footprint, and bring your company into the age of new mobility solutions.</p>
-                         <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModals()">Close</button>
-                       </div>
-                     </div>
-                     <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModals()">Read More</p>
-                 </div>
-               </div>        
-               
-           <div>
-             <div>
-               <img src="./images/payroll.webp" alt="fleet-management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[460px]" />
-               <div class="pl-5">
-                   <p class="text-xl font-bold">Payroll and Human Resource Management</p>
-                   <div id="popupone" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                     <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                       <h2 class="mb-4 text-xl font-bold">Payroll and Human Resource Management</h2>
-                       <p class="text-base text-slate-900 w-96">Prevent the waste of resources that results from  disparate or poorly integrated systems; reduce costs  and improve productivity through  a solution that  provides all the tools you  need to drive HR and  payroll in one integrated, state-of-the-art system.</p>
-                       <p class="justify-center text-base text-slate-900 w-96">Many HR departments spend most of their time processing employee information. This is because they have three or more HR systems in place. The answer to improving productivity in these circumstances is integration.</p>
-                       <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalone()">Close</button>
-                     </div>
-                   </div>
-                   <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalone()">Read More</p>
-               </div>
-             </div>        
-         </div>
-         
-       </div>    
-    
-        <div class="lg:flex">
-
-          <div>
-            <div>
-              <img src="./images/procurement management.jpg" alt="Procurement image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-              <div class="pl-5">
-                  <p class="text-xl font-bold">Procurement Management </p>
-                  <div id="popuptwo" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                    <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                      <h2 class="mb-4 text-xl font-bold">Procurement Management </h2>
-                      <p class="text-base text-slate-900 w-96">Procurement Management, an ERP add-on,automates core procurement tasks like purchasing planning and vendor invoice payment. It ensures rapid processes and integrates seamlessly with accounting and warehouse  management for success.</p>
-                      <p class="justify-center text-base text-slate-900 w-96">With an ERP Solution, you gain a detailed view of your vendors and support for an integrated, centralized vendor data repository so you can make more effective purchasing decisions, identify opportunities for cost savings, and better manage supplier relationships.</p>
-                      <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModaltwo()">Close</button>
-                    </div>
-                  </div>
-                  <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModaltwo()">Read More</p>
-              </div>
-            </div>        
-          </div>
-            
-          <div>
-            <div>
-              <img src="./images/inventory management.webp" alt="inventory management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px] lg:h-[330px]">
-              <div class="pl-5">
-                  <p class="text-xl font-bold">Inventory Management</p>
-                  <div id="popupthree" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                    <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                      <h2 class="mb-4 text-xl font-bold">Inventory Management</h2>
-                      <p class="text-base text-slate-900 w-96"> Inventory management is critical for business success, yet  often overlooked. Our strategic platform provides real-time inventory tracking and management, ensuring your business stays on track.</p>
-                      <p class="justify-center text-base text-slate-900 w-96">An effective ERP system enables streamlined warehouse stock tracking, eliminating overstocking and understocking issues. Investing in inventory management yields excellent ROI, ensuring timely product delivery and informed inventory ordering for market success.</p>
-                      <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalthree()">Close</button>
-                    </div>
-                  </div>
-                  <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalthree()">Read More</p>
-              </div>
-            </div>        
-          </div>
-    
-          <div>
-            <img src="./images/warehouse management image.jpeg" alt="warehouse management image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-            <div class="pl-5">
-                <p class="text-xl font-bold">Warehouse Management</p>
-                <div id="popupfour" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                  <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                    <h2 class="mb-4 text-xl font-bold">Warehouse Management</h2>
-                    <p class="text-base text-slate-900 w-96">Daily planning and controlling of resources in the warehouse is crucial and involves processes not only related to transporting and storing but also keeping track of your inventory.</p>
-                    <p class="justify-center text-base text-slate-900 w-96">The need for flexible and scalable warehousing and distribution solutions is growing as supply chain operators try to overcome labor shortages, increasing costs, and rising consumer demands. Warehouse Management improves the quality of work, boosts efficiency, saves space, organizes labor, increases security, and guarantees client satisfaction.</p>
-                    <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalfour()">Close</button>
-                  </div>
-                </div>
-                <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalfour()">Read More</p>
-            </div>
-          </div> 
-            
+    <!-- Main section -->
+     <section>
+      <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10">
+        <img src="./images/interested.webp" alt="services image" class="lg:w-[500px] rounded-md">
+        <div class="lg:flex lg:flex-col lg:gap-5 lg:justify-center lg:items-center">
+          <h1 class="text-5xl font-Rajdhani font-bold ">Services Briefing</h1>
+          <p class="font-Rajdhani text-2xl font-semibold">We provide an extensive range of solutions to help our clients to manage their business processes. Whether it be financial software packages enabling better financial management, CRM software helping to build profitable customer relationships or HR & Payroll offerings being used to improve employee performance, our software and services equip our customers to run their businesses more effectively and overcome the challenges of today's business environment.</p>
+        </div>
       </div>
-
-         <div class="lg:flex lg:justify-center lg:gap-10">
-          
-           <div>
-             <img src="./images/customer-relationship-management-businessman.webp" alt="finance and accounting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[440px]">
-             <div class="pl-5">
-                 <p class="text-xl font-bold">Customer Relationship Management</p>
-                 <div id="popupfive" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                   <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                     <h2 class="mb-4 text-xl font-bold">Customer Relationship Management</h2>
-                     <p class="text-base text-slate-900 w-96">Our CRM platform enhances customer relationships, empowering businesses to thrive. With tools for contact management and personalized communication, our solution drives revenue growth and fosters lasting connections.</p>
-                     <p class="justify-center text-base text-slate-900 w-96">An ERP application provides a comprehensive set of tools to manage and automate all accounting processes, including ledger entries, accounts receivable, and accounts payable, ensuring efficiency and accuracy in your growing organization</p>
-                     <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalfive()">Close</button>
-                   </div>
-                 </div>
-                 <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalfive()">Read More</p>
-             </div>
-           </div>
-  
-           <div>
-             <img src="./images/MyIC_Article_91981.jpeg" alt="business intelligence and reporting image" class="w-[390px] px-5 pt-10 pb-5 lg:w-[450px] lg:h-[300px]">
-             <div class="pl-5">
-                 <p class="text-xl font-bold">Business Intelligence and Reporting</p>
-                 <div id="popupsix" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-                   <div class="p-8 bg-white rounded-lg shadow-lg lg:w-1/3">
-                     <h2 class="mb-4 text-xl font-bold">Business Intelligence and Reporting</h2>
-                     <p class="text-base text-slate-900 w-96">Transforming raw data into actionable insights poses a persistent challenge for organizations. Information scattered across systems and employees' knowledge requires manual reconciliation, hindering decision-making.Our solution streamlines data integration and analysis empowering informed decisions and driving business success.</p>
-                     <p class="justify-center text-base text-slate-900 w-96">An ERP application provides integrated reporting and analytic tools to help you access the critical organizational Information you need with ease.</p>
-                     <button id="closePopup" class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600" onclick="closeModalsix()">Close</button>
-                   </div>
-                 </div>
-                 <p id="openPopupButton" class="font-semibold text-blue-600 list-none cursor-pointer" onclick="openModalsix()">Read More</p>
-             </div>
-           </div>
-           
-         </div>
-
     </section>
+    <!-- how we work section -->
+     <section>
+      <h1 class="font-Rajdhani font-bold lg:text-7xl lg:flex lg:justify-center lg:items-center pb-5 text-4xl flex justify-center">How We Work</h1>
+      <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10 lg:flex-row-reverse">
+        <img src="./images/Where-We-Work-About.jpg" alt="services image" class="lg:w-[500px] rounded-md">
+        <p class="font-Rajdhani text-2xl font-semibold lg:flex lg:items-center">At Domain-Plus Int’l. Limited, we provide on-site/off Site and scheduled courses for our clients.  This is based on their identified corporate and individual needs.  We strongly believe in results oriented training and therefore our training methodology is participant centred and consists of carefully selected training schedule.</p>
+      </div>
+     </section>
+     <section>
+      <div>
+        <h1 class="lg:flex lg:items-start lg:justify-center font-Rajdhani font-bold lg:text-7xl flex justify-center text-4xl">OUR SERVICES</h1>
+      </div>
+      <!-- consulting section -->
+       <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10">
+        <img src="./images/consulting-expert-advice-support-service-business-concept.webp" alt="consulting_image" class=" lg:w-1/2 rounded-md">
+        <div class="lg:flex lg:flex-col lg:gap-5 lg:justify-center lg:items-center">
+          <h1 class="text-5xl font-Rajdhani font-bold py-5 pl-5">Consulting </h1>
+          <p class="font-Rajdhani text-2xl font-semibold pl-5">We discuss our client's business requirements and interpret the facts, identify the challenges, and express the critical success factors for the required solution. Through our consulting services, we bring strategic thinking and actionable solutions to your business, focusing on both project-based and long-term goals. We conduct thorough needs analysis and manage every phase, including development, implementation, training, and post-implementation support. Engage with our consultants when you need a fully dedicated team that delivers custom recommendations. We also design and build customized reporting and dashboards for management and executive management based on key performance areas in the business.</p>
+        </div>
+       </div>
+       <!-- implementation section -->
+       <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10 lg:flex-row-reverse">
+        <img src="./images/shutterstock_implementation.jpg" alt="consulting_image" class=" lg:w-1/2 rounded-md">
+        <div class="lg:flex lg:flex-col lg:gap-5 lg:justify-center lg:items-center">
+          <h1 class="text-5xl font-Rajdhani font-bold py-5 pl-5 ">Implementation </h1>
+          <p class="font-Rajdhani text-2xl font-semibold pl-5">We provide organizations with a range of easy-to-use business management software and services: enterprise resource planning, accounting packages, human resource payroll system, employee self-service, customer relationship management & payment processing.
+            Sage offers its clients cutting-edge technology solutions for enhanced productivity and efficiency. Sage Solutions help you confidently manage your organization's complex processes and it's fully compliant with all relevant legislation (complies with local accounting rules). Key solution features include full multi-currency capability, excellent bank reconciliation and tax reporting, payroll, HR insurance scheme, employee and management self-service, e Recruitment, flexible transaction processing options, good management of fiscal periods and informative dashboards for analytical reporting.
+            </p>
+        </div>
+       </div>
+       <!-- maintenance and support -->
+       <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10">
+        <img src="./images/Best-Practices-of-Application-Maintenance-Services.jpg" alt="consulting_image" class="lg:w-1/2 rounded-md">
+        <div class="lg:flex lg:flex-col lg:gap-5 lg:justify-center lg:items-center">
+          <h1 class="text-5xl font-Rajdhani font-bold py-5 pl-5 ">Maintenance and Support</h1>
+          <p class="font-Rajdhani text-2xl font-semibold pl-5">We offer outstanding customer service/support and our customer-centric approach is designed to cause customer loyalty, whilst at the same time setting us apart from our competitors.
+            Support & maintenance model is flexible and is agreed upon with the client, at the time of software implementation. From choosing the right solution to seamless integration and maintenance, we ensure ongoing support for our clients throughout the entire product life-cycle.
+            Our Sage Partner support center base in South Africa is internationally recognized having won the 2012 Best Community Service category, was a runner up for Best Help Desk and was placed third for Best Customer Service in the Contact Centre World Awards powered by ContactCentreWorld.com.
+            
+            </p>
+        </div>
+       </div>
+       <!-- training section -->
+       <div class="lg:flex lg:gap-10 lg:px-5 pt-10 pb-10 lg:flex-row-reverse">
+        <img src="./images/istockphoto-1366428092-612x612.jpg" alt="consulting_image" class=" rounded-md ">
+        <div class="lg:flex lg:flex-col lg:gap-5 lg:justify-center lg:items-center">
+          <h1 class="text-5xl font-Rajdhani font-bold py-5 pl-5 ">Training</h1>
+          <p class="font-Rajdhani text-2xl font-semibold pl-5">As part of software implementation, training sessions are organized at the client site for users of deployed business solutions. ICT/ business process & related training programmes are organized externally at the company's training center or in-house at clients. We provide comprehensive training to End Users and System Administrators so they can use the solution efficiently.
+            Our training is delivered by certified and experienced specialists. At our fully equipped, digital, and flexible training academy, we meet all your training needs. Our trainers bring practical experience, addressing the real-world challenges you face daily, which are often overlooked in typical training courses.            
+            </p>
+        </div>
+       </div>
+
+     </section>
 
       <!-- FOOTER  -->
       <footer>
