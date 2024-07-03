@@ -13,79 +13,92 @@
         <link rel="shortcut icon" href="./images/logo (2).png" type="image/x-icon">
     </head>
 <body class="bg-gray-100 font-Rajdhani">
-  <!-- MEDIA LINKS -->
-  <div class="sticky top-0 z-50 flex items-center justify-between w-full h-full px-2 py-2 bg-gradient-to-r from-blue-900 to-red-900 md:px-10">
-    <div class="flex items-center gap-1 pl-0 md:pl-5">
-        <ion-icon name="call" class="text-xl text-white md:text-2xl hover:text-red-950"></ion-icon>
-        <p class="text-base font-extrabold text-white font-Rajdhani hover:text-red-950 md:text-xl">08023121258</p>
-    </div>
-
-    <div class="md:space-x-4">
-        <a href=""><ion-icon name="logo-facebook" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-twitter" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-instagram" class="text-xl text-white md:text-3xl hover:text-red-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-whatsapp" class="text-xl text-white md:text-3xl hover:text-green-700"></ion-icon></a>
-        <a href=""><ion-icon name="logo-linkedin" class="text-xl text-white md:text-3xl hover:text-blue-700"></ion-icon></a></a>
-        <a href="mailto:"><ion-icon name="mail-outline" class="text-xl text-white md:text-3xl hover:text-red-700"></ion-icon></a>
-    </div>
-  </div>
-  
-  <header class="bg-center bg-no-repeat bg-cover opacity-100">
-    <nav class="bg-white lg:opacity w-full  fixed z-50 px-7 py-3 sm:px-10 md:py-5 lg:pl-16 flex items-center justify-between lg:border-b-[1.5px] ">
-        <!-- HEADER LOGO -->
-        <div class="flex items-center">
+    <div class="sticky  grid grid-cols-2 top-0 z-50 bg-[#0e2b5c]">
+        <div class=" py-1 w-full h-full flex items-center pl-5 lg:pl-10">
+         
+        </div>
+    
+        <div href="" class=" w-full h-full py-1 pr-5 flex items-center space-x-1 md:space-x-2 justify-end md:pr-10">
+          <a href="contact.html" class="flex items-center text-xs md:text-lg font-semibold space-x-1 md:space-x-2 justify-start">
+            <span class="block text-white hover:text-red-950">Contact Us:</span>
+            <ion-icon name="call-outline" class="text-white hover:text-red-950"></ion-icon>
+          </a>
+          <a href="mailto:" class="flex items-center text-xs md:text-lg font-semibold space-x-1 md:space-x-2 justify-start">
+            <span class="block text-white hover:text-red-950">Send Mail:</span>
+            <ion-icon name="mail-outline" class="text-white hover:text-red-950"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <!-- HEADER -->
+      <header class="shadow-xl shadow-black">
+        <nav class="bg-white w-full fixed z-50 px-5 py-3 sm:px-10 md:py-5 flex items-center justify-between lg:border-b-[1.5px] ">
+          <!-- HEADER LOGO -->
+          <div class="flex items-center">
             <a href="index.html"><img src="./images/logo (2).png" alt="logo" class="w-10 md:w-20" /></a>
             <div class="text-white">
-                <p class="leading-3 text-center">
-                  <a href="index.html" class="pl-5 font-semibold tracking-widest text-blue-900 md:text-4xl font-Rajdhani">Domain-Plus</a><br />
-                  <a href="index.html" class="pl-4 font-semibold tracking-tighter text-red-900 md:text-3xl font-Rajdhani">International Limited</a>
-                </p>
+              <p class="leading-3">
+                <a href="index.html" class="pl-5 md:text-3xl font-semibold tracking-wider text-blue-900 font-Rajdhani">Domain-Plus</a><br />
+                <a href="index.html" class="pl-4 md:text-2xl font-semibold tracking-tighter text-red-900 font-Rajdhani">International Limited</a>
+              </p>
             </div>
-        </div>
-
-        
-        <!-- HEADER ICON MENU -->
-        <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
+          </div>
+              
+          <!-- HEADER ICON MENU -->
+          <div class="flex-row-reverse sm:flex sm:items-center sm:gap-8 lg:gap-10">
             <button class="border-[3px] border-[#2563eb] bg-red-800 hover:border-[3px] hover:border-red-800 transition-transform hover:scale-90 ease-linear duration-500 rounded-md hover:bg-[#2563eb] lg:hidden" onclick="openNav()">
-                <img src="../images/icon-menu.svg" alt="menu"/>
+              <img src="./images/icon-menu.svg" alt="menu"/>
             </button>
             <!-- HEADER LINK MENU -->
-            <ul class="hidden text-2xl font-semibold text-red-700 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
-                <li><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
-                <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About Us</a></li>
-                <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
-                <li><a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Solution</a></li>
-                <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Blog</a></li>
-                <li><a href="support.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Support</a></li>
-                <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
+            <ul class="hidden text-2xl font-semibold text-red-800 lg:flex lg:justify-centr lg:gap-16 lg:text-xl font-Rajdhani">
+              <li class="text-blue-800"><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">
+                Home
+              </a></li>
+              <li><a href="about.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">About Us</a></li>
+              <li><a href="services.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Services</a></li>
+              <li onmouseover="unHid()" onmouseleave="out()">
+                <a href="solution.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Brand/Product</a>
+                <div hidden id="drop" class="absolute bg-slate-100 shadow-md shadow-black py-3 px-10 rounded-md">
+                  <ul class="space-y-1">
+                    <li><a href="sage.html" class="text-lg font-bold text-blue-500">Sage</a></li>
+                    <li><a href="microsoft.html" class="text-lg font-bold text-blue-500">Microsoft Dynamics</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="blog.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Indusries</a></li>
+              <li><a href="contact.html"  class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Contact</a></li>
             </ul>
-        </div>
-        
-          <div id="sideNav"
-            class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-500 bg-black">
-            
+          </div>
+              
+          <div id="sideNav" class="fixed top-0 right-0 z-10 flex items-center w-0 h-full overflow-x-hidden font-bold text-black duration-700 
+          bg-black">
+                  
             <div class="absolute flex items-center mx-4 mt-5 top-2 left-1">
               <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
             </div>
-            
+                  
             <nav class="">
-              <ul class="ml-4 font-serif text-3xl font-semibold text-left sm:text-4xl font-Rajdhani">
-                <li class="p-2 text-white hover:text-blue-600"><a href="index.html">Home</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="about.html">About</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="services.html">Services</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="solution.html">Solution</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="blog.html">Blog</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="support.html">Support</a></li>
-                <li class="p-2 text-white hover:text-blue-600"><a href="contact.html">Contact</a></li>
+              <ul class="ml-4 font-serif text-3xl text-red-800 font-semibold text-left sm:text-4xl font-Rajdhani">
+                <li class="p-2 text-blue-800"><a href="index.html" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600">Home</a></li>
+                <li class="p-2"><a href="about.html">About</a></li>
+                <li class="p-2"><a href="services.html">Services</a></li>
+                <li onmouseover="Hid()" onmouseout="outen()" class="relative p-2">
+                  <a href="solution.html">Brand/Product</a>
+                  <div hidden id="hid" class="absolute top-0 bg-slate-100 shadow-md shadow-black py-3 px-10 rounded-md">
+                    <ul class="space-y-3">
+                      <li><a href="sage.html" class="text-lg font-bold text-blue-500">Sage</a></li>
+                      <li><a href="microsoft.html" class="text-lg font-bold text-blue-500">Microsoft Dynamics</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="p-2"><a href="blog.html">Industries</a></li>
+                <li class="p-2"><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
-          </div>
           
-        </div>
-      </nav>
-
-      <div onclick="exitNav()" id="sideBar" class="">
-      </div> 
+        </nav>
+      
+        <div onclick="exitNav()" id="sideBar" class="">
+      </div>
 
     <!-- HEADER SECTION FINANCIAL -->
     <div class="bg-center bg-no-repeat bg-cover bg-headbg pt-11 lg:pt-44" >
