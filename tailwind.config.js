@@ -30,6 +30,8 @@ module.exports = {
         'instana': "url('../images/intana_solution.jpeg')",
         'quickbook': "url('../images/quickbook_solution.jpeg')",
         'key': "url('../images/solution_key.jpeg')",
+        'industry': "url('../images/industry.jpg')",
+        'contact': "url('../images/contactUs.jpg')",
       }
     },
 
